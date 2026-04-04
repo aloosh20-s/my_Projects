@@ -2,6 +2,7 @@ services:
   - type: web
     name: marketplace-backend
     runtime: node
+    plan: free
     buildCommand: npm install
     startCommand: npm start
     rootDir: backend
