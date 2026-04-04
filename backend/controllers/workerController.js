@@ -32,7 +32,7 @@ const getWorkerProfile = async (req, res) => {
 // @access  Private/Worker
 const updateWorkerProfile = async (req, res) => {
   try {
-    const { experience, skills, hourlyRate, description, availability } = req.body;
+    const { experience, skills, hourlyRate, description, availability, profileImage } = req.body;
     let profile = await WorkerProfile.findOne({ where: { userId: req.user.id } });
 
     if (!profile) {
@@ -54,7 +54,22 @@ const updateWorkerProfile = async (req, res) => {
       await profile.save();
     }
 
-    res.json(profile);
+    // Update avatar on User model if provided
+    if (profileImage) {
+      const user = await User.findByPk(req.user.id);
+      if (user) {
+        user.profileImage = profileImage;
+        await user.save();
+      }
+    }
+
+    // Re-fetch profile with User to return updated image
+    const updatedProfile = await WorkerProfile.findOne({
+      where: { userId: req.user.id },
+      include: [{ model: User, attributes: ['name', 'email', 'phone', 'profileImage'] }]
+    });
+
+    res.json(updatedProfile);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

@@ -34,6 +34,24 @@ export default function CustomerDashboard() {
     }
   }, [user]);
 
+  const updateBookingStatus = async (bookingId: number, newStatus: string) => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/bookings/${bookingId}/status`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${user?.token}`
+        },
+        body: JSON.stringify({ status: newStatus })
+      });
+      if (res.ok) {
+        setBookings(bookings.map(b => b.id === bookingId ? { ...b, status: newStatus } : b));
+      }
+    } catch (error) {
+      console.error("Failed to update status", error);
+    }
+  };
+
   if (loading) return <div className="p-10 text-center text-slate-900 dark:text-white">Loading...</div>;
   if (!user) return <div className="p-10 text-center text-slate-900 dark:text-white">Please log in to view your dashboard.</div>;
 
@@ -86,13 +104,24 @@ export default function CustomerDashboard() {
                   <h4 className="font-semibold text-slate-900 dark:text-white">{booking.Service?.title || 'Unknown Service'}</h4>
                   <p className="text-sm text-slate-500">with {booking.worker?.name || 'Unknown Worker'} • {new Date(booking.date).toLocaleDateString()}</p>
                 </div>
-                <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                  booking.status === 'pending' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300' :
-                  booking.status === 'completed' ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' :
-                  'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300'
-                }`}>
-                  {booking.status.charAt(0).toUpperCase() + booking.status.slice(1)}
-                </span>
+                <div className="flex flex-col items-end gap-2">
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                    booking.status === 'pending' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300' :
+                    booking.status === 'completed' ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' :
+                    booking.status === 'cancelled' ? 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300' :
+                    'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300'
+                  }`}>
+                    {booking.status.charAt(0).toUpperCase() + booking.status.slice(1)}
+                  </span>
+                  {booking.status === 'pending' && (
+                    <button 
+                      onClick={() => updateBookingStatus(booking.id, 'cancelled')}
+                      className="text-xs text-red-600 hover:underline dark:text-red-400 mt-1"
+                    >
+                      Cancel Booking
+                    </button>
+                  )}
+                </div>
               </div>
             ))
           )}

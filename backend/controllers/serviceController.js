@@ -5,11 +5,14 @@ const { Service, User } = require('../models');
 // @access  Public
 const getServices = async (req, res) => {
   try {
+    const where = {};
+    if (req.query.workerId) {
+      where.workerId = req.query.workerId;
+    }
     const services = await Service.findAll({
-      include: [{ model: User, attributes: ['id', 'name', 'profileImage'], as: 'User' }] // From User.hasMany(Service) ... Service.belongsTo(User, { foreignKey: 'workerId' }) -- wait, the alias is not set in belongsTo in models/index.js.
+      where,
+      include: [{ model: User, attributes: ['id', 'name', 'profileImage'], as: 'User' }] 
     });
-    // Let's rely on default alias or just fetch raw services first
-    // In models/index.js: Service.belongsTo(User, { foreignKey: 'workerId' });
     res.json(services);
   } catch (error) {
     res.status(500).json({ message: error.message });

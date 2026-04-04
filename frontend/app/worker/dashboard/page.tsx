@@ -10,17 +10,23 @@ export default function WorkerDashboard() {
   const { user, loading } = useAuth();
   const [bookings, setBookings] = useState<any[]>([]);
   const [profile, setProfile] = useState<any>(null);
+  const [profileImageUrl, setProfileImageUrl] = useState<string>('');
+  const [isUploadingImage, setIsUploadingImage] = useState(false);
+  const [myServices, setMyServices] = useState<any[]>([]);
   const [isLoadingData, setIsLoadingData] = useState(true);
 
   useEffect(() => {
     if (user && user.token) {
       const fetchData = async () => {
         try {
-          const [bookingsRes, profileRes] = await Promise.all([
+          const [bookingsRes, profileRes, servicesRes] = await Promise.all([
             fetch(`${API_BASE_URL}/bookings/worker`, {
               headers: { Authorization: `Bearer ${user.token}` }
             }),
             fetch(`${API_BASE_URL}/workers/profile`, {
+              headers: { Authorization: `Bearer ${user.token}` }
+            }),
+            fetch(`${API_BASE_URL}/services?workerId=${user.id}`, {
               headers: { Authorization: `Bearer ${user.token}` }
             })
           ]);
@@ -29,7 +35,14 @@ export default function WorkerDashboard() {
             setBookings(await bookingsRes.json());
           }
           if (profileRes.ok) {
-            setProfile(await profileRes.json());
+            const data = await profileRes.json();
+            setProfile(data);
+            if (data.User?.profileImage) {
+               setProfileImageUrl(data.User.profileImage);
+            }
+          }
+          if (servicesRes.ok) {
+            setMyServices(await servicesRes.json());
           }
         } catch (error) {
           console.error("Failed to fetch worker data", error);
@@ -57,6 +70,32 @@ export default function WorkerDashboard() {
       }
     } catch (error) {
       console.error("Failed to update status", error);
+    }
+  };
+
+  const handleProfileImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.files || e.target.files.length === 0) return;
+    setIsUploadingImage(true);
+    const formData = new FormData();
+    formData.append('image', e.target.files[0]);
+    try {
+      const res = await fetch(`${API_BASE_URL}/upload`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${user?.token}` },
+        body: formData
+      });
+      const data = await res.json();
+      if (res.ok) {
+        let url = data.url;
+        if (url.startsWith('/uploads')) url = `${API_BASE_URL.replace('/api', '')}${url}`;
+        setProfileImageUrl(url);
+      } else {
+        alert(data.message || 'Image upload failed');
+      }
+    } catch {
+      alert('Error uploading image');
+    } finally {
+      setIsUploadingImage(false);
     }
   };
 
@@ -145,6 +184,41 @@ export default function WorkerDashboard() {
       </div>
 
       <div className="glass rounded-xl border border-slate-200 dark:border-slate-800 p-6 mt-8">
+        <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6">My Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {isLoadingData ? (
+             <p className="text-slate-500">Loading services...</p>
+          ) : myServices.length === 0 ? (
+             <p className="text-slate-500">You haven't added any services yet.</p>
+          ) : (
+            myServices.map((service) => (
+              <div key={service.id} className="p-4 border border-slate-200 dark:border-slate-800 rounded-lg flex justify-between items-center bg-white dark:bg-slate-900/50">
+                <div>
+                  <h4 className="font-semibold text-slate-900 dark:text-white">{service.title}</h4>
+                  <p className="text-sm text-slate-500">${service.price} • {service.category}</p>
+                </div>
+                <button
+                  onClick={async () => {
+                    const confirmDel = window.confirm('Are you sure you want to delete this service?');
+                    if (confirmDel) {
+                      const res = await fetch(`${API_BASE_URL}/services/${service.id}`, {
+                        method: 'DELETE',
+                        headers: { Authorization: `Bearer ${user.token}` }
+                      });
+                      if (res.ok) setMyServices(myServices.filter(s => s.id !== service.id));
+                    }
+                  }}
+                  className="px-3 py-1 bg-red-100 text-red-600 rounded-lg hover:bg-red-200 dark:bg-red-900/30 dark:text-red-400 text-sm font-medium"
+                >
+                  Delete
+                </button>
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+
+      <div className="glass rounded-xl border border-slate-200 dark:border-slate-800 p-6 mt-8">
         <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6">Profile Settings</h2>
         {profile ? (
           <form onSubmit={async (e) => {
@@ -156,11 +230,19 @@ export default function WorkerDashboard() {
               body: JSON.stringify({
                 experience: formData.get('experience'),
                 hourlyRate: parseFloat(formData.get('hourlyRate') as string),
-                description: formData.get('description')
+                description: formData.get('description'),
+                profileImage: profileImageUrl
               })
             });
             if (res.ok) alert('Profile updated successfully');
           }} className="space-y-4 max-w-2xl">
+            <div className="flex items-center gap-6 mb-6">
+               <img src={profileImageUrl || 'https://via.placeholder.com/100'} alt="Avatar" className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-sm dark:border-slate-800" />
+               <div>
+                 <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-300">Upload New Avatar</label>
+                 <input type="file" accept="image/*" onChange={handleProfileImageUpload} disabled={isUploadingImage} className="text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 dark:file:bg-slate-800 dark:file:text-slate-300 dark:hover:file:bg-slate-700" />
+               </div>
+            </div>
             <div>
               <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-300">Experience</label>
               <input name="experience" defaultValue={profile.experience} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700" />

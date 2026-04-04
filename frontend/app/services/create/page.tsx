@@ -16,6 +16,38 @@ export default function CreateServicePage() {
   const [estimatedTime, setEstimatedTime] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [images, setImages] = useState<string[]>([]);
+  const [isUploadingImage, setIsUploadingImage] = useState(false);
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.files || e.target.files.length === 0) return;
+    const file = e.target.files[0];
+    
+    setIsUploadingImage(true);
+    const formData = new FormData();
+    formData.append('image', file);
+    
+    try {
+      const res = await fetch(`${API_BASE_URL}/upload`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${user?.token}` },
+        body: formData
+      });
+      const data = await res.json();
+      if (res.ok) {
+        let url = data.url;
+        // If it returns a local path, ensure it's absolute
+        if (url.startsWith('/uploads')) url = `${API_BASE_URL.replace('/api', '')}${url}`;
+        setImages([...images, url]);
+      } else {
+        alert(data.message || 'Image upload failed');
+      }
+    } catch {
+      alert('Error uploading image');
+    } finally {
+      setIsUploadingImage(false);
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,7 +72,7 @@ export default function CreateServicePage() {
           description,
           price: parseFloat(price),
           estimatedTime,
-          images: [],
+          images
         })
       });
 
@@ -88,6 +120,17 @@ export default function CreateServicePage() {
               <label className="block text-sm font-medium mb-1">Estimated Time</label>
               <input type="text" required value={estimatedTime} onChange={e => setEstimatedTime(e.target.value)} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700" placeholder="e.g. 2 hours" />
             </div>
+          </div>
+          
+          <div>
+             <label className="block text-sm font-medium mb-1">Service Images</label>
+             <div className="flex gap-4 mb-2 overflow-x-auto py-2">
+               {images.map((img, i) => (
+                 <img key={i} src={img} alt={`Uploaded ${i}`} className="h-24 w-24 object-cover rounded-lg border border-slate-200 dark:border-slate-700" />
+               ))}
+             </div>
+             <input type="file" accept="image/*" onChange={handleImageUpload} disabled={isUploadingImage} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700 text-sm" />
+             {isUploadingImage && <p className="text-sm text-blue-500 mt-1">Uploading image...</p>}
           </div>
           <button type="submit" disabled={isSubmitting} className="w-full btn-primary py-3 mt-6">
             {isSubmitting ? 'Creating...' : 'Create Service'}
