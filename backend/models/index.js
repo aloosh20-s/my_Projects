@@ -4,6 +4,7 @@ const Service = require('./Service');
 const Booking = require('./Booking');
 const Review = require('./Review');
 const Message = require('./Message');
+const ServiceRequest = require('./ServiceRequest');
 
 // User and WorkerProfile
 User.hasOne(WorkerProfile, { foreignKey: 'userId', as: 'workerProfile' });
@@ -33,11 +34,18 @@ User.hasMany(Message, { foreignKey: 'receiverId', as: 'receivedMessages' });
 Message.belongsTo(User, { foreignKey: 'senderId', as: 'sender' });
 Message.belongsTo(User, { foreignKey: 'receiverId', as: 'receiver' });
 
+// Service Requests
+User.hasMany(ServiceRequest, { foreignKey: 'customerId', as: 'customRequests' });
+ServiceRequest.belongsTo(User, { foreignKey: 'customerId', as: 'customer' });
+User.hasMany(ServiceRequest, { foreignKey: 'workerId', as: 'acceptedRequests' });
+ServiceRequest.belongsTo(User, { foreignKey: 'workerId', as: 'assignedWorker' });
+
 module.exports = {
   User,
   WorkerProfile,
   Service,
   Booking,
   Review,
-  Message
+  Message,
+  ServiceRequest
 };

@@ -22,6 +22,7 @@ export default function CreateServicePage() {
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files || e.target.files.length === 0) return;
     const file = e.target.files[0];
+    e.target.value = ''; // Reset input
     
     setIsUploadingImage(true);
     const formData = new FormData();
@@ -77,7 +78,7 @@ export default function CreateServicePage() {
       });
 
       if (res.ok) {
-        router.push('/worker/dashboard');
+        router.push('/worker/services');
       } else {
         const data = await res.json();
         setError(data.message || 'Failed to create service');
@@ -130,7 +131,7 @@ export default function CreateServicePage() {
                ))}
              </div>
              <input type="file" accept="image/*" onChange={handleImageUpload} disabled={isUploadingImage} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700 text-sm" />
-             {isUploadingImage && <p className="text-sm text-blue-500 mt-1">Uploading image...</p>}
+             {isUploadingImage && <p className="text-sm text-primary-light mt-1">Uploading image...</p>}
           </div>
           <button type="submit" disabled={isSubmitting} className="w-full btn-primary py-3 mt-6">
             {isSubmitting ? 'Creating...' : 'Create Service'}

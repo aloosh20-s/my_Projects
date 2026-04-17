@@ -60,7 +60,7 @@ const loginUser = async (req, res) => {
     // Check for user email
     const user = await User.findOne({ where: { email } });
 
-    if (user && (await bcrypt.compare(password, user.password))) {
+    if (user && (await user.matchPassword(password))) {
       res.json({
         id: user.id,
         name: user.name,
@@ -101,8 +101,47 @@ const getUserProfile = async (req, res) => {
   }
 };
 
+// @desc    Update user profile
+// @route   PUT /api/auth/profile
+// @access  Private
+const updateUserProfile = async (req, res) => {
+  try {
+    const user = await User.findByPk(req.user.id);
+
+    if (user) {
+      user.name = req.body.name || user.name;
+      user.email = req.body.email?.toLowerCase() || user.email;
+      user.phone = req.body.phone || user.phone;
+      user.location = req.body.location || user.location;
+      user.profileImage = req.body.profileImage || user.profileImage;
+
+      if (req.body.password) {
+        user.password = req.body.password;
+      }
+
+      const updatedUser = await user.save();
+
+      res.json({
+        id: updatedUser.id,
+        name: updatedUser.name,
+        email: updatedUser.email,
+        role: updatedUser.role,
+        phone: updatedUser.phone,
+        location: updatedUser.location,
+        profileImage: updatedUser.profileImage,
+        token: generateToken(updatedUser.id),
+      });
+    } else {
+      res.status(404).json({ message: 'User not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 module.exports = {
   registerUser,
   loginUser,
-  getUserProfile
+  getUserProfile,
+  updateUserProfile
 };

@@ -65,7 +65,7 @@ export default function BookingPage({ params }: { params: Promise<{ id: string }
       if (res.ok) {
         setSuccess(true);
         setTimeout(() => {
-          router.push('/customer/dashboard');
+          router.push('/customer');
         }, 2000);
       } else {
         const data = await res.json();
@@ -90,7 +90,7 @@ export default function BookingPage({ params }: { params: Promise<{ id: string }
         <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-6 border border-slate-100 dark:border-slate-800 mb-8">
           <div className="flex justify-between items-start mb-4">
             <div>
-              <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">{service.category}</div>
+              <div className="text-sm font-semibold text-primary dark:text-accent-amber uppercase tracking-wider mb-1">{service.category}</div>
               <h2 className="text-xl font-bold text-slate-900 dark:text-white">{service.title}</h2>
             </div>
             <div className="text-2xl font-bold text-slate-900 dark:text-white">${service.price}</div>
@@ -126,7 +126,7 @@ export default function BookingPage({ params }: { params: Promise<{ id: string }
                   required
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition"
+                  className="w-full pl-10 pr-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-primary outline-none transition"
                 />
               </div>
             </div>

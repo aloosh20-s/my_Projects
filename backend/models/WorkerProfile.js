@@ -27,7 +27,11 @@ const WorkerProfile = sequelize.define('WorkerProfile', {
   },
   hourlyRate: {
     type: DataTypes.FLOAT,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      min: 0.01,
+      isDecimal: true
+    }
   },
   rating: {
     type: DataTypes.FLOAT,

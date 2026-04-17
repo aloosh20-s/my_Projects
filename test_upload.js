@@ -1,64 +1,49 @@
 const fs = require('fs');
 const path = require('path');
 
-async function run() {
+async function testUpload() {
+  const FormData = require('form-data');
+  const form = new FormData();
+  
+  // create dummy image file
+  const testImagePath = path.join(__dirname, 'test.png');
+  fs.writeFileSync(testImagePath, 'fake image content');
+  
+  // Register or Login to get token
+  let token = 'mock';
+  
   try {
-    const FormData = require('form-data');
-    const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+    const res = await fetch('http://localhost:5000/api/auth/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Test Uploader',
+        email: `test_uploader_${Date.now()}@example.com`,
+        password: 'password123',
+        role: 'worker'
+      })
+    });
+    const authData = await res.json();
+    token = authData.token;
     
-    console.log("Starting upload test...");
+    // Now test upload
+    form.append('image', fs.createReadStream(testImagePath));
     
-    // Create form data using the generated worker avatar
-    const form = new FormData();
-    const imagePath = 'C:\\Users\\AlaaSaleh\\.gemini\\antigravity\\brain\\b9f6e150-8340-40a1-97ed-c928560ae249\\worker_avatar_1775273901587.png';
-    const fileStream = fs.createReadStream(imagePath);
-    form.append('image', fileStream);
-
-    // Mock an authorization token if hitting the protected endpoint
-    // Actually, we need a valid token. Let's just create a dummy one or grab one from the DB using jwt.
-    const jwt = require('jsonwebtoken');
-    require('dotenv').config({ path: './backend/.env' });
-    const token = jwt.sign({ id: 1 }, process.env.JWT_SECRET || 'my_super_secret_key_12345', { expiresIn: '30d' });
-
-    console.log("Uploading file via API...");
-    // Let's assume the server is running on localhost:5000
-    // Using native http instead of fetch to avoid module issues
-    const http = require('http');
-
-    const req = http.request({
-      hostname: 'localhost',
-      port: 5000,
-      path: '/api/upload',
+    const uploadRes = await fetch('http://localhost:5000/api/upload', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${token}`,
-        ...form.getHeaders()
-      }
-    }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        console.log(`Status code: ${res.statusCode}`);
-        console.log(`Response: ${data}`);
-        
-        // Assertions
-        if (res.statusCode === 201 && JSON.parse(data).url) {
-           console.log("✅ Upload test PASSED! File stored locally at: " + JSON.parse(data).url);
-        } else {
-           console.log("❌ Upload test FAILED!");
-        }
-      });
+        Authorization: `Bearer ${token}`
+      },
+      body: form // node-fetch handles form-data correctly
     });
-
-    req.on('error', (e) => {
-      console.error(`Problem with request: ${e.message}`);
-    });
-
-    form.pipe(req);
-
-  } catch (err) {
-    console.error("Test execution failed: ", err);
+    
+    const uploadData = await uploadRes.json();
+    console.log("Upload Status:", uploadRes.status);
+    console.log("Upload Response:", uploadData);
+    
+  } catch(e) {
+    console.error(e);
   }
 }
 
-run();
+testUpload();

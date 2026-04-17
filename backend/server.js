@@ -23,6 +23,8 @@ const io = new Server(server, {
   }
 });
 
+app.set('io', io);
+
 // Middlewares
 const allowedOrigins = [
   'http://localhost:3000',
@@ -47,6 +49,11 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 io.on('connection', (socket) => {
   console.log(`User connected: ${socket.id}`);
 
+  socket.on('join', (userId) => {
+    socket.join(`user_${userId}`);
+    console.log(`User ${userId} joined their notification room`);
+  });
+
   socket.on('disconnect', () => {
     console.log(`User disconnected: ${socket.id}`);
   });
@@ -63,6 +70,8 @@ app.use('/api/services', require('./routes/serviceRoutes'));
 app.use('/api/bookings', require('./routes/bookingRoutes'));
 app.use('/api/workers', require('./routes/workerRoutes'));
 app.use('/api/upload', require('./routes/uploadRoutes'));
+app.use('/api/service-requests', require('./routes/serviceRequestRoutes'));
+app.use('/api/messages', require('./routes/messageRoutes'));
 // app.use('/api/reviews', require('./routes/reviewRoutes'));
 
 const PORT = process.env.PORT || 5000;

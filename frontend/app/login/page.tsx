@@ -1,16 +1,27 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { API_BASE_URL } from '@/utils/api';
+import { useAuth } from '@/context/AuthContext';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const { login, user } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (user) {
+      router.push(user.role === 'worker' ? '/worker/bookings' : '/customer');
+    }
+  }, [user, router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
     try {
       const res = await fetch(`${API_BASE_URL}/auth/login`, {
         method: 'POST',
@@ -21,13 +32,13 @@ export default function Login() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || 'Login failed');
 
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('user', JSON.stringify(data));
+      // Use AuthContext login so Navbar re-renders reactively
+      login(data);
       
       if (data.role === 'worker') {
-        window.location.href = '/worker/dashboard';
+        router.push('/worker/bookings');
       } else {
-        window.location.href = '/customer/dashboard';
+        router.push('/customer');
       }
     } catch (err: any) {
       setError(err.message);
@@ -37,7 +48,7 @@ export default function Login() {
   return (
     <div className="min-h-[80vh] flex items-center justify-center bg-slate-50 dark:bg-slate-950 px-4">
       <div className="max-w-md w-full glass p-8 rounded-2xl shadow-xl">
-        <h2 className="text-3xl font-bold text-center text-slate-900 dark:text-white mb-8">Welcome Back</h2>
+        <h2 className="text-3xl font-bold text-center text-slate-900 dark:text-white mb-8">Welcome Back to Souq Yemen</h2>
         {error && <div className="bg-red-100 text-red-600 p-3 rounded-lg mb-4 text-sm">{error}</div>}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
@@ -45,7 +56,7 @@ export default function Login() {
             <input 
               type="email" 
               required 
-              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition"
+              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-primary outline-none transition"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -55,7 +66,7 @@ export default function Login() {
             <input 
               type="password" 
               required 
-              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition"
+              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-primary outline-none transition"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -63,7 +74,7 @@ export default function Login() {
           <button type="submit" className="w-full btn-primary py-3 text-lg">Log in</button>
         </form>
         <p className="mt-6 text-center text-slate-600 dark:text-slate-400">
-          Don't have an account? <Link href="/register" className="text-blue-600 hover:underline">Sign up</Link>
+          Don't have an account? <Link href="/register" className="text-primary hover:underline">Sign up</Link>
         </p>
       </div>
     </div>

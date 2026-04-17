@@ -11,7 +11,7 @@ const getServices = async (req, res) => {
     }
     const services = await Service.findAll({
       where,
-      include: [{ model: User, attributes: ['id', 'name', 'profileImage'], as: 'User' }] 
+      include: [{ model: User, attributes: ['id', 'name', 'profileImage'] }] 
     });
     res.json(services);
   } catch (error) {

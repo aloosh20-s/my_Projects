@@ -22,6 +22,14 @@ const createBooking = async (req, res) => {
       paymentStatus: 'pending'
     });
 
+    // Emit to worker
+    const io = req.app.get('io');
+    io.to(`user_${service.workerId}`).emit('new_booking', {
+      id: booking.id,
+      serviceTitle: service.title,
+      clientName: req.user.name
+    });
+
     res.status(201).json(booking);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -83,6 +91,13 @@ const updateBookingStatus = async (req, res) => {
 
     booking.status = status;
     await booking.save();
+
+    // Emit to client
+    const io = req.app.get('io');
+    io.to(`user_${booking.clientId}`).emit('booking_status_updated', {
+      id: booking.id,
+      status: booking.status
+    });
 
     res.json(booking);
   } catch (error) {
