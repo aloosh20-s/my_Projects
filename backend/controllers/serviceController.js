@@ -71,10 +71,22 @@ const updateService = async (req, res) => {
       return res.status(403).json({ message: 'Not authorized to update this service' });
     }
 
-    const updatedService = await service.update(req.body);
+    const { title, category, description, price, estimatedTime, images } = req.body;
+    
+    // Whitelist only approved fields to prevent Mass Assignment attacks
+    const updatedService = await service.update({
+      title,
+      category,
+      description,
+      price,
+      estimatedTime,
+      images
+    });
     res.json(updatedService);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('[serviceController.updateService Error]:', error);
+    const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
+    res.status(500).json({ message });
   }
 };
 

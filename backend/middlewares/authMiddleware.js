@@ -12,8 +12,19 @@ const protect = async (req, res, next) => {
       // Get token from header
       token = req.headers.authorization.split(' ')[1];
 
-      // Verify token
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      if (!process.env.JWT_SECRET) {
+        throw new Error('FATAL: JWT_SECRET is not defined');
+      }
+
+      let decoded;
+      try {
+        decoded = jwt.verify(token, process.env.JWT_SECRET);
+      } catch (tokenErr) {
+        if (tokenErr.name === 'TokenExpiredError') {
+          return res.status(401).json({ message: 'Token has expired. Please login again.' });
+        }
+        return res.status(401).json({ message: 'Not authorized, invalid token signature.' });
+      }
 
       // Get user from the token
       req.user = await User.findByPk(decoded.id, {

@@ -24,11 +24,14 @@ const registerUser = async (req, res) => {
     }
 
     // Create user
+    const allowedRoles = ['client', 'worker'];
+    const assignedRole = allowedRoles.includes(role) ? role : 'client';
+
     const user = await User.create({
       name,
       email,
       password,
-      role: role || 'client',
+      role: assignedRole,
       phone,
       location
     });
@@ -45,7 +48,9 @@ const registerUser = async (req, res) => {
       res.status(400).json({ message: 'Invalid user data' });
     }
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('[authController.registerUser Error]:', error);
+    const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
+    res.status(500).json({ message });
   }
 };
 
@@ -72,7 +77,9 @@ const loginUser = async (req, res) => {
       res.status(401).json({ message: 'Invalid email or password' });
     }
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('[authController.loginUser Error]:', error);
+    const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
+    res.status(500).json({ message });
   }
 };
 
@@ -97,7 +104,9 @@ const getUserProfile = async (req, res) => {
       res.status(404).json({ message: 'User not found' });
     }
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('[authController.getUserProfile Error]:', error);
+    const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
+    res.status(500).json({ message });
   }
 };
 
@@ -116,6 +125,15 @@ const updateUserProfile = async (req, res) => {
       user.profileImage = req.body.profileImage || user.profileImage;
 
       if (req.body.password) {
+        if (!req.body.oldPassword) {
+          return res.status(400).json({ message: 'Must provide current password as oldPassword to update it.' });
+        }
+        
+        const isMatch = await user.matchPassword(req.body.oldPassword);
+        if (!isMatch) {
+          return res.status(401).json({ message: 'Current password is incorrect.' });
+        }
+
         user.password = req.body.password;
       }
 
@@ -135,7 +153,9 @@ const updateUserProfile = async (req, res) => {
       res.status(404).json({ message: 'User not found' });
     }
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('[authController.updateUserProfile Error]:', error);
+    const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
+    res.status(500).json({ message });
   }
 };
 

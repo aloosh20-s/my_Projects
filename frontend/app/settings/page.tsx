@@ -14,7 +14,9 @@ export default function SettingsPage() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    location: ''
+    location: '',
+    oldPassword: '',
+    password: ''
   });
   
   const [profileImageFile, setProfileImageFile] = useState<File | null>(null);
@@ -28,7 +30,9 @@ export default function SettingsPage() {
       setFormData({
         name: user.name || '',
         phone: user.phone || '',
-        location: user.location || ''
+        location: user.location || '',
+        oldPassword: '',
+        password: ''
       });
       if (user.profileImage) {
         setImagePreview(user.profileImage);
@@ -71,13 +75,28 @@ export default function SettingsPage() {
 
       // 2. Update profile
       if (user) {
+         const payload: any = { 
+           name: formData.name, 
+           phone: formData.phone, 
+           location: formData.location, 
+           profileImage: finalImgUrl 
+         };
+
+         if (formData.password) {
+           if (!formData.oldPassword) {
+             throw new Error('Please provide your current password to set a new password.');
+           }
+           payload.password = formData.password;
+           payload.oldPassword = formData.oldPassword;
+         }
+
          const updateRes = await fetch(`${API_BASE_URL}/auth/profile`, {
            method: 'PUT',
            headers: { 
                'Content-Type': 'application/json',
                Authorization: `Bearer ${user.token}`
            },
-           body: JSON.stringify({ ...formData, profileImage: finalImgUrl })
+           body: JSON.stringify(payload)
          });
          
          if (!updateRes.ok) throw new Error('Failed to update profile');
@@ -86,6 +105,7 @@ export default function SettingsPage() {
          // Update auth context
          login(updatedData);
          showToast('Profile updated successfully!', 'success');
+         setFormData(prev => ({ ...prev, oldPassword: '', password: '' }));
       }
     } catch (err: any) {
       showToast(err.message || 'An error occurred', 'error');
@@ -144,6 +164,30 @@ export default function SettingsPage() {
                  value={formData.location} onChange={(e) => setFormData({...formData, location: e.target.value})}
                />
              </div>
+          </div>
+
+          <div className="border-t border-slate-100 dark:border-slate-800/60 pt-6 mt-6">
+            <h2 className="text-lg font-bold text-slate-800 dark:text-white mb-4">Security</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Current Password</label>
+                <input 
+                  type="password" 
+                  placeholder="Enter current password if updating"
+                  className="w-full px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+                  value={formData.oldPassword} onChange={(e) => setFormData({...formData, oldPassword: e.target.value})}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">New Password</label>
+                <input 
+                  type="password" 
+                  placeholder="Leave blank to keep same"
+                  className="w-full px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
+                  value={formData.password} onChange={(e) => setFormData({...formData, password: e.target.value})}
+                />
+              </div>
+            </div>
           </div>
           
           <div className="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800/60 flex gap-4">

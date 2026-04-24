@@ -58,6 +58,16 @@ router.post('/', protect, upload.single('image'), async (req, res) => {
       return res.status(400).json({ message: 'No image uploaded' });
     }
 
+    // Secure File Upload Validation: Check Magic Bytes
+    const fileTypeModule = await import('file-type');
+    const buffer = fs.readFileSync(req.file.path);
+    const type = await fileTypeModule.fileTypeFromBuffer(buffer);
+
+    if (!type || !['image/jpeg', 'image/png', 'image/webp'].includes(type.mime)) {
+      fs.unlinkSync(req.file.path); // Delete malicious file immediately
+      return res.status(400).json({ message: 'Invalid file type signature. Detected malicious or unsupported file.' });
+    }
+
     if (useCloudinary) {
       // Upload raw file path to Cloudinary
       const result = await cloudinary.uploader.upload(req.file.path, {
@@ -79,7 +89,10 @@ router.post('/', protect, upload.single('image'), async (req, res) => {
     if (req.file && fs.existsSync(req.file.path)) {
       fs.unlinkSync(req.file.path);
     }
-    res.status(500).json({ message: error.message });
+    
+    console.error('[uploadRoutes.post Error]:', error);
+    const message = process.env.NODE_ENV === 'production' ? 'Upload failed due to a server error.' : error.message;
+    res.status(500).json({ message });
   }
 });
 
