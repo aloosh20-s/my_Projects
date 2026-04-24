@@ -97,7 +97,7 @@ export default function ServiceDetails() {
   if (!service) return (
     <div className="bg-slate-50 dark:bg-slate-950 min-h-screen py-32 flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-4">Service Not Found</h1>
-      <p className="text-slate-500 mb-8 max-w-md text-center">We couldn't find the service you are looking for. It might have been removed by the professional.</p>
+      <p className="text-slate-500 mb-8 max-w-md text-center">We couldn&apos;t find the service you are looking for. It might have been removed by the professional.</p>
       <button onClick={() => router.push('/services')} className="btn-primary">Browse All Services</button>
     </div>
   );
@@ -152,7 +152,7 @@ export default function ServiceDetails() {
 
                 <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Description</h2>
                 <div className="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-400 text-lg leading-relaxed whitespace-pre-line">
-                  {service.description || "The professional hasn't provided a detailed description for this service yet. Reach out to them for more specifications."}
+                  {service.description || "The professional hasn&apos;t provided a detailed description for this service yet. Reach out to them for more specifications."}
                 </div>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function ServiceDetails() {
                  </button>
 
                  <p className="text-xs text-center text-slate-500 dark:text-slate-400 mt-4">
-                   You won't be charged yet. The professional must first accept your request.
+                   You won&apos;t be charged yet. The professional must first accept your request.
                  </p>
                </form>
 

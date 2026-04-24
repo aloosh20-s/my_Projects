@@ -339,7 +339,7 @@ export default function WorkerDashboard() {
             
             <div className="space-y-4">
               {myServices.length === 0 ? (
-                <p className="text-slate-500 text-sm">You haven't added any services yet. Add one to get started.</p>
+                <p className="text-slate-500 text-sm">You haven&apos;t added any services yet. Add one to get started.</p>
               ) : (
                 myServices.slice(0,4).map((service) => (
                   <div key={service.id} className="p-4 border border-slate-100 dark:border-slate-800 rounded-xl hover:shadow-md transition bg-slate-50 dark:bg-slate-900/50 group">

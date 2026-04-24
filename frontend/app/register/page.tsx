@@ -126,7 +126,7 @@ function RegisterForm() {
           <div>
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Full Name</label>
             <input 
-              type="text" required 
+              type="text" required autoComplete="off"
               className="w-full px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
               value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}
             />
@@ -134,7 +134,7 @@ function RegisterForm() {
           <div>
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Email Address</label>
             <input 
-              type="email" required 
+              type="email" required autoComplete="off"
               className="w-full px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
               value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}
             />
@@ -142,7 +142,7 @@ function RegisterForm() {
           <div>
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Password</label>
             <input 
-              type="password" required 
+              type="password" required autoComplete="new-password"
               minLength={6}
               className="w-full px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary outline-none"
               value={formData.password} onChange={(e) => setFormData({...formData, password: e.target.value})}

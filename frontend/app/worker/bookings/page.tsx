@@ -35,10 +35,36 @@ export default function WorkerBookingsPage() {
 
       const fetchBookings = async () => {
         try {
-          const res = await fetch(`${API_BASE_URL}/bookings/worker`, {
-            headers: { Authorization: `Bearer ${user.token}` }
-          });
-          if (res.ok) setBookings(await res.json());
+          const [bookingsRes, requestsRes] = await Promise.all([
+            fetch(`${API_BASE_URL}/bookings/worker`, {
+              headers: { Authorization: `Bearer ${user.token}` }
+            }),
+            fetch(`${API_BASE_URL}/service-requests`, {
+              headers: { Authorization: `Bearer ${user.token}` }
+            })
+          ]);
+          
+          let fetchedBookings = [];
+          if (bookingsRes.ok) fetchedBookings = await bookingsRes.json();
+          
+          let fetchedRequests = [];
+          if (requestsRes.ok) fetchedRequests = await requestsRes.json();
+          
+          // Filter requests to only show ones assigned to THIS worker
+          const assignedRequests = fetchedRequests
+            .filter((r: any) => r.workerId === user.id && r.status !== 'open')
+            .map((r: any) => ({
+              id: `req_${r.id}`, // prefix ID to avoid collision with booking IDs
+              isRequest: true,
+              originalId: r.id,
+              Service: { title: `Custom Request: ${r.title}` },
+              client: r.customer,
+              date: r.deadline,
+              status: r.status === 'assigned' ? 'accepted' : r.status // Map assigned to accepted
+            }));
+
+          const combined = [...fetchedBookings, ...assignedRequests].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+          setBookings(combined);
         } catch (error) {
           console.error("Failed to fetch bookings", error);
         } finally {
@@ -53,9 +79,14 @@ export default function WorkerBookingsPage() {
     }
   }, [user, loading]);
 
-  const updateBookingStatus = async (bookingId: number, newStatus: string) => {
+  const updateBookingStatus = async (item: any, newStatus: string) => {
+    if (item.isRequest) {
+      showToast('Custom request status updates coming soon.', 'info');
+      return;
+    }
+
     try {
-      const res = await fetch(`${API_BASE_URL}/bookings/${bookingId}/status`, {
+      const res = await fetch(`${API_BASE_URL}/bookings/${item.id}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +95,7 @@ export default function WorkerBookingsPage() {
         body: JSON.stringify({ status: newStatus })
       });
       if (res.ok) {
-        setBookings(bookings.map(b => b.id === bookingId ? { ...b, status: newStatus } : b));
+        setBookings(bookings.map(b => b.id === item.id ? { ...b, status: newStatus } : b));
         showToast(`Booking marked as ${newStatus}`, 'success');
       }
     } catch (error) {
@@ -130,17 +161,20 @@ export default function WorkerBookingsPage() {
                     </td>
                     <td className="py-5 text-right">
                       <div className="flex justify-end gap-2 text-sm">
-                        {booking.status === 'pending' && (
+                        {booking.status === 'pending' && !booking.isRequest && (
                           <>
-                            <button onClick={() => updateBookingStatus(booking.id, 'accepted')} className="btn-primary">Accept</button>
-                            <button onClick={() => updateBookingStatus(booking.id, 'cancelled')} className="btn-secondary text-red-600 border-red-200 hover:bg-red-50 dark:hover:bg-red-900/20">Decline</button>
+                            <button onClick={() => updateBookingStatus(booking, 'accepted')} className="btn-primary">Accept</button>
+                            <button onClick={() => updateBookingStatus(booking, 'cancelled')} className="btn-secondary text-red-600 border-red-200 hover:bg-red-50 dark:hover:bg-red-900/20">Decline</button>
                           </>
                         )}
-                        {booking.status === 'accepted' && (
-                          <button onClick={() => updateBookingStatus(booking.id, 'completed')} className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-2 px-4 rounded-xl transition shadow-sm">Mark Complete</button>
+                        {booking.status === 'accepted' && !booking.isRequest && (
+                          <button onClick={() => updateBookingStatus(booking, 'completed')} className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-2 px-4 rounded-xl transition shadow-sm">Mark Complete</button>
                         )}
-                        {booking.status === 'completed' && (
+                        {booking.status === 'completed' && !booking.isRequest && (
                           <button disabled className="bg-slate-100 dark:bg-slate-800 text-slate-400 font-medium py-2 px-4 rounded-xl cursor-not-allowed">Completed</button>
+                        )}
+                        {booking.isRequest && (
+                          <span className="text-slate-500 text-sm font-medium">Custom Request</span>
                         )}
                       </div>
                     </td>

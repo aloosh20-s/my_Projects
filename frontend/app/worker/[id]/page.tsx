@@ -30,7 +30,7 @@ export default function WorkerProfile() {
         
         if (servicesRes.ok) {
           const servData = await servicesRes.json();
-          // The backend might return all services if workerId query isn't implemented properly,
+          // The backend might return all services if workerId query isn&apos;t implemented properly,
           // so we double check and filter them.
           const filteredServices = servData.filter((s:any) => s.workerId === parseInt(id as string));
           setServices(filteredServices.length > 0 ? filteredServices : servData); // Fallback to all data if filter yields 0
@@ -60,7 +60,7 @@ export default function WorkerProfile() {
   if (!worker) return (
     <div className="bg-slate-50 dark:bg-slate-950 min-h-screen py-32 flex flex-col items-center">
       <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-4">Worker Not Found</h1>
-      <p className="text-slate-500 mb-8">The professional you're looking for doesn't exist or is unavailable.</p>
+      <p className="text-slate-500 mb-8">The professional you&apos;re looking for doesn&apos;t exist or is unavailable.</p>
       <button onClick={() => router.back()} className="btn-primary">Go Back</button>
     </div>
   );
@@ -118,7 +118,7 @@ export default function WorkerProfile() {
                 {worker.description ? (
                   <p>{worker.description}</p>
                 ) : (
-                  <p>This professional hasn't added a bio yet, but they are fully vetted and verified by our platform.</p>
+                  <p>This professional hasn&apos;t added a bio yet, but they are fully vetted and verified by our platform.</p>
                 )}
               </div>
               
@@ -173,7 +173,7 @@ export default function WorkerProfile() {
                       </div>
                     </div>
                     <p className="text-slate-600 dark:text-slate-400 text-sm">
-                      "Absolutely fantastic service. Showed up on time, knew exactly what needed to be done, and was extremely professional. Highly recommended!"
+                      &quot;Absolutely fantastic service. Showed up on time, knew exactly what needed to be done, and was extremely professional. Highly recommended!&quot;
                     </p>
                   </div>
                 ))}
@@ -188,7 +188,7 @@ export default function WorkerProfile() {
             <div className="flex flex-col gap-4">
               {services.length === 0 ? (
                 <div className="card-modern p-6 text-center">
-                  <p className="text-slate-500 dark:text-slate-400 text-sm">This professional hasn't listed specific services yet. You can still message them to arrange custom work.</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-sm">This professional hasn&apos;t listed specific services yet. You can still message them to arrange custom work.</p>
                 </div>
               ) : (
                 services.map((service) => (

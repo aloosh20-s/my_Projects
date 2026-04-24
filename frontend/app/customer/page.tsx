@@ -14,6 +14,7 @@ import Link from 'next/link';
 export default function CustomerDashboard() {
   const { user, loading } = useAuth();
   const [bookings, setBookings] = useState<any[]>([]);
+  const [recommendedServices, setRecommendedServices] = useState<any[]>([]);
   const [isLoadingBookings, setIsLoadingBookings] = useState(true);
   const { showToast } = useToast();
 
@@ -48,7 +49,22 @@ export default function CustomerDashboard() {
         }
       };
       
+      const fetchRecommended = async () => {
+        try {
+          const res = await fetch(`${API_BASE_URL}/services`);
+          if (res.ok) {
+            const data = await res.json();
+            // take 2 random services
+            const shuffled = data.sort(() => 0.5 - Math.random());
+            setRecommendedServices(shuffled.slice(0, 2));
+          }
+        } catch (error) {
+          console.error("Failed to fetch recommended services", error);
+        }
+      };
+
       fetchBookings();
+      fetchRecommended();
       return () => {
         socket.off('booking_status_updated');
       };
@@ -107,9 +123,9 @@ export default function CustomerDashboard() {
             <Link href="/services" className="bg-white text-primary hover:bg-[#FDFCF5] px-6 py-3 rounded-xl font-semibold transition shadow-sm flex items-center justify-center gap-2">
               <Search className="w-5 h-5" /> Find a Service
             </Link>
-            <button className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2 border border-white/30">
+            <Link href="/request-service" className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2 border border-white/30">
               <Plus className="w-5 h-5" /> Post Custom Request
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -169,7 +185,7 @@ export default function CustomerDashboard() {
                 <div className="text-center py-12 border border-dashed border-slate-200 dark:border-slate-700 rounded-xl bg-slate-50 dark:bg-slate-900/50">
                   <Briefcase className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">No bookings yet</h3>
-                  <p className="text-slate-500 dark:text-slate-400 mb-4 text-sm">You haven't requested any services yet.</p>
+                  <p className="text-slate-500 dark:text-slate-400 mb-4 text-sm">You haven&apos;t requested any services yet.</p>
                   <Link href="/services" className="btn-primary inline-flex">Explore Services</Link>
                 </div>
               ) : (
@@ -217,21 +233,20 @@ export default function CustomerDashboard() {
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {[
-                { title: 'Standard House Cleaning', cat: 'Cleaning', price: 90, img: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=300&auto=format&fit=crop' },
-                { title: 'Lawn Care & Mowing', cat: 'Gardening', price: 45, img: 'https://images.unsplash.com/photo-1592424005856-2dbb2771b96a?q=80&w=300&auto=format&fit=crop' }
-              ].map((s, idx) => (
-                <div key={idx} className="flex gap-4 p-3 border border-slate-100 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition cursor-pointer">
+              {recommendedServices.length > 0 ? recommendedServices.map((s, idx) => (
+                <Link href={`/service/${s.id}`} key={idx} className="flex gap-4 p-3 border border-slate-100 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition cursor-pointer">
                   <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                    <img src={s.img} alt={s.title} className="w-full h-full object-cover" />
+                    <img src={s.images?.[0] || 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=300&auto=format&fit=crop'} alt={s.title} className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 dark:text-white text-sm line-clamp-2">{s.title}</h4>
-                    <p className="text-xs text-slate-500 mt-1">{s.cat}</p>
+                    <p className="text-xs text-slate-500 mt-1">{s.category}</p>
                     <p className="font-bold text-primary dark:text-accent-amber mt-1">${s.price}</p>
                   </div>
-                </div>
-              ))}
+                </Link>
+              )) : (
+                <p className="text-sm text-slate-500">No recommendations right now.</p>
+              )}
             </div>
           </div>
         </div>
@@ -245,17 +260,15 @@ export default function CustomerDashboard() {
               <Activity className="w-5 h-5 text-indigo-500" /> Recent Activity
             </h2>
             <div className="relative border-l-2 border-slate-100 dark:border-slate-800 ml-3 space-y-6">
-              {[
-                { text: "Account created successfully", time: "2 days ago", color: "blue" },
-                { text: "Profile settings updated", time: "1 day ago", color: "slate" },
-                { text: "Viewed 3 plumbing services", time: "5 hours ago", color: "slate" }
-              ].map((act, i) => (
+              {bookings.length > 0 ? bookings.slice(0, 3).map((booking, i) => (
                 <div key={i} className="relative pl-6">
-                  <div className={`absolute -left-[9px] top-1 w-4 h-4 rounded-full border-2 border-white dark:border-slate-900 bg-${act.color}-500`}></div>
-                  <p className="text-sm text-slate-800 dark:text-slate-200 font-medium">{act.text}</p>
-                  <p className="text-xs text-slate-500 mt-0.5">{act.time}</p>
+                  <div className={`absolute -left-[9px] top-1 w-4 h-4 rounded-full border-2 border-white dark:border-slate-900 ${booking.status === 'completed' ? 'bg-green-500' : 'bg-blue-500'}`}></div>
+                  <p className="text-sm text-slate-800 dark:text-slate-200 font-medium">Booking {booking.status}: {booking.Service?.title || 'Service'}</p>
+                  <p className="text-xs text-slate-500 mt-0.5">{new Date(booking.date).toLocaleDateString()}</p>
                 </div>
-              ))}
+              )) : (
+                <p className="text-sm text-slate-500 pl-4">No recent activity.</p>
+              )}
             </div>
           </div>
 

@@ -100,7 +100,7 @@ export default function CustomerBookings() {
           <div className="text-center py-16 border border-dashed border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-900/50">
             <Briefcase className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-4" />
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">No bookings yet</h3>
-            <p className="text-slate-500 dark:text-slate-400 mb-6 target">You haven't requested any services yet.</p>
+            <p className="text-slate-500 dark:text-slate-400 mb-6 target">You haven&apos;t requested any services yet.</p>
             <Link href="/services" className="btn-primary">Explore Services</Link>
           </div>
         ) : (

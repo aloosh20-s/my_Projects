@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User, WorkerProfile } = require('../models');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
@@ -37,6 +37,15 @@ const registerUser = async (req, res) => {
     });
 
     if (user) {
+      if (user.role === 'worker') {
+        await WorkerProfile.create({
+          userId: user.id,
+          experience: 'Not specified',
+          hourlyRate: 15.0,
+          description: 'New worker account',
+        });
+      }
+
       res.status(201).json({
         id: user.id,
         name: user.name,

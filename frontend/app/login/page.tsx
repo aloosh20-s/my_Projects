@@ -28,13 +28,13 @@ export default function Login() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       });
-      
+
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || 'Login failed');
 
       // Use AuthContext login so Navbar re-renders reactively
       login(data);
-      
+
       if (data.role === 'worker') {
         router.push('/worker/bookings');
       } else {
@@ -53,9 +53,9 @@ export default function Login() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Email Address</label>
-            <input 
-              type="email" 
-              required 
+            <input
+              type="email"
+              required autoComplete="off"
               className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-primary outline-none transition"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -63,9 +63,9 @@ export default function Login() {
           </div>
           <div>
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Password</label>
-            <input 
-              type="password" 
-              required 
+            <input
+              type="password"
+              required autoComplete="current-password"
               className="w-full px-4 py-3 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-primary outline-none transition"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -74,7 +74,7 @@ export default function Login() {
           <button type="submit" className="w-full btn-primary py-3 text-lg">Log in</button>
         </form>
         <p className="mt-6 text-center text-slate-600 dark:text-slate-400">
-          Don't have an account? <Link href="/register" className="text-primary hover:underline">Sign up</Link>
+          Don&apos;t have an account? <Link href="/register" className="text-primary hover:underline">Sign up</Link>
         </p>
       </div>
     </div>

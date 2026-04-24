@@ -247,12 +247,12 @@ export default function Home() {
               { text: "The review system gives me total peace of mind. I know exactly who is coming to my home.", author: "Samantha K.", role: "Mom of three" }
             ].map((testimonial, i) => (
               <div key={i} className="card-modern p-8 relative">
-                <div className="text-slate-300 dark:text-slate-700 absolute top-4 right-6 text-6xl font-serif">"</div>
+                <div className="text-slate-300 dark:text-slate-700 absolute top-4 right-6 text-6xl font-serif">&quot;</div>
                 <div className="flex gap-1 mb-6">
                   {[1,2,3,4,5].map(s => <Star key={s} className="w-5 h-5 text-yellow-500 fill-yellow-500" />)}
                 </div>
                 <p className="text-lg text-slate-700 dark:text-slate-300 mb-8 italic relative z-10">
-                  "{testimonial.text}"
+                  &quot;{testimonial.text}&quot;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white font-bold text-xl shadow-inner">

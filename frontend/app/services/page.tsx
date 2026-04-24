@@ -91,15 +91,17 @@ function ServicesContent() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {filteredServices.map((service) => (
             <div key={service.id} className="glass rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:shadow-lg transition flex flex-col h-full group">
-              <div className="h-48 bg-slate-200 dark:bg-slate-800 relative">
+              <Link href={`/service/${service.id}`} className="block h-48 bg-slate-200 dark:bg-slate-800 relative">
                 <img src={service.images?.[0] || 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=400&fit=crop'} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-4 right-4 bg-white dark:bg-slate-900 px-3 py-1 rounded-full text-sm font-semibold text-slate-900 dark:text-white shadow-sm">
                   ${service.price}
                 </div>
-              </div>
+              </Link>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="text-xs font-semibold tracking-wider text-primary dark:text-accent-amber uppercase mb-2">{service.category}</div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">{service.title}</h3>
+                <Link href={`/service/${service.id}`}>
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">{service.title}</h3>
+                </Link>
                 <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">{service.description}</p>
 
                 <div className="mt-auto space-y-3">

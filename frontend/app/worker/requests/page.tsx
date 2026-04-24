@@ -14,12 +14,6 @@ export default function WorkerRequestsPage() {
   const [fetching, setFetching] = useState(true);
   const [error, setError] = useState('');
 
-  // Protection
-  if (!loading && (!user || user.role !== 'worker')) {
-    router.replace('/login');
-    return null;
-  }
-
   const fetchRequests = async () => {
     try {
       const res = await fetch(`${API_BASE_URL}/service-requests`, {
@@ -40,6 +34,13 @@ export default function WorkerRequestsPage() {
   useEffect(() => {
     if (user?.role === 'worker') fetchRequests();
   }, [user]);
+
+  // Protection
+  if (!loading && (!user || user.role !== 'worker')) {
+    router.replace('/login');
+    return null;
+  }
+
 
   const handleAccept = async (id: number) => {
     try {

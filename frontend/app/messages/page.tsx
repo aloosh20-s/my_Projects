@@ -287,7 +287,7 @@ function MessagesContent() {
         </div>
 
         {/* Chat Area */}
-        <div className="hidden md:flex flex-col flex-1 bg-slate-50 dark:bg-[#0B1120]">
+        <div className="hidden md:flex flex-col flex-1 bg-slate-50 dark:bg-slate-950">
           {activeContact ? (
             <>
               {/* Chat Header */}
@@ -323,7 +323,7 @@ function MessagesContent() {
                     const isMe = msg.senderId === user.id;
                     return (
                       <div key={msg.id} className={`flex flex-col ${isMe ? 'items-end' : 'items-start'}`}>
-                        <div className={`max-w-[70%] rounded-2xl px-5 py-3 ${isMe ? 'bg-primary text-white rounded-br-sm' : 'bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-100 dark:border-slate-700/50 rounded-bl-sm shadow-sm'}`}>
+                        <div className={`max-w-[70%] rounded-2xl px-5 py-3 ${isMe ? 'bg-primary text-white rounded-br-sm' : 'bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-100 dark:border-slate-700/50 rounded-bl-sm shadow-sm'}`}>
                           <p className="text-[15px]">{msg.message}</p>
                         </div>
                         <div className="flex items-center gap-1 mt-1">
