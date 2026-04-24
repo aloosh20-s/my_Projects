@@ -23,7 +23,10 @@ export default function CustomerBookings() {
     }
 
     if (user && user.token) {
-      if (!socket.connected) socket.connect();
+      if (!socket.connected) {
+        socket.auth = { token: user.token };
+        socket.connect();
+      }
       socket.emit('join', user.id);
 
       socket.on('booking_status_updated', (data) => {

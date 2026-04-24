@@ -38,7 +38,10 @@ function MessagesContent() {
   useEffect(() => {
     if (!user) return;
     
-    if (!socket.connected) socket.connect();
+    if (!socket.connected) {
+      socket.auth = { token: user.token };
+      socket.connect();
+    }
     socket.emit('join', user.id);
     
     const handleReceiveMessage = (msg: any) => {

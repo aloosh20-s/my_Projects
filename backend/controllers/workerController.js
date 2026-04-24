@@ -15,7 +15,7 @@ const getWorkerProfile = async (req, res) => {
       const newProfile = await WorkerProfile.create({
         userId: req.user.id,
         experience: 'Not specified',
-        hourlyRate: 0.0,
+        hourlyRate: 15.0,
         description: 'New worker account',
       });
       return res.json(newProfile);
@@ -40,7 +40,7 @@ const updateWorkerProfile = async (req, res) => {
         userId: req.user.id,
         experience: experience || 'Not specified',
         skills: skills || [],
-        hourlyRate: hourlyRate || 0.0,
+        hourlyRate: hourlyRate || 15.0,
         description: description || '',
         availability: availability || []
       });
