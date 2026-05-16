@@ -34,6 +34,10 @@ export default function WorkerDashboard() {
         fetchData();
       });
 
+      socket.on('new_request', (data) => {
+        showToast(`New Request: ${data.title} from ${data.customerName}`, 'info');
+      });
+
       const fetchData = async () => {
         try {
           const [bookingsRes, profileRes, servicesRes] = await Promise.all([
@@ -44,7 +48,8 @@ export default function WorkerDashboard() {
               headers: { Authorization: `Bearer ${user.token}` }
             }),
             fetch(`${API_BASE_URL}/services?workerId=${user.id}`, {
-              headers: { Authorization: `Bearer ${user.token}` }
+              headers: { Authorization: `Bearer ${user.token}` },
+              cache: 'no-store'
             })
           ]);
           
@@ -65,6 +70,7 @@ export default function WorkerDashboard() {
       fetchData();
       return () => {
         socket.off('new_booking');
+        socket.off('new_request');
       };
     }
   }, [user]);
@@ -351,7 +357,7 @@ export default function WorkerDashboard() {
                       <span className="font-bold text-slate-900 dark:text-white">${service.price}</span>
                     </div>
                     <div className="flex justify-end gap-2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <button className="p-1.5 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-md transition"><Edit className="w-4 h-4" /></button>
+                      <Link href={`/services/edit/${service.id}`} className="p-1.5 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-md transition inline-block"><Edit className="w-4 h-4" /></Link>
                       <button 
                         onClick={async () => {
                           if (window.confirm('Delete this service?')) {

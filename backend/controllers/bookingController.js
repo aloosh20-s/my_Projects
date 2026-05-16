@@ -13,11 +13,18 @@ const createBooking = async (req, res) => {
       return res.status(404).json({ message: 'Service not found' });
     }
 
+    // Verify worker status
+    const worker = await User.findByPk(service.workerId);
+    if (!worker || worker.status !== 'approved') {
+      return res.status(403).json({ message: 'Cannot book this service at the moment' });
+    }
+
     const booking = await Booking.create({
       clientId: req.user.id,
       workerId: service.workerId,
       serviceId,
       date,
+      price: service.price, // backend sets price
       status: 'pending',
       paymentStatus: 'pending'
     });
@@ -87,6 +94,14 @@ const updateBookingStatus = async (req, res) => {
     // Ensure only the worker handling it or client who created it can update it 
     if (booking.workerId !== req.user.id && booking.clientId !== req.user.id && req.user.role !== 'admin') {
       return res.status(403).json({ message: 'Not authorized' });
+    }
+
+    if (req.user.role === 'client' && ['accepted', 'completed'].includes(status)) {
+      return res.status(403).json({ message: 'Client cannot change status to accepted or completed' });
+    }
+
+    if (req.user.role === 'worker' && booking.workerId !== req.user.id) {
+      return res.status(403).json({ message: 'Worker cannot update this booking' });
     }
 
     booking.status = status;

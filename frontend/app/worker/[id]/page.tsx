@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { User as UserIcon, MapPin, Briefcase, Star, Clock, CheckCircle, MessageSquare } from 'lucide-react';
+import { User as UserIcon, MapPin, Briefcase, Star, Clock, CheckCircle, MessageSquare, Flag } from 'lucide-react';
 import { API_BASE_URL } from '@/utils/api';
 import Link from 'next/link';
+import ReportModal from '@/components/ReportModal';
 
 export default function WorkerProfile() {
   const { id } = useParams();
@@ -12,6 +13,7 @@ export default function WorkerProfile() {
   const [worker, setWorker] = useState<any>(null);
   const [services, setServices] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isReportOpen, setIsReportOpen] = useState(false);
 
   useEffect(() => {
     if (!id) return;
@@ -223,9 +225,24 @@ export default function WorkerProfile() {
               </Link>
             </div>
             
+            <button
+              type="button"
+              onClick={() => setIsReportOpen(true)}
+              className="flex items-center justify-center gap-2 w-full py-2 text-sm text-slate-500 hover:text-red-500 transition-colors"
+            >
+              <Flag className="w-4 h-4" /> Report this professional
+            </button>
+            
           </div>
         </div>
       </div>
+
+      <ReportModal
+        isOpen={isReportOpen}
+        onClose={() => setIsReportOpen(false)}
+        targetId={worker.userId || worker.id}
+        targetType="worker"
+      />
     </div>
   );
 }

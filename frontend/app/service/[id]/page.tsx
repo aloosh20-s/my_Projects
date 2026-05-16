@@ -5,8 +5,9 @@ import { useParams, useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import { API_BASE_URL } from '@/utils/api';
 import { useToast } from '@/context/ToastContext';
-import { Star, Clock, MapPin, CheckCircle, Shield, User as UserIcon, Calendar as CalendarIcon } from 'lucide-react';
+import { Star, Clock, MapPin, CheckCircle, Shield, User as UserIcon, Calendar as CalendarIcon, Flag } from 'lucide-react';
 import Link from 'next/link';
+import ReportModal from '@/components/ReportModal';
 
 export default function ServiceDetails() {
   const { id } = useParams();
@@ -18,6 +19,7 @@ export default function ServiceDetails() {
   const [loading, setLoading] = useState(true);
   const [bookingDate, setBookingDate] = useState('');
   const [isBooking, setIsBooking] = useState(false);
+  const [isReportOpen, setIsReportOpen] = useState(false);
 
   useEffect(() => {
     if (!id) return;
@@ -25,7 +27,7 @@ export default function ServiceDetails() {
     const fetchServiceData = async () => {
       try {
         // Fetch all services and find the specific one 
-        const res = await fetch(`${API_BASE_URL}/services`);
+        const res = await fetch(`${API_BASE_URL}/services`, { cache: 'no-store' });
         if (res.ok) {
           const allServices = await res.json();
           const foundService = allServices.find((s: any) => s.id === parseInt(id as string));
@@ -181,9 +183,14 @@ export default function ServiceDetails() {
                   <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 line-clamp-2">
                     {service.worker?.description || "Experienced professional ready to assist you. Highly rated and vetted by Souq Yemen."}
                   </p>
-                  <Link href={`/worker/${service.workerId}`} className="btn-secondary !py-2 !px-4 text-sm inline-flex">
-                    View Full Profile
-                  </Link>
+                  <div className="flex gap-2 justify-center sm:justify-start">
+                    <Link href={`/worker/${service.workerId}`} className="btn-secondary !py-2 !px-4 text-sm inline-flex">
+                      View Full Profile
+                    </Link>
+                    <Link href={`/messages?userId=${service.workerId}`} className="btn-primary !py-2 !px-4 text-sm inline-flex">
+                      Message
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -238,13 +245,21 @@ export default function ServiceDetails() {
                      <p className="text-xs text-slate-500">Your satisfaction is guaranteed. Payments are held until the job is completed safely.</p>
                    </div>
                  </div>
-                 <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3">
                    <CheckCircle className="w-5 h-5 text-primary-light shrink-0 mt-0.5" />
                    <div>
                      <p className="text-sm font-bold text-slate-900 dark:text-white">Verified Professional</p>
                      <p className="text-xs text-slate-500">Identity and background checks have been successfully cleared.</p>
                    </div>
                  </div>
+
+                 <button
+                   type="button"
+                   onClick={() => setIsReportOpen(true)}
+                   className="mt-6 flex items-center justify-center gap-2 w-full py-2 text-sm text-slate-500 hover:text-red-500 transition-colors"
+                 >
+                   <Flag className="w-4 h-4" /> Report this service
+                 </button>
                </div>
 
              </div>
@@ -253,6 +268,13 @@ export default function ServiceDetails() {
         </div>
 
       </div>
+
+      <ReportModal
+        isOpen={isReportOpen}
+        onClose={() => setIsReportOpen(false)}
+        targetId={service.id}
+        targetType="service"
+      />
     </div>
   );
 }

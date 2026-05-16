@@ -16,6 +16,9 @@ export default function CustomerDashboard() {
   const [bookings, setBookings] = useState<any[]>([]);
   const [recommendedServices, setRecommendedServices] = useState<any[]>([]);
   const [isLoadingBookings, setIsLoadingBookings] = useState(true);
+  const [profileName, setProfileName] = useState(user?.name || '');
+  const [profilePhone, setProfilePhone] = useState(user?.phone || '');
+  const [isUpdatingProfile, setIsUpdatingProfile] = useState(false);
   const { showToast } = useToast();
 
   useEffect(() => {
@@ -29,6 +32,10 @@ export default function CustomerDashboard() {
       socket.on('booking_status_updated', (data) => {
         showToast(`Booking Update: Your booking is now ${data.status}!`, 'info');
         fetchBookings();
+      });
+
+      socket.on('request_accepted', (data) => {
+        showToast(`Request Update: Your request ${data.title} was accepted by ${data.workerName}!`, 'success');
       });
 
       const fetchBookings = async () => {
@@ -51,7 +58,7 @@ export default function CustomerDashboard() {
       
       const fetchRecommended = async () => {
         try {
-          const res = await fetch(`${API_BASE_URL}/services`);
+          const res = await fetch(`${API_BASE_URL}/services`, { cache: 'no-store' });
           if (res.ok) {
             const data = await res.json();
             // take 2 random services
@@ -67,9 +74,17 @@ export default function CustomerDashboard() {
       fetchRecommended();
       return () => {
         socket.off('booking_status_updated');
+        socket.off('request_accepted');
       };
     }
   }, [user]);
+
+  useEffect(() => {
+    if (user) {
+      setProfileName(user.name || '');
+      setProfilePhone(user.phone || '');
+    }
+  }, [user?.name, user?.phone]);
 
   const updateBookingStatus = async (bookingId: number, newStatus: string) => {
     try {
@@ -157,7 +172,7 @@ export default function CustomerDashboard() {
         <div className="card-modern p-6 flex items-center justify-between group">
           <div>
             <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">Saved Workers</p>
-            <p className="text-3xl font-bold text-slate-900 dark:text-white">3</p>
+            <p className="text-3xl font-bold text-slate-900 dark:text-white">0</p>
           </div>
           <div className="w-14 h-14 rounded-2xl bg-rose-50 dark:bg-rose-900/40 flex items-center justify-center text-rose-500 dark:text-rose-400 group-hover:scale-110 transition-transform">
             <Heart className="w-7 h-7 fill-rose-500/20" />
@@ -276,23 +291,53 @@ export default function CustomerDashboard() {
             <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
               <Settings className="w-5 h-5 text-slate-500" /> Profile Settings
             </h2>
-            <form onSubmit={(e) => {
+            <form onSubmit={async (e) => {
               e.preventDefault();
-              showToast('Profile feature coming soon for customers!', 'info');
+              if (isUpdatingProfile) return;
+              setIsUpdatingProfile(true);
+              try {
+                const res = await fetch(`${API_BASE_URL}/auth/profile`, {
+                  method: 'PUT',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${user?.token}`
+                  },
+                  body: JSON.stringify({ name: profileName, phone: profilePhone })
+                });
+                
+                if (res.ok) {
+                  const updatedUser = await res.json();
+                  // We update localStorage and reload to sync the context, or just show success
+                  const storedInfo = localStorage.getItem('userInfo');
+                  if (storedInfo) {
+                    const parsed = JSON.parse(storedInfo);
+                    localStorage.setItem('userInfo', JSON.stringify({ ...parsed, ...updatedUser }));
+                  }
+                  showToast('Profile updated successfully!', 'success');
+                } else {
+                  showToast('Failed to update profile.', 'error');
+                }
+              } catch (err) {
+                showToast('An error occurred.', 'error');
+              } finally {
+                setIsUpdatingProfile(false);
+              }
             }} className="space-y-4">
                <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Full Name</label>
-                  <input type="text" defaultValue={user.name} className="input-modern !py-2 !text-sm" />
+                  <input type="text" value={profileName} onChange={(e) => setProfileName(e.target.value)} className="input-modern !py-2 !text-sm" required />
                </div>
                <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email Address</label>
-                  <input type="email" defaultValue={user.email} disabled className="input-modern !py-2 !text-sm bg-slate-50 dark:bg-slate-800/50 opacity-70" />
+                  <input type="email" value={user.email} disabled className="input-modern !py-2 !text-sm bg-slate-50 dark:bg-slate-800/50 opacity-70" />
                </div>
                <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Phone Number</label>
-                  <input type="text" placeholder="Add your phone" className="input-modern !py-2 !text-sm" />
+                  <input type="text" value={profilePhone} onChange={(e) => setProfilePhone(e.target.value)} placeholder="Add your phone" className="input-modern !py-2 !text-sm" />
                </div>
-               <button type="submit" className="btn-primary w-full mt-2">Save Changes</button>
+               <button type="submit" disabled={isUpdatingProfile} className="btn-primary w-full mt-2">
+                 {isUpdatingProfile ? 'Saving...' : 'Save Changes'}
+               </button>
             </form>
           </div>
 

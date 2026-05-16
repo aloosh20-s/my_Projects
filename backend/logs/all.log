@@ -1,3 +1,2049 @@
 2026-04-24 18:45:59:4559 info: Database synced successfully
 2026-04-24 18:46:35:4635 info: Database synced successfully
 2026-04-24 18:46:35:4635 info: Server running on port 5000
+2026-04-24 20:24:19:2419 info: Database synced successfully
+2026-04-24 20:24:19:2419 info: Server running on port 5000
+2026-04-24 20:32:28:3228 info: Database synced successfully
+2026-04-24 20:32:28:3228 info: Server running on port 5000
+2026-04-24 20:32:45:3245 info: ::1 - GET /api/workers 304 - - 31.530 ms
+2026-04-24 20:32:45:3245 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 6.713 ms
+2026-04-24 20:33:55:3355 info: ::1 - POST /api/auth/login 401 39 - 411.816 ms
+2026-04-24 20:34:21:3421 info: ::1 - POST /api/auth/register 400 49 - 4.388 ms
+2026-04-24 20:34:54:3454 info: ::1 - POST /api/auth/login 200 223 - 301.087 ms
+2026-04-24 20:34:55:3455 warn: Socket connection attempt without token: uniZctubq5hcgf-JAAAB
+2026-04-24 20:34:55:3455 info: ::1 - GET /api/bookings/client 304 - - 33.821 ms
+2026-04-24 20:34:55:3455 info: ::1 - GET /api/bookings/client 304 - - 5.770 ms
+2026-04-24 20:35:05:355 info: ::1 - POST /api/auth/login 200 213 - 215.537 ms
+2026-04-24 20:35:06:356 warn: Socket connection attempt without token: 0KXvEY3Zh940KOdkAAAD
+2026-04-24 20:35:06:356 info: ::1 - GET /api/bookings/worker 200 1121 - 30.768 ms
+2026-04-24 20:35:06:356 info: ::1 - GET /api/bookings/worker 304 - - 16.469 ms
+2026-04-24 20:35:08:358 info: ::1 - GET /api/services?workerId=24 200 1521 - 27.918 ms
+2026-04-24 20:35:08:358 info: ::1 - GET /api/services?workerId=24 304 - - 9.051 ms
+2026-04-24 20:35:08:358 info: ::1 - GET /uploads/24-1776438325659.webp 200 62177 - 22.441 ms
+2026-04-24 20:35:08:358 info: ::1 - GET /uploads/24-1776441463826.webp 200 98506 - 30.503 ms
+2026-04-24 20:35:08:358 info: ::1 - GET /uploads/24-1776351823526.jpeg 200 66038 - 47.445 ms
+2026-04-24 20:35:08:358 info: ::1 - GET /uploads/24-1776438972919.jpg 200 189490 - 34.885 ms
+2026-04-24 20:35:10:3510 warn: Socket connection attempt without token: 6i1J7pZq5tzpRY2NAAAF
+2026-04-24 20:35:10:3510 info: ::1 - GET /api/bookings/worker 304 - - 35.627 ms
+2026-04-24 20:35:10:3510 info: ::1 - GET /api/bookings/worker 304 - - 21.404 ms
+2026-04-24 20:35:14:3514 info: ::1 - GET /api/services 200 4341 - 19.003 ms
+2026-04-24 20:35:14:3514 info: ::1 - GET /api/services 304 - - 25.107 ms
+2026-04-24 20:35:14:3514 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 3.878 ms
+2026-04-24 20:35:14:3514 info: ::1 - GET /uploads/28-1776382397880.jpg 200 34075 - 26.130 ms
+2026-04-24 20:35:14:3514 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 10.063 ms
+2026-04-24 20:35:15:3515 info: ::1 - GET /uploads/17-1776199669154.webp 200 115679 - 37.822 ms
+2026-04-24 20:35:15:3515 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 11.312 ms
+2026-04-24 20:35:15:3515 info: ::1 - GET /uploads/29-1776433669052.jpg 200 136292 - 33.874 ms
+2026-04-24 20:35:15:3515 info: ::1 - GET /uploads/25-1776369294869.jpg 200 229978 - 34.324 ms
+2026-04-24 20:35:15:3515 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 3.919 ms
+2026-04-24 20:35:27:3527 info: ::1 - GET /api/workers 304 - - 21.711 ms
+2026-04-24 20:35:27:3527 info: ::1 - GET /api/workers 304 - - 15.671 ms
+2026-04-24 20:35:28:3528 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 2.096 ms
+2026-04-24 20:35:49:3549 info: ::1 - GET /api/services 200 4341 - 15.874 ms
+2026-04-24 20:35:49:3549 info: ::1 - GET /api/services 304 - - 20.997 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.977 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/24-1776351823526.jpeg 200 66038 - 2.784 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/28-1776382397880.jpg 200 34075 - 20.310 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 22.254 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/24-1776438325659.webp 200 62177 - 31.080 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/29-1776433669052.jpg 200 136292 - 22.857 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/24-1776441463826.webp 200 98506 - 28.902 ms
+2026-04-24 20:35:50:3550 info: ::1 - GET /uploads/24-1776438972919.jpg 200 189490 - 31.163 ms
+2026-04-24 20:36:25:3625 info: ::1 - GET /api/messages/contacts 304 - - 26.550 ms
+2026-04-24 20:36:25:3625 info: ::1 - GET /api/messages/contacts 304 - - 9.373 ms
+2026-04-24 20:36:25:3625 warn: Socket connection attempt without token: rhx9WixhtTDs0dT4AAAH
+2026-04-24 20:36:44:3644 info: ::1 - GET /api/workers 304 - - 6.978 ms
+2026-04-24 20:36:44:3644 info: ::1 - GET /api/workers 304 - - 4.598 ms
+2026-04-24 20:36:44:3644 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 3.457 ms
+2026-04-24 20:37:07:377 info: ::1 - GET /api/workers 304 - - 8.225 ms
+2026-04-24 20:37:07:377 info: ::1 - GET /api/workers 304 - - 17.188 ms
+2026-04-24 20:37:07:377 info: ::1 - GET /api/services?workerId=3 200 278 - 7.118 ms
+2026-04-24 20:37:07:377 info: ::1 - GET /api/services?workerId=3 304 - - 12.931 ms
+2026-04-24 20:37:47:3747 info: ::1 - POST /api/auth/login 200 213 - 101.734 ms
+2026-04-24 20:37:47:3747 warn: Socket connection attempt without token: z-IzRWiNCLbhMai6AAAJ
+2026-04-24 20:37:47:3747 info: ::1 - GET /api/bookings/worker 304 - - 19.902 ms
+2026-04-24 20:37:47:3747 info: ::1 - GET /api/bookings/worker 304 - - 5.055 ms
+2026-04-24 20:37:51:3751 warn: Socket connection attempt without token: PEY_9ApOGgIrlm0-AAAL
+2026-04-24 20:37:51:3751 info: ::1 - GET /api/messages/contacts 200 281 - 30.346 ms
+2026-04-24 20:37:51:3751 info: ::1 - GET /api/messages/contacts 304 - - 11.945 ms
+2026-04-24 20:37:51:3751 info: ::1 - GET /api/messages/32 200 189 - 5.239 ms
+2026-04-24 20:37:51:3751 warn: Socket connection attempt without token: h4QGnJn_S4NGt3aBAAAN
+2026-04-24 20:37:53:3753 info: ::1 - GET /api/messages/19 200 430 - 4.832 ms
+2026-04-24 20:37:53:3753 warn: Socket connection attempt without token: Yzm_9JgP5cPedS_fAAAP
+2026-04-24 20:37:55:3755 info: ::1 - GET /api/messages/32 304 - - 4.772 ms
+2026-04-24 20:37:55:3755 warn: Socket connection attempt without token: VD1N6v2QZdd-DMqWAAAR
+2026-04-24 20:42:22:4222 info: Database synced successfully
+2026-04-24 20:42:22:4222 info: Database synced successfully
+2026-04-24 20:42:22:4222 info: Server running on port 5000
+2026-04-24 20:42:31:4231 info: Database synced successfully
+2026-04-24 20:42:31:4231 info: Server running on port 5000
+2026-04-24 20:42:32:4232 info: Database synced successfully
+2026-04-24 20:43:10:4310 info: Database synced successfully
+2026-04-24 20:43:10:4310 info: Server running on port 5000
+2026-04-24 20:43:10:4310 info: Database synced successfully
+2026-04-24 20:43:29:4329 info: Database synced successfully
+2026-04-24 20:43:29:4329 info: Server running on port 5000
+2026-04-24 20:43:29:4329 info: Database synced successfully
+2026-04-24 20:45:05:455 info: ::1 - GET /api/workers 200 1700 - 29.911 ms
+2026-04-24 20:45:05:455 info: ::1 - GET /api/services?workerId=3 304 - - 8.471 ms
+2026-04-24 20:45:05:455 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 1.886 ms
+2026-04-24 20:45:53:4553 info: User connected: sRnsm1F6J6B3NRwQAAAB (UserId: 24)
+2026-04-24 20:45:53:4553 info: User 24 joined their notification room
+2026-04-24 20:45:53:4553 info: ::1 - GET /api/messages/contacts 304 - - 31.007 ms
+2026-04-24 20:45:53:4553 info: ::1 - GET /api/messages/32 304 - - 5.781 ms
+2026-04-24 20:45:53:4553 info: User 24 joined their notification room
+2026-04-24 20:46:11:4611 info: ::1 - POST /api/auth/register 201 259 - 140.408 ms
+2026-04-24 20:46:11:4611 info: User 34 joined their notification room
+2026-04-24 20:46:11:4611 info: User 34 joined their notification room
+2026-04-24 20:46:11:4611 info: ::1 - GET /api/bookings/client 200 2 - 4.680 ms
+2026-04-24 20:46:11:4611 info: ::1 - GET /api/bookings/client 304 - - 9.777 ms
+2026-04-24 20:46:50:4650 info: User 34 joined their notification room
+2026-04-24 20:46:50:4650 info: User 34 joined their notification room
+2026-04-24 20:46:50:4650 info: ::1 - GET /api/bookings/client 304 - - 6.605 ms
+2026-04-24 20:46:51:4651 info: ::1 - GET /api/bookings/client 304 - - 4.323 ms
+2026-04-24 20:47:28:4728 info: User disconnected: sRnsm1F6J6B3NRwQAAAB
+2026-04-24 21:32:01:321 info: ::1 - POST /api/auth/login 200 306 - 88.438 ms
+2026-04-24 21:32:01:321 info: ::1 - GET /uploads/24-1776441479887.jpg 200 24655 - 2.951 ms
+2026-04-24 21:32:01:321 info: User connected: D_Wbzg5xsqxoJDflAAAD (UserId: 24)
+2026-04-24 21:32:01:321 info: ::1 - GET /api/bookings/worker 304 - - 18.832 ms
+2026-04-24 21:32:01:321 info: User 24 joined their notification room
+2026-04-24 21:32:01:321 info: ::1 - GET /api/bookings/worker 304 - - 5.775 ms
+2026-04-24 21:32:01:321 info: User 24 joined their notification room
+2026-04-24 21:32:15:3215 info: User 24 joined their notification room
+2026-04-24 21:32:15:3215 info: User 24 joined their notification room
+2026-04-24 21:32:15:3215 info: ::1 - GET /api/messages/contacts 304 - - 7.268 ms
+2026-04-24 21:32:15:3215 info: ::1 - GET /api/messages/contacts 304 - - 7.211 ms
+2026-04-24 21:32:15:3215 info: User 24 joined their notification room
+2026-04-24 21:32:15:3215 info: ::1 - GET /api/messages/32 304 - - 10.993 ms
+2026-04-24 21:32:26:3226 info: ::1 - POST /api/messages 201 241 - 15.659 ms
+2026-04-24 21:32:36:3236 info: ::1 - GET /uploads/24-1776441479887.jpg 304 - - 1.197 ms
+2026-04-24 21:56:11:5611 info: Server running on port 5000
+2026-04-24 21:57:10:5710 info: Server running on port 5000
+2026-04-24 21:57:30:5730 info: ::1 - POST /api/auth/login - - - - ms
+2026-04-24 21:57:30:5730 info: ::1 - POST /api/auth/login - - - - ms
+2026-04-24 21:57:30:5730 info: ::1 - POST /api/auth/login - - - - ms
+2026-04-24 21:57:44:5744 info: Database synced successfully
+2026-04-24 21:57:44:5744 info: Server running on port 5000
+2026-04-24 21:57:44:5744 info: Database synced successfully
+2026-04-24 21:57:51:5751 info: ::1 - POST /api/auth/login 200 306 - 127.256 ms
+2026-04-24 21:57:51:5751 info: ::1 - GET /uploads/24-1776441479887.jpg 304 - - 2.477 ms
+2026-04-24 21:57:51:5751 info: User connected: UD1jUW_n9Bo2R5L1AAAB (UserId: 24)
+2026-04-24 21:57:51:5751 info: User 24 joined their notification room
+2026-04-24 21:57:51:5751 info: User 24 joined their notification room
+2026-04-24 21:57:51:5751 info: ::1 - GET /api/bookings/worker 304 - - 31.145 ms
+2026-04-24 21:57:52:5752 info: ::1 - GET /api/bookings/worker 304 - - 8.337 ms
+2026-04-24 22:24:18:2418 info: Database synced successfully
+2026-04-24 22:24:18:2418 info: Server running on port 5000
+2026-04-24 22:24:18:2418 info: Database synced successfully
+2026-04-24 22:24:18:2418 info: User connected: 56b8hCeSo4vh5L7nAAAB (UserId: 24)
+2026-04-24 22:28:13:2813 info: Database synced successfully
+2026-04-24 22:28:13:2813 info: Server running on port 5000
+2026-04-24 22:28:13:2813 info: Database synced successfully
+2026-04-24 22:28:13:2813 info: User connected: buOMM6qfVLsfH6wAAAAB (UserId: 24)
+2026-04-24 22:30:33:3033 info: ::1 - GET /uploads/24-1776441479887.jpg 304 - - 5.997 ms
+2026-04-24 22:30:33:3033 info: User connected: n0eYxIPr_SDvxsPpAAAD (UserId: 24)
+2026-04-24 22:30:33:3033 info: User 24 joined their notification room
+2026-04-24 22:30:33:3033 info: ::1 - GET /api/bookings/worker 304 - - 52.037 ms
+2026-04-24 22:30:33:3033 info: ::1 - GET /api/bookings/worker 304 - - 8.186 ms
+2026-04-24 22:30:33:3033 info: User 24 joined their notification room
+2026-04-24 22:30:35:3035 info: User disconnected: n0eYxIPr_SDvxsPpAAAD
+2026-04-24 22:30:39:3039 info: Database synced successfully
+2026-04-24 22:30:43:3043 info: User disconnected: buOMM6qfVLsfH6wAAAAB
+2026-04-25 01:04:22:422 info: Database synced successfully
+2026-04-25 01:04:22:422 info: Server running on port 5000
+2026-04-25 01:04:55:455 info: ::1 - GET /api/workers 304 - - 21.244 ms
+2026-04-25 01:04:55:455 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 1.932 ms
+2026-04-25 01:06:47:647 info: ::1 - POST /api/auth/register 201 269 - 461.607 ms
+2026-04-25 01:06:48:648 info: User connected: FvzEMbiN8KmJyQchAAAB (UserId: 35)
+2026-04-25 01:06:48:648 info: User 35 joined their notification room
+2026-04-25 01:06:48:648 info: ::1 - GET /api/bookings/client 304 - - 30.410 ms
+2026-04-25 01:06:48:648 info: ::1 - GET /api/bookings/client 304 - - 5.865 ms
+2026-04-25 01:06:48:648 info: User 35 joined their notification room
+2026-04-25 01:08:12:812 info: ::1 - POST /api/auth/register 201 265 - 287.590 ms
+2026-04-25 01:08:14:814 info: User 36 joined their notification room
+2026-04-25 01:08:14:814 info: User 36 joined their notification room
+2026-04-25 01:08:14:814 info: ::1 - GET /api/bookings/worker 304 - - 15.569 ms
+2026-04-25 01:08:14:814 info: ::1 - GET /api/bookings/worker 304 - - 13.046 ms
+2026-04-25 01:08:22:822 info: ::1 - GET /api/services?workerId=36 200 2 - 5.853 ms
+2026-04-25 01:08:22:822 info: ::1 - GET /api/services?workerId=36 304 - - 7.569 ms
+2026-04-25 01:10:04:104 info: ::1 - POST /api/services 201 283 - 14.721 ms
+2026-04-25 01:10:05:105 info: ::1 - GET /api/services?workerId=36 200 340 - 11.751 ms
+2026-04-25 01:10:05:105 info: ::1 - GET /api/services?workerId=36 304 - - 8.295 ms
+2026-04-25 01:10:50:1050 info: ::1 - POST /api/auth/login 200 269 - 175.927 ms
+2026-04-25 01:10:51:1051 info: User 35 joined their notification room
+2026-04-25 01:10:51:1051 info: User 35 joined their notification room
+2026-04-25 01:10:51:1051 info: ::1 - GET /api/bookings/client 304 - - 9.865 ms
+2026-04-25 01:10:51:1051 info: ::1 - GET /api/bookings/client 304 - - 7.238 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /api/services 200 4680 - 13.233 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /api/services 304 - - 13.857 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 3.705 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 3.809 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 3.943 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 4.169 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 4.572 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 5.025 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 1.581 ms
+2026-04-25 01:10:58:1058 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 1.683 ms
+2026-04-25 01:11:43:1143 info: ::1 - GET /api/services/17 200 283 - 6.056 ms
+2026-04-25 01:11:43:1143 info: ::1 - GET /api/services/17 304 - - 5.992 ms
+2026-04-25 01:12:23:1223 info: ::1 - GET /api/workers 304 - - 11.631 ms
+2026-04-25 01:12:23:1223 info: ::1 - GET /api/workers 304 - - 8.538 ms
+2026-04-25 01:12:23:1223 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 1.529 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /api/services 304 - - 7.842 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /api/services 304 - - 15.418 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 10.090 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 10.217 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 10.344 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 11.795 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 10.799 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 12.991 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 0.585 ms
+2026-04-25 01:13:29:1329 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 0.886 ms
+2026-04-25 01:14:03:143 info: ::1 - GET /api/workers 304 - - 12.704 ms
+2026-04-25 01:14:03:143 info: ::1 - GET /api/workers 304 - - 8.932 ms
+2026-04-25 01:14:34:1434 info: ::1 - GET /api/workers 304 - - 5.096 ms
+2026-04-25 01:14:34:1434 info: ::1 - GET /api/workers 304 - - 9.086 ms
+2026-04-25 01:14:34:1434 info: ::1 - GET /api/services?workerId=3 304 - - 4.299 ms
+2026-04-25 01:14:34:1434 info: ::1 - GET /api/services?workerId=3 304 - - 8.596 ms
+2026-04-25 01:14:54:1454 info: User 35 joined their notification room
+2026-04-25 01:14:54:1454 info: User 35 joined their notification room
+2026-04-25 01:14:54:1454 info: ::1 - GET /api/messages/contacts 304 - - 23.118 ms
+2026-04-25 01:14:54:1454 info: ::1 - GET /api/messages/contacts 304 - - 14.640 ms
+2026-04-25 01:14:54:1454 info: ::1 - GET /api/messages/user/7 200 112 - 11.961 ms
+2026-04-25 01:14:54:1454 info: ::1 - GET /api/messages/user/7 304 - - 10.565 ms
+2026-04-25 01:14:54:1454 info: User 35 joined their notification room
+2026-04-25 01:14:54:1454 info: ::1 - GET /api/messages/7 200 2 - 19.150 ms
+2026-04-25 01:15:13:1513 info: ::1 - POST /api/messages 201 238 - 31.722 ms
+2026-04-25 01:15:43:1543 info: ::1 - POST /api/auth/login 200 265 - 264.504 ms
+2026-04-25 01:15:44:1544 info: User 36 joined their notification room
+2026-04-25 01:15:44:1544 info: User 36 joined their notification room
+2026-04-25 01:15:44:1544 info: ::1 - GET /api/bookings/worker 304 - - 8.421 ms
+2026-04-25 01:15:44:1544 info: ::1 - GET /api/bookings/worker 304 - - 14.982 ms
+2026-04-25 01:15:52:1552 info: User 36 joined their notification room
+2026-04-25 01:15:52:1552 info: User 36 joined their notification room
+2026-04-25 01:15:52:1552 info: ::1 - GET /api/messages/contacts 304 - - 18.811 ms
+2026-04-25 01:15:52:1552 info: ::1 - GET /api/messages/contacts 304 - - 13.378 ms
+2026-04-25 01:20:17:2017 info: Database synced successfully
+2026-04-25 01:20:17:2017 info: Server running on port 5000
+2026-04-25 01:20:17:2017 info: User connected: GegolIlAZXvrpRo3AAAB (UserId: 35)
+2026-04-25 01:24:26:2426 info: ::1 - GET /api/service-requests 200 2 - 63.337 ms
+2026-04-25 01:24:26:2426 info: ::1 - GET /api/service-requests 304 - - 5.614 ms
+2026-04-25 01:32:11:3211 info: User disconnected: GegolIlAZXvrpRo3AAAB
+2026-04-25 01:32:11:3211 info: ::1 - GET /api/workers 304 - - 7.560 ms
+2026-04-25 01:32:11:3211 info: ::1 - GET /api/service-requests 304 - - 11.199 ms
+2026-04-25 01:32:11:3211 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 1.898 ms
+2026-04-25 01:40:06:406 info: ::1 - GET /api/workers 304 - - 3.607 ms
+2026-04-25 01:40:06:406 info: ::1 - GET /api/service-requests 304 - - 4.993 ms
+2026-04-25 01:40:06:406 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 0.622 ms
+2026-04-25 01:48:24:4824 info: Database synced successfully
+2026-04-25 01:48:37:4837 info: ::1 - GET /uploads/24-1776441479887.jpg 304 - - 0.865 ms
+2026-04-25 01:48:43:4843 info: ::1 - POST /api/auth/login 200 306 - 117.154 ms
+2026-04-25 01:48:44:4844 info: User connected: DxLXv1RPjUPnOfTAAAAD (UserId: 24)
+2026-04-25 01:48:44:4844 info: User 24 joined their notification room
+2026-04-25 01:48:44:4844 info: ::1 - GET /api/bookings/worker 304 - - 24.355 ms
+2026-04-25 01:48:44:4844 info: ::1 - GET /api/bookings/worker 304 - - 6.871 ms
+2026-04-25 01:48:44:4844 info: User 24 joined their notification room
+2026-04-25 01:48:50:4850 info: ::1 - GET /api/services?workerId=24 304 - - 6.422 ms
+2026-04-25 01:48:50:4850 info: ::1 - GET /api/services?workerId=24 304 - - 8.788 ms
+2026-04-25 01:48:50:4850 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 5.385 ms
+2026-04-25 01:48:50:4850 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 4.751 ms
+2026-04-25 01:48:50:4850 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 4.424 ms
+2026-04-25 01:48:50:4850 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 3.512 ms
+2026-04-25 01:49:16:4916 info: ::1 - POST /api/auth/login 200 303 - 88.224 ms
+2026-04-25 01:49:16:4916 info: ::1 - GET /uploads/9-1776442399350.jpg 200 95076 - 9.188 ms
+2026-04-25 01:49:16:4916 info: User 9 joined their notification room
+2026-04-25 01:49:16:4916 info: User 9 joined their notification room
+2026-04-25 01:49:16:4916 info: ::1 - GET /api/services 200 4680 - 12.684 ms
+2026-04-25 01:49:16:4916 info: ::1 - GET /api/bookings/client 304 - - 14.800 ms
+2026-04-25 01:49:16:4916 info: ::1 - GET /api/services 304 - - 7.648 ms
+2026-04-25 01:49:16:4916 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 1.215 ms
+2026-04-25 01:49:16:4916 info: ::1 - GET /api/bookings/client 304 - - 11.490 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /api/services 304 - - 5.819 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /api/services 304 - - 10.156 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.645 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 3.371 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 2.220 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 5.013 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 4.742 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 7.193 ms
+2026-04-25 01:49:20:4920 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 1.392 ms
+2026-04-25 01:49:32:4932 info: ::1 - GET /api/services/13 200 267 - 3.613 ms
+2026-04-25 01:49:32:4932 info: ::1 - GET /api/services/13 304 - - 5.604 ms
+2026-04-25 01:52:35:5235 info: ::1 - GET /api/services 200 4680 - 2.868 ms
+2026-04-25 01:52:54:5254 info: ::1 - GET /api/workers 304 - - 4.931 ms
+2026-04-25 01:52:54:5254 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 2.877 ms
+2026-04-25 01:55:23:5523 info: ::1 - POST /api/auth/register 201 276 - 275.378 ms
+2026-04-25 01:55:24:5524 info: ::1 - GET /api/services 304 - - 10.204 ms
+2026-04-25 01:55:24:5524 info: ::1 - GET /api/bookings/client 304 - - 13.026 ms
+2026-04-25 01:55:24:5524 info: ::1 - GET /api/services 304 - - 12.309 ms
+2026-04-25 01:55:24:5524 info: ::1 - GET /api/bookings/client 304 - - 18.723 ms
+2026-04-25 01:55:24:5524 info: User connected: WW1O1yVvMogE72r6AAAF (UserId: 37)
+2026-04-25 01:55:24:5524 info: User disconnected: DxLXv1RPjUPnOfTAAAAD
+2026-04-25 01:55:24:5524 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 0.760 ms
+2026-04-25 01:55:24:5524 info: User 37 joined their notification room
+2026-04-25 01:55:24:5524 info: User 37 joined their notification room
+2026-04-25 01:55:48:5548 info: ::1 - GET /api/services 304 - - 8.343 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /api/services 304 - - 5.990 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 14.550 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 14.256 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 13.960 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 12.971 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 13.147 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 12.023 ms
+2026-04-25 01:55:48:5548 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 1.175 ms
+2026-04-25 01:56:13:5613 info: ::1 - GET /api/services 304 - - 11.203 ms
+2026-04-25 01:56:13:5613 info: ::1 - GET /api/services 304 - - 9.845 ms
+2026-04-25 01:56:45:5645 info: ::1 - POST /api/bookings 201 210 - 39.650 ms
+2026-04-25 01:56:45:5645 info: User 37 joined their notification room
+2026-04-25 01:56:45:5645 info: ::1 - GET /api/services 304 - - 12.385 ms
+2026-04-25 01:56:45:5645 info: ::1 - GET /api/bookings/client 200 514 - 24.159 ms
+2026-04-25 01:56:45:5645 info: User 37 joined their notification room
+2026-04-25 01:56:45:5645 info: ::1 - GET /api/services 304 - - 24.976 ms
+2026-04-25 01:56:45:5645 info: ::1 - GET /api/bookings/client 304 - - 27.254 ms
+2026-04-25 01:56:46:5646 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.399 ms
+2026-04-25 01:57:40:5740 info: User disconnected: WW1O1yVvMogE72r6AAAF
+2026-04-25 02:01:31:131 info: ::1 - GET /api/messages/contacts 304 - - 21.454 ms
+2026-04-25 02:01:32:132 info: ::1 - GET /api/messages/contacts 304 - - 8.601 ms
+2026-04-25 02:01:32:132 info: User connected: XzJNtamXkP4Vl2T2AAAH (UserId: 37)
+2026-04-25 02:01:32:132 info: User 37 joined their notification room
+2026-04-25 02:01:32:132 info: User 37 joined their notification room
+2026-04-25 02:02:36:236 info: User disconnected: XzJNtamXkP4Vl2T2AAAH
+2026-04-25 02:02:37:237 info: ::1 - GET /api/services 304 - - 11.138 ms
+2026-04-25 02:02:37:237 info: ::1 - GET /api/bookings/client 304 - - 16.182 ms
+2026-04-25 02:02:37:237 info: User connected: hTIxqXdm3qqrl1tUAAAJ (UserId: 37)
+2026-04-25 02:02:37:237 info: User 37 joined their notification room
+2026-04-25 02:04:31:431 info: ::1 - POST /api/auth/login 401 39 - 8.901 ms
+2026-04-25 02:05:44:544 info: ::1 - POST /api/auth/register 201 272 - 270.849 ms
+2026-04-25 02:05:46:546 info: User 38 joined their notification room
+2026-04-25 02:05:46:546 info: ::1 - GET /api/bookings/worker 304 - - 30.219 ms
+2026-04-25 02:05:47:547 info: ::1 - GET /api/bookings/worker 304 - - 40.565 ms
+2026-04-25 02:05:47:547 info: User 38 joined their notification room
+2026-04-25 02:06:08:68 info: ::1 - GET /api/service-requests 304 - - 13.578 ms
+2026-04-25 02:06:08:68 info: ::1 - GET /api/service-requests 304 - - 10.988 ms
+2026-04-25 02:06:27:627 info: ::1 - GET /api/services?workerId=38 200 2 - 6.211 ms
+2026-04-25 02:06:27:627 info: ::1 - GET /api/services?workerId=38 304 - - 8.047 ms
+2026-04-25 02:07:53:753 info: ::1 - POST /api/services 201 251 - 21.887 ms
+2026-04-25 02:07:55:755 info: ::1 - GET /api/services?workerId=38 200 309 - 17.386 ms
+2026-04-25 02:07:55:755 info: ::1 - GET /api/services?workerId=38 304 - - 3.327 ms
+2026-04-25 02:08:04:84 info: ::1 - GET /api/service-requests 304 - - 17.421 ms
+2026-04-25 02:08:04:84 info: ::1 - GET /api/service-requests 304 - - 7.882 ms
+2026-04-25 02:09:04:94 info: ::1 - POST /api/auth/login 401 39 - 3.345 ms
+2026-04-25 02:09:14:914 info: ::1 - GET /api/services 200 4988 - 13.126 ms
+2026-04-25 02:09:14:914 info: ::1 - GET /api/services 304 - - 7.626 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 3.098 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 2.249 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 0.901 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 1.271 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 1.869 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 3.221 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 2.878 ms
+2026-04-25 02:09:15:915 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 1.669 ms
+2026-04-25 02:09:38:938 info: ::1 - GET /api/workers 200 2030 - 8.617 ms
+2026-04-25 02:09:38:938 info: ::1 - GET /api/workers 304 - - 12.845 ms
+2026-04-25 02:09:38:938 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 2.606 ms
+2026-04-25 02:10:02:102 info: ::1 - GET /api/services 304 - - 9.256 ms
+2026-04-25 02:10:02:102 info: ::1 - GET /api/services 304 - - 6.973 ms
+2026-04-25 02:10:32:1032 info: ::1 - POST /api/auth/login 200 266 - 250.022 ms
+2026-04-25 02:10:33:1033 info: User 1 joined their notification room
+2026-04-25 02:10:33:1033 info: ::1 - GET /api/services 304 - - 11.099 ms
+2026-04-25 02:10:33:1033 info: ::1 - GET /api/bookings/client 200 2 - 19.349 ms
+2026-04-25 02:10:33:1033 info: ::1 - GET /api/services 304 - - 14.484 ms
+2026-04-25 02:10:33:1033 info: User 1 joined their notification room
+2026-04-25 02:10:33:1033 info: ::1 - GET /api/bookings/client 304 - - 25.418 ms
+2026-04-25 02:10:44:1044 info: ::1 - GET /api/services 304 - - 11.767 ms
+2026-04-25 02:10:44:1044 info: ::1 - GET /api/services 304 - - 8.015 ms
+2026-04-25 02:10:45:1045 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.152 ms
+2026-04-25 02:10:45:1045 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 6.933 ms
+2026-04-25 02:10:45:1045 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 4.974 ms
+2026-04-25 02:10:45:1045 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 5.653 ms
+2026-04-25 02:10:45:1045 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 8.197 ms
+2026-04-25 02:10:45:1045 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 10.569 ms
+2026-04-25 02:10:45:1045 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 5.454 ms
+2026-04-25 02:11:14:1114 info: ::1 - GET /api/services 304 - - 14.345 ms
+2026-04-25 02:11:14:1114 info: ::1 - GET /api/services 304 - - 7.418 ms
+2026-04-25 02:11:57:1157 info: ::1 - POST /api/bookings 201 209 - 33.680 ms
+2026-04-25 02:11:58:1158 info: User 1 joined their notification room
+2026-04-25 02:11:58:1158 info: ::1 - GET /api/services 304 - - 11.247 ms
+2026-04-25 02:11:58:1158 info: ::1 - GET /api/bookings/client 200 549 - 25.946 ms
+2026-04-25 02:11:58:1158 info: User 1 joined their notification room
+2026-04-25 02:11:58:1158 info: ::1 - GET /api/services 304 - - 9.777 ms
+2026-04-25 02:11:58:1158 info: ::1 - GET /api/bookings/client 304 - - 22.256 ms
+2026-04-25 02:11:59:1159 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 0.819 ms
+2026-04-25 02:12:54:1254 info: User disconnected: hTIxqXdm3qqrl1tUAAAJ
+2026-04-25 02:14:56:1456 info: ::1 - POST /api/service-requests 201 291 - 43.119 ms
+2026-04-25 02:15:01:151 info: ::1 - GET /api/services 304 - - 24.562 ms
+2026-04-25 02:15:01:151 info: ::1 - GET /api/bookings/client 304 - - 78.017 ms
+2026-04-25 02:15:01:151 info: ::1 - GET /api/services 304 - - 13.682 ms
+2026-04-25 02:15:01:151 info: ::1 - GET /api/bookings/client 304 - - 22.939 ms
+2026-04-25 02:15:02:152 info: User connected: WFGNXyokxEfaMqdhAAAL (UserId: 1)
+2026-04-25 02:15:02:152 info: User 1 joined their notification room
+2026-04-25 02:15:02:152 info: User 1 joined their notification room
+2026-04-25 02:15:03:153 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 1.589 ms
+2026-04-25 02:15:03:153 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.708 ms
+2026-04-25 02:15:49:1549 info: ::1 - POST /api/auth/login 200 272 - 275.999 ms
+2026-04-25 02:15:50:1550 info: User 38 joined their notification room
+2026-04-25 02:15:50:1550 info: ::1 - GET /api/bookings/worker 304 - - 12.031 ms
+2026-04-25 02:15:50:1550 info: User 38 joined their notification room
+2026-04-25 02:15:50:1550 info: ::1 - GET /api/bookings/worker 304 - - 5.857 ms
+2026-04-25 02:16:06:166 info: ::1 - GET /api/service-requests 200 362 - 22.787 ms
+2026-04-25 02:16:06:166 info: ::1 - GET /api/service-requests 304 - - 16.798 ms
+2026-04-25 02:16:30:1630 info: ::1 - PUT /api/service-requests/1 200 291 - 32.293 ms
+2026-04-25 02:16:30:1630 info: ::1 - GET /api/service-requests 200 364 - 13.066 ms
+2026-04-25 02:16:39:1639 info: User 38 joined their notification room
+2026-04-25 02:16:39:1639 info: ::1 - GET /api/bookings/worker 304 - - 11.051 ms
+2026-04-25 02:16:39:1639 info: User 38 joined their notification room
+2026-04-25 02:16:39:1639 info: ::1 - GET /api/bookings/worker 304 - - 8.508 ms
+2026-04-25 02:16:48:1648 info: ::1 - GET /api/service-requests 304 - - 9.962 ms
+2026-04-25 02:16:48:1648 info: ::1 - GET /api/service-requests 304 - - 15.499 ms
+2026-04-25 02:30:38:3038 info: Database synced successfully
+2026-04-25 02:30:38:3038 info: Server running on port 5000
+2026-04-25 02:30:55:3055 info: ::1 - GET /uploads/9-1776442399350.jpg 304 - - 2.521 ms
+2026-04-25 02:31:04:314 info: ::1 - POST /api/auth/login 200 303 - 133.663 ms
+2026-04-25 02:31:05:315 info: User connected: cwrCMCbM7px3gwIMAAAB (UserId: 9)
+2026-04-25 02:31:05:315 info: User 9 joined their notification room
+2026-04-25 02:31:05:315 info: ::1 - GET /api/services 200 4988 - 41.041 ms
+2026-04-25 02:31:05:315 info: ::1 - GET /api/bookings/client 304 - - 40.202 ms
+2026-04-25 02:31:05:315 info: ::1 - GET /api/services 304 - - 10.620 ms
+2026-04-25 02:31:05:315 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 1.050 ms
+2026-04-25 02:31:05:315 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.987 ms
+2026-04-25 02:31:05:315 info: ::1 - GET /api/bookings/client 304 - - 16.659 ms
+2026-04-25 02:31:05:315 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 1.215 ms
+2026-04-25 02:31:05:315 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 1.630 ms
+2026-04-25 02:31:05:315 info: User 9 joined their notification room
+2026-04-25 02:31:10:3110 info: ::1 - GET /api/workers 200 2030 - 4.329 ms
+2026-04-25 02:31:10:3110 info: ::1 - GET /api/workers 304 - - 5.508 ms
+2026-04-25 02:31:10:3110 info: ::1 - GET /uploads/7-1775274002185.jpg 200 95076 - 2.682 ms
+2026-04-25 02:31:17:3117 info: ::1 - GET /api/services 304 - - 5.392 ms
+2026-04-25 02:31:17:3117 info: ::1 - GET /api/services 304 - - 7.505 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.550 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 1.836 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 2.097 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 2.157 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 2.773 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 4.171 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 4.274 ms
+2026-04-25 02:31:18:3118 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 4.868 ms
+2026-04-25 02:31:22:3122 info: ::1 - GET /api/services/5 200 272 - 3.993 ms
+2026-04-25 02:31:22:3122 info: ::1 - GET /api/services/5 304 - - 3.110 ms
+2026-04-25 02:31:30:3130 info: User disconnected: cwrCMCbM7px3gwIMAAAB
+2026-04-25 02:31:34:3134 info: Database synced successfully
+2026-04-25 02:31:34:3134 info: Server running on port 5000
+2026-04-25 08:16:50:1650 info: Database synced successfully
+2026-04-25 08:16:50:1650 info: Server running on port 5000
+2026-04-25 08:18:01:181 info: ::1 - GET /uploads/9-1776442399350.jpg 304 - - 7.079 ms
+2026-04-25 08:19:13:1913 info: ::1 - POST /api/auth/register 201 255 - 345.438 ms
+2026-04-25 08:19:14:1914 info: User connected: va4CJ2JVbowmI4IYAAAB (UserId: 39)
+2026-04-25 08:19:14:1914 info: User 39 joined their notification room
+2026-04-25 08:19:14:1914 info: ::1 - GET /api/bookings/worker 200 2 - 55.182 ms
+2026-04-25 08:19:14:1914 info: ::1 - GET /api/service-requests 200 2 - 54.982 ms
+2026-04-25 08:19:14:1914 info: ::1 - GET /api/bookings/worker 304 - - 17.463 ms
+2026-04-25 08:19:14:1914 info: ::1 - GET /api/service-requests 304 - - 16.991 ms
+2026-04-25 08:19:14:1914 info: User 39 joined their notification room
+2026-04-25 08:19:30:1930 info: ::1 - GET /api/services?workerId=39 200 2 - 6.994 ms
+2026-04-25 08:19:30:1930 info: ::1 - GET /api/services?workerId=39 304 - - 4.244 ms
+2026-04-25 08:19:38:1938 info: User 39 joined their notification room
+2026-04-25 08:19:38:1938 info: User 39 joined their notification room
+2026-04-25 08:19:38:1938 info: ::1 - GET /api/bookings/worker 304 - - 33.969 ms
+2026-04-25 08:19:38:1938 info: ::1 - GET /api/service-requests 304 - - 33.722 ms
+2026-04-25 08:19:38:1938 info: ::1 - GET /api/bookings/worker 304 - - 31.527 ms
+2026-04-25 08:19:38:1938 info: ::1 - GET /api/service-requests 304 - - 29.447 ms
+2026-04-25 08:22:27:2227 info: User 39 joined their notification room
+2026-04-25 08:22:27:2227 info: User 39 joined their notification room
+2026-04-25 08:22:27:2227 info: ::1 - GET /api/bookings/worker 304 - - 28.110 ms
+2026-04-25 08:22:27:2227 info: ::1 - GET /api/service-requests 304 - - 27.144 ms
+2026-04-25 08:22:27:2227 info: ::1 - GET /api/bookings/worker 304 - - 24.735 ms
+2026-04-25 08:22:27:2227 info: ::1 - GET /api/service-requests 304 - - 25.535 ms
+2026-04-25 08:25:59:2559 info: ::1 - POST /api/auth/register 400 49 - 9.513 ms
+2026-04-25 08:26:12:2612 info: ::1 - POST /api/auth/register 201 261 - 246.404 ms
+2026-04-25 08:26:12:2612 info: ::1 - POST /api/auth/register 400 49 - 4.225 ms
+2026-04-25 08:26:12:2612 info: User 40 joined their notification room
+2026-04-25 08:26:12:2612 info: User 40 joined their notification room
+2026-04-25 08:26:12:2612 info: ::1 - GET /api/bookings/worker 304 - - 19.092 ms
+2026-04-25 08:26:12:2612 info: ::1 - GET /api/service-requests 304 - - 16.671 ms
+2026-04-25 08:26:12:2612 info: ::1 - GET /api/bookings/worker 304 - - 19.030 ms
+2026-04-25 08:26:12:2612 info: ::1 - GET /api/service-requests 304 - - 19.672 ms
+2026-04-25 08:26:25:2625 info: ::1 - GET /api/services?workerId=40 200 2 - 7.617 ms
+2026-04-25 08:26:25:2625 info: ::1 - GET /api/services?workerId=40 304 - - 8.121 ms
+2026-04-25 08:33:20:3320 info: ::1 - POST /api/upload 201 39 - 205.477 ms
+2026-04-25 08:33:20:3320 info: ::1 - GET /uploads/40-1777095200195.png 200 1640897 - 2.831 ms
+2026-04-25 08:33:21:3321 info: ::1 - POST /api/services 201 270 - 40.521 ms
+2026-04-25 08:33:21:3321 info: ::1 - GET /api/services?workerId=40 200 322 - 11.165 ms
+2026-04-25 08:33:21:3321 info: ::1 - GET /api/services?workerId=40 304 - - 8.308 ms
+2026-04-25 08:33:54:3354 info: ::1 - POST /api/auth/login 200 303 - 259.243 ms
+2026-04-25 08:33:54:3354 info: ::1 - GET /uploads/9-1776442399350.jpg 304 - - 0.972 ms
+2026-04-25 08:33:55:3355 info: ::1 - GET /api/services 200 5309 - 14.146 ms
+2026-04-25 08:33:55:3355 info: User connected: d88O4TT-1WZDDsJBAAAD (UserId: 9)
+2026-04-25 08:33:55:3355 info: ::1 - GET /api/bookings/client 304 - - 33.217 ms
+2026-04-25 08:33:55:3355 info: ::1 - GET /api/services 304 - - 15.452 ms
+2026-04-25 08:33:55:3355 info: User 9 joined their notification room
+2026-04-25 08:33:55:3355 info: ::1 - GET /api/bookings/client 304 - - 14.039 ms
+2026-04-25 08:33:55:3355 info: User 9 joined their notification room
+2026-04-25 08:34:01:341 info: ::1 - GET /api/services 304 - - 12.350 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /api/services 304 - - 10.522 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 5.425 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 5.006 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 4.824 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 5.276 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 5.900 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 6.531 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 1.637 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 4.729 ms
+2026-04-25 08:34:01:341 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 1.873 ms
+2026-04-25 08:34:30:3430 info: ::1 - GET /api/services/19 200 270 - 16.095 ms
+2026-04-25 08:34:30:3430 info: ::1 - GET /api/services/19 304 - - 2.868 ms
+2026-04-25 08:34:49:3449 info: ::1 - POST /api/bookings 201 210 - 30.905 ms
+2026-04-25 08:34:51:3451 info: User 9 joined their notification room
+2026-04-25 08:34:51:3451 info: User 9 joined their notification room
+2026-04-25 08:34:51:3451 info: ::1 - GET /api/services 304 - - 28.479 ms
+2026-04-25 08:34:51:3451 info: ::1 - GET /api/bookings/client 200 556 - 50.195 ms
+2026-04-25 08:34:51:3451 info: ::1 - GET /api/services 304 - - 25.982 ms
+2026-04-25 08:34:51:3451 info: ::1 - GET /api/bookings/client 304 - - 15.708 ms
+2026-04-25 08:34:51:3451 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 1.541 ms
+2026-04-25 08:34:51:3451 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 2.915 ms
+2026-04-25 08:34:51:3451 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 3.533 ms
+2026-04-25 08:35:07:357 info: ::1 - GET /api/service-requests 304 - - 8.834 ms
+2026-04-25 08:35:07:357 info: ::1 - GET /api/service-requests 304 - - 8.238 ms
+2026-04-25 08:35:09:359 info: User 40 joined their notification room
+2026-04-25 08:35:09:359 info: User 40 joined their notification room
+2026-04-25 08:35:09:359 info: ::1 - GET /api/bookings/worker 200 552 - 14.808 ms
+2026-04-25 08:35:09:359 info: ::1 - GET /api/service-requests 304 - - 15.812 ms
+2026-04-25 08:35:09:359 info: ::1 - GET /api/bookings/worker 304 - - 11.661 ms
+2026-04-25 08:35:09:359 info: ::1 - GET /api/service-requests 304 - - 11.117 ms
+2026-04-25 08:35:20:3520 info: ::1 - PUT /api/bookings/13/status 200 209 - 41.066 ms
+2026-04-25 08:35:20:3520 info: ::1 - GET /api/bookings/client 200 557 - 17.277 ms
+2026-04-25 08:35:30:3530 info: User 9 joined their notification room
+2026-04-25 08:35:30:3530 info: User 9 joined their notification room
+2026-04-25 08:35:30:3530 info: ::1 - GET /api/messages/contacts 200 2 - 26.086 ms
+2026-04-25 08:35:30:3530 info: ::1 - GET /api/messages/contacts 304 - - 18.547 ms
+2026-04-25 08:35:30:3530 info: ::1 - GET /api/messages/user/40 200 58 - 12.101 ms
+2026-04-25 08:35:30:3530 info: ::1 - GET /api/messages/user/40 304 - - 8.579 ms
+2026-04-25 08:35:30:3530 info: User 9 joined their notification room
+2026-04-25 08:35:30:3530 info: ::1 - GET /api/messages/40 200 2 - 8.346 ms
+2026-04-25 08:35:41:3541 info: ::1 - POST /api/messages 201 237 - 43.339 ms
+2026-04-25 08:35:46:3546 info: User 40 joined their notification room
+2026-04-25 08:35:46:3546 info: User 40 joined their notification room
+2026-04-25 08:35:46:3546 info: ::1 - GET /api/messages/contacts 200 188 - 13.927 ms
+2026-04-25 08:35:46:3546 info: ::1 - GET /api/messages/contacts 304 - - 9.283 ms
+2026-04-25 08:35:46:3546 info: ::1 - GET /uploads/9-1776442399350.jpg 304 - - 0.633 ms
+2026-04-25 08:35:46:3546 info: User 40 joined their notification room
+2026-04-25 08:35:46:3546 info: ::1 - GET /api/messages/9 200 239 - 8.362 ms
+2026-04-25 08:58:38:5838 info: User disconnected: d88O4TT-1WZDDsJBAAAD
+2026-04-25 08:58:38:5838 info: User disconnected: va4CJ2JVbowmI4IYAAAB
+2026-04-25 08:58:52:5852 info: Database synced successfully
+2026-04-25 08:58:52:5852 info: Server running on port 5000
+2026-04-25 17:47:04:474 info: Database synced successfully
+2026-04-25 17:47:04:474 info: Server running on port 5000
+2026-04-25 17:47:57:4757 info: ::1 - GET /api/services 200 5309 - 17.888 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /api/services 304 - - 3.737 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 2.150 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/17-1776199669154.webp 200 115679 - 7.462 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/24-1776351823526.jpeg 200 66038 - 6.784 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/24-1776438325659.webp 200 62177 - 11.619 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/29-1776433669052.jpg 200 136292 - 11.181 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/25-1776369294869.jpg 200 229978 - 8.322 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/24-1776441463826.webp 200 98506 - 8.368 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/24-1776438972919.jpg 200 189490 - 8.324 ms
+2026-04-25 17:47:58:4758 info: ::1 - GET /uploads/40-1777095200195.png 200 1640897 - 7.766 ms
+2026-04-25 17:49:29:4929 info: Database synced successfully
+2026-04-25 17:49:29:4929 info: Server running on port 5000
+2026-05-04 21:25:33:2533 info: Database synced successfully
+2026-05-04 21:25:33:2533 info: Server running on port 5000
+2026-05-04 21:27:43:2743 info: Database synced successfully
+2026-05-04 21:27:43:2743 info: Server running on port 5000
+2026-05-04 21:28:30:2830 info: ::1 - GET /uploads/9-1776442399350.jpg 304 - - 13.256 ms
+2026-05-04 21:32:13:3213 info: ::1 - POST /api/auth/register 201 257 - 306.983 ms
+2026-05-04 21:32:13:3213 info: User connected: i9uGgcog-qJTfrKhAAAB (UserId: 41)
+2026-05-04 21:32:13:3213 info: User 41 joined their notification room
+2026-05-04 21:32:13:3213 info: ::1 - GET /api/services 304 - - 81.087 ms
+2026-05-04 21:32:13:3213 info: ::1 - GET /api/bookings/client 200 2 - 78.789 ms
+2026-05-04 21:32:13:3213 info: ::1 - GET /api/services 304 - - 22.935 ms
+2026-05-04 21:32:13:3213 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 5.392 ms
+2026-05-04 21:32:13:3213 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 7.742 ms
+2026-05-04 21:32:13:3213 info: ::1 - GET /api/bookings/client 304 - - 31.190 ms
+2026-05-04 21:32:13:3213 info: User 41 joined their notification room
+2026-05-04 21:32:49:3249 info: ::1 - POST /api/upload 201 40 - 276.640 ms
+2026-05-04 21:32:49:3249 info: ::1 - PUT /api/auth/profile 200 322 - 17.990 ms
+2026-05-04 21:32:49:3249 info: ::1 - GET /uploads/41-1777919568940.webp 200 72028 - 2.918 ms
+2026-05-04 21:32:52:3252 info: User 41 joined their notification room
+2026-05-04 21:32:52:3252 info: User 41 joined their notification room
+2026-05-04 21:32:52:3252 info: ::1 - GET /api/services 304 - - 22.175 ms
+2026-05-04 21:32:52:3252 info: ::1 - GET /api/bookings/client 304 - - 42.439 ms
+2026-05-04 21:32:52:3252 info: ::1 - GET /api/services 304 - - 18.974 ms
+2026-05-04 21:32:52:3252 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 2.665 ms
+2026-05-04 21:32:52:3252 info: ::1 - GET /api/bookings/client 304 - - 28.781 ms
+2026-05-04 21:32:52:3252 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 1.780 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /api/services 304 - - 13.955 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /api/services 304 - - 8.430 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 6.290 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 5.545 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 6.086 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 10.687 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 7.199 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 6.954 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 3.439 ms
+2026-05-04 21:33:05:335 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 3.657 ms
+2026-05-04 21:33:24:3324 info: User 41 joined their notification room
+2026-05-04 21:33:24:3324 info: User 41 joined their notification room
+2026-05-04 21:33:24:3324 info: ::1 - GET /api/services 304 - - 10.932 ms
+2026-05-04 21:33:24:3324 info: ::1 - GET /api/bookings/client 304 - - 20.781 ms
+2026-05-04 21:33:24:3324 info: ::1 - GET /api/services 304 - - 11.432 ms
+2026-05-04 21:33:24:3324 info: ::1 - GET /api/bookings/client 304 - - 12.585 ms
+2026-05-04 21:33:31:3331 info: User 41 joined their notification room
+2026-05-04 21:33:31:3331 info: User 41 joined their notification room
+2026-05-04 21:33:31:3331 info: ::1 - GET /api/services 304 - - 11.170 ms
+2026-05-04 21:33:31:3331 info: ::1 - GET /api/bookings/client 304 - - 18.232 ms
+2026-05-04 21:33:31:3331 info: ::1 - GET /api/services 304 - - 12.202 ms
+2026-05-04 21:33:31:3331 info: ::1 - GET /api/bookings/client 304 - - 17.329 ms
+2026-05-04 21:33:31:3331 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 4.037 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /api/services 304 - - 15.964 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /api/services 304 - - 8.924 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 5.159 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 5.534 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 5.323 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 10.327 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 5.141 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 4.983 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 3.187 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 3.013 ms
+2026-05-04 21:33:45:3345 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 3.389 ms
+2026-05-04 21:34:07:347 info: ::1 - GET /uploads/41-1777919568940.webp 304 - - 1.013 ms
+2026-05-04 21:34:25:3425 info: ::1 - POST /api/auth/login 200 259 - 209.998 ms
+2026-05-04 21:34:26:3426 info: ::1 - GET /api/services 304 - - 20.400 ms
+2026-05-04 21:34:26:3426 info: User connected: f_KdAciVDenOXD4CAAAD (UserId: 34)
+2026-05-04 21:34:26:3426 info: ::1 - GET /api/bookings/client 304 - - 41.948 ms
+2026-05-04 21:34:26:3426 info: ::1 - GET /api/services 304 - - 18.768 ms
+2026-05-04 21:34:26:3426 info: ::1 - GET /api/bookings/client 304 - - 15.494 ms
+2026-05-04 21:34:26:3426 info: User 34 joined their notification room
+2026-05-04 21:34:26:3426 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 5.979 ms
+2026-05-04 21:34:26:3426 info: User 34 joined their notification room
+2026-05-04 21:34:39:3439 info: ::1 - POST /api/auth/login 200 303 - 294.833 ms
+2026-05-04 21:34:39:3439 info: ::1 - GET /uploads/9-1776442399350.jpg 304 - - 1.050 ms
+2026-05-04 21:34:39:3439 info: User 9 joined their notification room
+2026-05-04 21:34:39:3439 info: User 9 joined their notification room
+2026-05-04 21:34:39:3439 info: ::1 - GET /api/services 304 - - 17.757 ms
+2026-05-04 21:34:39:3439 info: ::1 - GET /api/bookings/client 200 557 - 32.368 ms
+2026-05-04 21:34:39:3439 info: ::1 - GET /api/services 304 - - 22.261 ms
+2026-05-04 21:34:39:3439 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 3.011 ms
+2026-05-04 21:34:39:3439 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 4.125 ms
+2026-05-04 21:34:39:3439 info: ::1 - GET /api/bookings/client 304 - - 28.320 ms
+2026-05-04 21:34:39:3439 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 1.015 ms
+2026-05-04 21:35:30:3530 info: ::1 - POST /api/auth/register 201 255 - 214.436 ms
+2026-05-04 21:35:30:3530 info: User 42 joined their notification room
+2026-05-04 21:35:30:3530 info: User 42 joined their notification room
+2026-05-04 21:35:30:3530 info: ::1 - GET /api/service-requests 304 - - 17.882 ms
+2026-05-04 21:35:30:3530 info: ::1 - GET /api/bookings/worker 200 2 - 23.038 ms
+2026-05-04 21:35:30:3530 info: ::1 - GET /api/service-requests 304 - - 16.542 ms
+2026-05-04 21:35:30:3530 info: ::1 - GET /api/bookings/worker 304 - - 17.937 ms
+2026-05-04 21:35:44:3544 info: ::1 - GET /api/services?workerId=42 200 2 - 3.175 ms
+2026-05-04 21:35:44:3544 info: ::1 - GET /api/services?workerId=42 304 - - 3.098 ms
+2026-05-04 21:36:44:3644 info: ::1 - POST /api/upload 201 39 - 48.406 ms
+2026-05-04 21:36:44:3644 info: ::1 - GET /uploads/42-1777919804036.png 200 206183 - 1.726 ms
+2026-05-04 21:36:45:3645 info: ::1 - POST /api/services 201 258 - 13.877 ms
+2026-05-04 21:36:45:3645 info: ::1 - GET /api/services?workerId=42 200 308 - 4.095 ms
+2026-05-04 21:36:45:3645 info: ::1 - GET /api/services?workerId=42 304 - - 4.220 ms
+2026-05-04 21:36:54:3654 info: User disconnected: i9uGgcog-qJTfrKhAAAB
+2026-05-04 21:36:54:3654 info: ::1 - GET /api/services 200 5616 - 5.441 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 0.518 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 0.733 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 0.847 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 0.689 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 0.668 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 1.112 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 0.682 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 0.580 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 0.426 ms
+2026-05-04 21:36:54:3654 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 0.706 ms
+2026-05-04 21:37:04:374 info: ::1 - GET /api/services/20 200 258 - 8.686 ms
+2026-05-04 21:37:04:374 info: ::1 - GET /api/services/20 304 - - 4.440 ms
+2026-05-04 21:38:10:3810 info: ::1 - GET /api/services/20 304 - - 2.576 ms
+2026-05-04 21:39:00:390 info: ::1 - GET /api/services?workerId=42 304 - - 5.575 ms
+2026-05-04 21:39:00:390 info: ::1 - GET /api/services?workerId=42 304 - - 4.486 ms
+2026-05-04 21:39:00:390 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 0.447 ms
+2026-05-04 21:40:02:402 info: ::1 - POST /api/auth/login 200 322 - 278.521 ms
+2026-05-04 21:40:02:402 info: ::1 - GET /uploads/41-1777919568940.webp 304 - - 0.744 ms
+2026-05-04 21:40:02:402 info: User connected: nag8X9dLgj1ICzlqAAAF (UserId: 41)
+2026-05-04 21:40:02:402 info: ::1 - GET /api/services 304 - - 16.007 ms
+2026-05-04 21:40:02:402 info: User 41 joined their notification room
+2026-05-04 21:40:02:402 info: ::1 - GET /api/bookings/client 200 2 - 36.206 ms
+2026-05-04 21:40:02:402 info: ::1 - GET /api/services 304 - - 13.836 ms
+2026-05-04 21:40:02:402 info: ::1 - GET /api/bookings/client 304 - - 5.712 ms
+2026-05-04 21:40:02:402 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 0.471 ms
+2026-05-04 21:40:03:403 info: User 41 joined their notification room
+2026-05-04 21:40:10:4010 info: ::1 - GET /api/services 304 - - 14.781 ms
+2026-05-04 21:40:10:4010 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:11:4011 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:14:4014 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:14:4014 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:25:4025 info: User disconnected: f_KdAciVDenOXD4CAAAD
+2026-05-04 21:40:26:4026 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:26:4026 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:26:4026 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:26:4026 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:26:4026 info: User connected: RsSvC9bJgShF5nwBAAAH (UserId: 41)
+2026-05-04 21:40:26:4026 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:40:26:4026 info: User 41 joined their notification room
+2026-05-04 21:40:26:4026 info: User 41 joined their notification room
+2026-05-04 21:40:33:4033 info: User disconnected: nag8X9dLgj1ICzlqAAAF
+2026-05-04 21:41:21:4121 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:41:28:4128 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:41:44:4144 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:41:48:4148 info: User disconnected: RsSvC9bJgShF5nwBAAAH
+2026-05-04 21:41:48:4148 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:41:48:4148 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:42:21:4221 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:42:24:4224 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:42:24:4224 warn: Rate Limit Exceeded: IP ::1
+2026-05-04 21:42:24:4224 info: User connected: E9JogSR0x7ett9OHAAAJ (UserId: 41)
+2026-05-04 21:42:24:4224 info: User 41 joined their notification room
+2026-05-04 21:42:24:4224 info: User 41 joined their notification room
+2026-05-04 21:49:27:4927 info: ::1 - GET /api/workers 200 2975 - 14.330 ms
+2026-05-04 21:49:27:4927 info: ::1 - GET /api/workers 304 - - 7.520 ms
+2026-05-04 21:49:27:4927 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 0.564 ms
+2026-05-04 21:49:28:4928 info: User 41 joined their notification room
+2026-05-04 21:49:28:4928 info: User 41 joined their notification room
+2026-05-04 21:49:28:4928 info: ::1 - GET /api/messages/contacts 200 2 - 8.690 ms
+2026-05-04 21:49:28:4928 info: ::1 - GET /api/messages/contacts 304 - - 12.349 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /api/services 200 5616 - 7.637 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /api/services 304 - - 8.515 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 4.315 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/24-1776351823526.jpeg 200 66038 - 3.810 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/28-1776382397880.jpg 200 34075 - 12.018 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/24-1776438325659.webp 200 62177 - 11.626 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/29-1776433669052.jpg 200 136292 - 13.817 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/25-1776369294869.jpg 200 229978 - 12.354 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/24-1776441463826.webp 200 98506 - 12.874 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/24-1776438972919.jpg 200 189490 - 12.428 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 3.362 ms
+2026-05-04 21:49:29:4929 info: ::1 - GET /uploads/40-1777095200195.png 200 1640897 - 19.902 ms
+2026-05-04 22:13:09:139 info: Database synced successfully
+2026-05-04 22:13:09:139 info: Server running on port 5000
+2026-05-04 22:13:09:139 info: User connected: xIvvJw6EfwXvSVm_AAAB (UserId: 41)
+2026-05-15 23:05:40:540 info: Database synced successfully
+2026-05-15 23:05:40:540 info: Server running on port 5000
+2026-05-15 23:06:18:618 info: ::1 - GET /api/workers 200 2975 - 38.171 ms
+2026-05-15 23:06:18:618 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 3.343 ms
+2026-05-15 23:09:51:951 info: ::1 - POST /api/auth/register 201 270 - 552.543 ms
+2026-05-15 23:09:53:953 info: User connected: WVnRcXhI41VZ919HAAAB (UserId: 43)
+2026-05-15 23:09:53:953 info: User 43 joined their notification room
+2026-05-15 23:09:53:953 info: User 43 joined their notification room
+2026-05-15 23:09:53:953 info: ::1 - GET /api/services 200 5616 - 65.322 ms
+2026-05-15 23:09:53:953 info: ::1 - GET /api/bookings/client 200 2 - 75.370 ms
+2026-05-15 23:09:53:953 info: ::1 - GET /api/services 304 - - 16.740 ms
+2026-05-15 23:09:53:953 info: ::1 - GET /api/bookings/client 304 - - 9.306 ms
+2026-05-15 23:09:53:953 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 1.103 ms
+2026-05-15 23:10:31:1031 info: ::1 - GET /api/services 304 - - 19.023 ms
+2026-05-15 23:10:31:1031 info: ::1 - GET /api/services 304 - - 14.278 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 14.402 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 14.005 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 11.785 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 12.155 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 15.180 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 13.245 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 16.418 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/42-1777919804036.png 200 206183 - 16.448 ms
+2026-05-15 23:10:32:1032 info: ::1 - GET /uploads/40-1777095200195.png 200 1640897 - 40.241 ms
+2026-05-15 23:11:25:1125 info: ::1 - GET /api/services 304 - - 38.303 ms
+2026-05-15 23:11:25:1125 info: ::1 - GET /api/services 304 - - 22.586 ms
+2026-05-15 23:12:06:126 info: ::1 - POST /api/bookings 201 210 - 26.276 ms
+2026-05-15 23:12:07:127 info: User 43 joined their notification room
+2026-05-15 23:12:07:127 info: ::1 - GET /api/services 304 - - 18.559 ms
+2026-05-15 23:12:07:127 info: ::1 - GET /api/bookings/client 200 514 - 46.981 ms
+2026-05-15 23:12:07:127 info: User 43 joined their notification room
+2026-05-15 23:12:07:127 info: ::1 - GET /api/services 304 - - 27.643 ms
+2026-05-15 23:12:07:127 info: ::1 - GET /api/bookings/client 304 - - 34.084 ms
+2026-05-15 23:12:07:127 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 0.463 ms
+2026-05-15 23:12:07:127 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 3.048 ms
+2026-05-15 23:12:07:127 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 2.888 ms
+2026-05-15 23:13:05:135 info: ::1 - GET /api/workers 304 - - 7.893 ms
+2026-05-15 23:13:05:135 info: ::1 - GET /api/workers 304 - - 8.885 ms
+2026-05-15 23:13:05:135 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 1.277 ms
+2026-05-15 23:13:53:1353 info: User 43 joined their notification room
+2026-05-15 23:13:53:1353 info: User 43 joined their notification room
+2026-05-15 23:13:53:1353 info: ::1 - GET /api/messages/contacts 304 - - 33.656 ms
+2026-05-15 23:13:53:1353 info: ::1 - GET /api/messages/contacts 304 - - 46.337 ms
+2026-05-15 23:14:13:1413 info: ::1 - GET /api/workers 304 - - 25.429 ms
+2026-05-15 23:14:13:1413 info: ::1 - GET /api/workers 304 - - 35.650 ms
+2026-05-15 23:14:34:1434 info: ::1 - GET /api/workers 304 - - 20.720 ms
+2026-05-15 23:14:34:1434 info: ::1 - GET /api/workers 304 - - 26.648 ms
+2026-05-15 23:14:34:1434 info: ::1 - GET /api/services?workerId=1 304 - - 9.511 ms
+2026-05-15 23:14:34:1434 info: ::1 - GET /api/services?workerId=1 304 - - 14.656 ms
+2026-05-15 23:14:56:1456 info: ::1 - GET /api/services 304 - - 16.113 ms
+2026-05-15 23:14:56:1456 info: ::1 - GET /api/services 304 - - 15.095 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 7.053 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 4.840 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 23.907 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 21.118 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 25.206 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 32.642 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 2.669 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 25.669 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 0.745 ms
+2026-05-15 23:14:57:1457 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 0.964 ms
+2026-05-15 23:15:01:151 info: ::1 - GET /api/services 304 - - 24.678 ms
+2026-05-15 23:15:01:151 info: ::1 - GET /api/services 304 - - 22.613 ms
+2026-05-15 23:15:37:1537 info: User 43 joined their notification room
+2026-05-15 23:15:37:1537 info: ::1 - GET /api/services 304 - - 13.745 ms
+2026-05-15 23:15:37:1537 info: User 43 joined their notification room
+2026-05-15 23:15:37:1537 info: ::1 - GET /api/bookings/client 304 - - 34.970 ms
+2026-05-15 23:15:37:1537 info: ::1 - GET /api/services 304 - - 11.504 ms
+2026-05-15 23:15:37:1537 info: ::1 - GET /api/bookings/client 304 - - 8.965 ms
+2026-05-15 23:16:46:1646 info: ::1 - POST /api/auth/register 201 272 - 311.567 ms
+2026-05-15 23:16:46:1646 info: User 44 joined their notification room
+2026-05-15 23:16:46:1646 info: User 44 joined their notification room
+2026-05-15 23:16:46:1646 info: ::1 - GET /api/bookings/worker 304 - - 47.720 ms
+2026-05-15 23:16:46:1646 info: ::1 - GET /api/service-requests 200 2 - 50.354 ms
+2026-05-15 23:16:46:1646 info: ::1 - GET /api/bookings/worker 304 - - 18.177 ms
+2026-05-15 23:16:46:1646 info: ::1 - GET /api/service-requests 304 - - 17.463 ms
+2026-05-15 23:17:20:1720 info: ::1 - GET /api/services?workerId=44 200 2 - 78.939 ms
+2026-05-15 23:17:20:1720 info: ::1 - GET /api/services?workerId=44 304 - - 28.881 ms
+2026-05-15 23:20:12:2012 info: ::1 - POST /api/services 201 231 - 33.320 ms
+2026-05-15 23:20:13:2013 info: ::1 - GET /api/services?workerId=44 200 289 - 15.014 ms
+2026-05-15 23:20:13:2013 info: ::1 - GET /api/services?workerId=44 304 - - 12.481 ms
+2026-05-15 23:20:41:2041 info: ::1 - GET /api/services/21 200 231 - 20.808 ms
+2026-05-15 23:20:41:2041 info: ::1 - GET /api/services/21 304 - - 10.877 ms
+2026-05-15 23:21:12:2112 info: ::1 - GET /api/service-requests 304 - - 14.360 ms
+2026-05-15 23:21:12:2112 info: ::1 - GET /api/service-requests 304 - - 6.457 ms
+2026-05-15 23:21:39:2139 info: User 44 joined their notification room
+2026-05-15 23:21:39:2139 info: User 44 joined their notification room
+2026-05-15 23:21:39:2139 info: ::1 - GET /api/bookings/worker 304 - - 38.223 ms
+2026-05-15 23:21:39:2139 info: ::1 - GET /api/service-requests 304 - - 26.005 ms
+2026-05-15 23:21:39:2139 info: ::1 - GET /api/bookings/worker 304 - - 29.127 ms
+2026-05-15 23:21:39:2139 info: ::1 - GET /api/service-requests 304 - - 16.743 ms
+2026-05-15 23:21:50:2150 info: User 44 joined their notification room
+2026-05-15 23:21:50:2150 info: User 44 joined their notification room
+2026-05-15 23:21:50:2150 info: ::1 - GET /api/messages/contacts 304 - - 35.351 ms
+2026-05-15 23:21:50:2150 info: ::1 - GET /api/messages/contacts 304 - - 10.818 ms
+2026-05-15 23:27:51:2751 info: ::1 - GET /api/services 200 5904 - 4.542 ms
+2026-05-15 23:31:43:3143 info: ::1 - GET /api/workers 200 3306 - 4.765 ms
+2026-05-15 23:36:49:3649 info: User connected: va57QgBBs1xaMyoHAAAD (UserId: 44)
+2026-05-15 23:36:49:3649 info: ::1 - GET /api/bookings/worker 304 - - 36.753 ms
+2026-05-15 23:36:49:3649 info: ::1 - GET /api/service-requests 304 - - 29.613 ms
+2026-05-15 23:36:49:3649 info: User 44 joined their notification room
+2026-05-15 23:36:49:3649 info: User 44 joined their notification room
+2026-05-15 23:36:49:3649 info: ::1 - GET /api/bookings/worker 304 - - 40.120 ms
+2026-05-15 23:36:49:3649 info: ::1 - GET /api/service-requests 304 - - 39.490 ms
+2026-05-15 23:37:17:3717 info: User disconnected: va57QgBBs1xaMyoHAAAD
+2026-05-15 23:37:17:3717 info: ::1 - GET /api/bookings/worker 304 - - 14.778 ms
+2026-05-15 23:37:17:3717 info: ::1 - GET /api/service-requests 304 - - 17.543 ms
+2026-05-15 23:37:18:3718 info: User connected: uPdvjUwPZB-AdqupAAAF (UserId: 44)
+2026-05-15 23:37:18:3718 info: ::1 - GET /api/bookings/worker 304 - - 20.219 ms
+2026-05-15 23:37:18:3718 info: User 44 joined their notification room
+2026-05-15 23:37:18:3718 info: User 44 joined their notification room
+2026-05-15 23:37:18:3718 info: ::1 - GET /api/service-requests 304 - - 18.194 ms
+2026-05-15 23:38:14:3814 info: ::1 - POST /api/auth/register 400 49 - 2.865 ms
+2026-05-15 23:43:15:4315 info: ::1 - POST /api/auth/login 200 266 - 113.757 ms
+2026-05-15 23:43:16:4316 info: User 1 joined their notification room
+2026-05-15 23:43:16:4316 info: ::1 - GET /api/services 200 5904 - 11.331 ms
+2026-05-15 23:43:16:4316 info: User 1 joined their notification room
+2026-05-15 23:43:16:4316 info: ::1 - GET /api/bookings/client 200 549 - 17.567 ms
+2026-05-15 23:43:16:4316 info: ::1 - GET /api/services 304 - - 8.745 ms
+2026-05-15 23:43:16:4316 info: ::1 - GET /api/bookings/client 304 - - 6.340 ms
+2026-05-15 23:43:16:4316 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 0.529 ms
+2026-05-15 23:43:16:4316 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 0.385 ms
+2026-05-15 23:43:38:4338 info: User disconnected: uPdvjUwPZB-AdqupAAAF
+2026-05-15 23:43:39:4339 info: ::1 - GET /api/services 304 - - 21.638 ms
+2026-05-15 23:43:39:4339 info: User connected: mCesKMsSOEsKB1tOAAAH (UserId: 1)
+2026-05-15 23:43:39:4339 info: User 1 joined their notification room
+2026-05-15 23:43:39:4339 info: ::1 - GET /api/bookings/client 304 - - 51.950 ms
+2026-05-15 23:43:39:4339 info: ::1 - GET /api/services 304 - - 14.255 ms
+2026-05-15 23:43:39:4339 info: ::1 - GET /api/bookings/client 304 - - 17.105 ms
+2026-05-15 23:43:39:4339 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 1.059 ms
+2026-05-15 23:43:39:4339 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.065 ms
+2026-05-15 23:43:39:4339 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.311 ms
+2026-05-15 23:43:39:4339 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 1.104 ms
+2026-05-15 23:43:39:4339 info: User 1 joined their notification room
+2026-05-15 23:44:17:4417 info: User disconnected: mCesKMsSOEsKB1tOAAAH
+2026-05-15 23:44:17:4417 info: ::1 - GET /api/services 304 - - 9.059 ms
+2026-05-15 23:44:17:4417 info: User connected: tWZSPlGmvoZoPjt-AAAJ (UserId: 1)
+2026-05-15 23:44:17:4417 info: ::1 - GET /api/bookings/client 304 - - 24.123 ms
+2026-05-15 23:44:18:4418 info: User 1 joined their notification room
+2026-05-15 23:44:18:4418 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 0.705 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /api/services 304 - - 4.402 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /api/services 304 - - 5.986 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 3.147 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 2.494 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 2.131 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 0.844 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 2.009 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 1.510 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 0.836 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 1.119 ms
+2026-05-15 23:44:59:4459 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 0.442 ms
+2026-05-15 23:45:11:4511 info: ::1 - GET /api/services/1 304 - - 4.264 ms
+2026-05-15 23:45:11:4511 info: ::1 - GET /api/services/1 304 - - 16.539 ms
+2026-05-15 23:45:30:4530 info: ::1 - POST /api/bookings 201 208 - 17.282 ms
+2026-05-15 23:45:32:4532 info: User 1 joined their notification room
+2026-05-15 23:45:32:4532 info: ::1 - GET /api/services 304 - - 11.221 ms
+2026-05-15 23:45:32:4532 info: User 1 joined their notification room
+2026-05-15 23:45:32:4532 info: ::1 - GET /api/bookings/client 200 1058 - 25.373 ms
+2026-05-15 23:45:32:4532 info: ::1 - GET /api/services 304 - - 11.369 ms
+2026-05-15 23:45:32:4532 info: ::1 - GET /api/bookings/client 304 - - 11.009 ms
+2026-05-15 23:46:03:463 info: ::1 - POST /api/auth/login 200 263 - 102.579 ms
+2026-05-15 23:46:03:463 info: User 3 joined their notification room
+2026-05-15 23:46:03:463 info: User 3 joined their notification room
+2026-05-15 23:46:03:463 info: ::1 - GET /api/bookings/worker 200 2058 - 19.068 ms
+2026-05-15 23:46:03:463 info: ::1 - GET /api/service-requests 304 - - 16.478 ms
+2026-05-15 23:46:03:463 info: ::1 - GET /api/bookings/worker 304 - - 23.529 ms
+2026-05-15 23:46:03:463 info: ::1 - GET /api/service-requests 304 - - 23.965 ms
+2026-05-15 23:46:07:467 info: ::1 - PUT /api/bookings/11/status 200 211 - 11.506 ms
+2026-05-15 23:46:08:468 info: ::1 - PUT /api/bookings/14/status 200 211 - 10.257 ms
+2026-05-15 23:46:12:4612 info: ::1 - PUT /api/bookings/15/status 200 207 - 16.475 ms
+2026-05-15 23:46:36:4636 info: User 3 joined their notification room
+2026-05-15 23:46:36:4636 info: User 3 joined their notification room
+2026-05-15 23:46:36:4636 info: ::1 - GET /api/messages/contacts 304 - - 9.264 ms
+2026-05-15 23:46:36:4636 info: ::1 - GET /api/messages/contacts 304 - - 5.920 ms
+2026-05-15 23:46:40:4640 info: ::1 - GET /api/services?workerId=3 304 - - 7.656 ms
+2026-05-15 23:46:41:4641 info: ::1 - GET /api/services?workerId=3 304 - - 4.954 ms
+2026-05-15 23:46:41:4641 info: User 3 joined their notification room
+2026-05-15 23:46:41:4641 info: User 3 joined their notification room
+2026-05-15 23:46:41:4641 info: ::1 - GET /api/bookings/worker 200 2061 - 15.351 ms
+2026-05-15 23:46:41:4641 info: ::1 - GET /api/service-requests 304 - - 16.284 ms
+2026-05-15 23:46:41:4641 info: ::1 - GET /api/bookings/worker 304 - - 37.217 ms
+2026-05-15 23:46:41:4641 info: ::1 - GET /api/service-requests 304 - - 34.117 ms
+2026-05-15 23:46:53:4653 info: User 3 joined their notification room
+2026-05-15 23:46:53:4653 info: User 3 joined their notification room
+2026-05-15 23:46:53:4653 info: ::1 - GET /api/messages/contacts 304 - - 8.882 ms
+2026-05-15 23:46:53:4653 info: ::1 - GET /api/messages/contacts 304 - - 6.013 ms
+2026-05-15 23:47:07:477 info: ::1 - GET /api/services?workerId=3 304 - - 6.225 ms
+2026-05-15 23:47:07:477 info: ::1 - GET /api/services?workerId=3 304 - - 7.784 ms
+2026-05-15 23:47:08:478 info: User 3 joined their notification room
+2026-05-15 23:47:08:478 info: User 3 joined their notification room
+2026-05-15 23:47:08:478 info: ::1 - GET /api/bookings/worker 304 - - 27.430 ms
+2026-05-15 23:47:08:478 info: ::1 - GET /api/service-requests 304 - - 31.542 ms
+2026-05-15 23:47:08:478 info: ::1 - GET /api/bookings/worker 304 - - 35.083 ms
+2026-05-15 23:47:08:478 info: ::1 - GET /api/service-requests 304 - - 36.366 ms
+2026-05-15 23:47:13:4713 info: User 3 joined their notification room
+2026-05-15 23:47:13:4713 info: User 3 joined their notification room
+2026-05-15 23:47:13:4713 info: ::1 - GET /api/messages/contacts 304 - - 8.053 ms
+2026-05-15 23:47:13:4713 info: ::1 - GET /api/messages/contacts 304 - - 5.686 ms
+2026-05-15 23:47:20:4720 info: User 3 joined their notification room
+2026-05-15 23:47:20:4720 info: User 3 joined their notification room
+2026-05-15 23:47:20:4720 info: ::1 - GET /api/bookings/worker 304 - - 24.386 ms
+2026-05-15 23:47:20:4720 info: ::1 - GET /api/service-requests 304 - - 21.823 ms
+2026-05-15 23:47:20:4720 info: ::1 - GET /api/bookings/worker 304 - - 17.948 ms
+2026-05-15 23:47:20:4720 info: ::1 - GET /api/service-requests 304 - - 22.438 ms
+2026-05-15 23:47:21:4721 info: ::1 - PUT /api/bookings/11/status 200 212 - 12.752 ms
+2026-05-15 23:47:30:4730 info: ::1 - GET /api/services?workerId=3 304 - - 2.234 ms
+2026-05-15 23:47:30:4730 info: ::1 - GET /api/services?workerId=3 304 - - 4.128 ms
+2026-05-15 23:47:33:4733 info: User 3 joined their notification room
+2026-05-15 23:47:33:4733 info: User 3 joined their notification room
+2026-05-15 23:47:33:4733 info: ::1 - GET /api/service-requests 304 - - 11.361 ms
+2026-05-15 23:47:33:4733 info: ::1 - GET /api/bookings/worker 200 2062 - 17.308 ms
+2026-05-15 23:47:33:4733 info: ::1 - GET /api/service-requests 304 - - 15.108 ms
+2026-05-15 23:47:33:4733 info: ::1 - GET /api/bookings/worker 304 - - 21.985 ms
+2026-05-15 23:47:35:4735 info: ::1 - GET /api/service-requests 304 - - 4.396 ms
+2026-05-15 23:47:35:4735 info: ::1 - GET /api/service-requests 304 - - 23.123 ms
+2026-05-15 23:47:37:4737 info: User 3 joined their notification room
+2026-05-15 23:47:37:4737 info: User 3 joined their notification room
+2026-05-15 23:47:37:4737 info: ::1 - GET /api/messages/contacts 304 - - 6.286 ms
+2026-05-15 23:47:37:4737 info: ::1 - GET /api/messages/contacts 304 - - 8.511 ms
+2026-05-15 23:47:43:4743 info: ::1 - GET /api/services?workerId=3 304 - - 3.231 ms
+2026-05-15 23:47:43:4743 info: ::1 - GET /api/services?workerId=3 304 - - 3.917 ms
+2026-05-15 23:47:45:4745 info: User 3 joined their notification room
+2026-05-15 23:47:45:4745 info: User 3 joined their notification room
+2026-05-15 23:47:45:4745 info: ::1 - GET /api/bookings/worker 304 - - 17.588 ms
+2026-05-15 23:47:45:4745 info: ::1 - GET /api/service-requests 304 - - 18.165 ms
+2026-05-15 23:47:45:4745 info: ::1 - GET /api/bookings/worker 304 - - 32.570 ms
+2026-05-15 23:47:45:4745 info: ::1 - GET /api/service-requests 304 - - 28.222 ms
+2026-05-15 23:47:57:4757 info: ::1 - POST /api/auth/login 200 266 - 116.528 ms
+2026-05-15 23:47:57:4757 info: User 1 joined their notification room
+2026-05-15 23:47:57:4757 info: User 1 joined their notification room
+2026-05-15 23:47:57:4757 info: ::1 - GET /api/services 304 - - 9.285 ms
+2026-05-15 23:47:57:4757 info: ::1 - GET /api/bookings/client 200 1059 - 14.772 ms
+2026-05-15 23:47:57:4757 info: ::1 - GET /api/services 304 - - 8.150 ms
+2026-05-15 23:47:57:4757 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 0.746 ms
+2026-05-15 23:47:57:4757 info: ::1 - GET /api/bookings/client 304 - - 16.180 ms
+2026-05-15 23:47:57:4757 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 0.524 ms
+2026-05-15 23:48:01:481 info: User 1 joined their notification room
+2026-05-15 23:48:01:481 info: User 1 joined their notification room
+2026-05-15 23:48:01:481 info: ::1 - GET /api/messages/contacts 304 - - 8.841 ms
+2026-05-15 23:48:01:481 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:48:01:481 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:48:14:4814 info: User disconnected: tWZSPlGmvoZoPjt-AAAJ
+2026-05-15 23:48:14:4814 info: User disconnected: WVnRcXhI41VZ919HAAAB
+2026-05-15 23:48:51:4851 info: Database synced successfully
+2026-05-15 23:49:23:4923 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:32:4932 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:33:4933 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:33:4933 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:33:4933 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:34:4934 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:34:4934 info: User connected: 25D8gWA9PGiU5hyGAAAL (UserId: 1)
+2026-05-15 23:49:34:4934 info: User 1 joined their notification room
+2026-05-15 23:49:34:4934 info: User 1 joined their notification room
+2026-05-15 23:49:39:4939 info: User disconnected: 25D8gWA9PGiU5hyGAAAL
+2026-05-15 23:49:40:4940 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:40:4940 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:49:40:4940 info: User connected: BtJcQ2Tc0cPaldHjAAAN (UserId: 1)
+2026-05-15 23:49:40:4940 info: User 1 joined their notification room
+2026-05-15 23:49:48:4948 warn: Rate Limit Exceeded: IP ::1
+2026-05-15 23:50:02:502 info: Database synced successfully
+2026-05-16 00:01:14:114 info: User connected: mgdp_M_mXU9q5IsIAAAP (UserId: 1)
+2026-05-16 00:01:14:114 info: User 1 joined their notification room
+2026-05-16 00:01:14:114 info: User 1 joined their notification room
+2026-05-16 00:01:14:114 info: ::1 - GET /api/services 200 5904 - 30.475 ms
+2026-05-16 00:01:14:114 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 8.321 ms
+2026-05-16 00:01:14:114 info: ::1 - GET /api/bookings/client 200 1059 - 187.559 ms
+2026-05-16 00:01:14:114 info: ::1 - GET /api/services 304 - - 139.954 ms
+2026-05-16 00:01:15:115 info: ::1 - GET /api/bookings/client 304 - - 175.572 ms
+2026-05-16 00:04:00:40 info: ::1 - PUT /api/auth/profile 200 297 - 56.102 ms
+2026-05-16 00:04:31:431 info: User disconnected: mgdp_M_mXU9q5IsIAAAP
+2026-05-16 00:04:31:431 info: ::1 - GET /api/workers 200 3306 - 4.184 ms
+2026-05-16 00:04:31:431 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 0.390 ms
+2026-05-16 00:05:44:544 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 0.498 ms
+2026-05-16 00:06:26:626 info: ::1 - GET /api/workers 304 - - 13.085 ms
+2026-05-16 00:06:27:627 info: ::1 - GET /api/workers 304 - - 5.759 ms
+2026-05-16 00:06:27:627 info: ::1 - GET /api/services?workerId=2 200 2 - 9.562 ms
+2026-05-16 00:06:27:627 info: ::1 - GET /api/services?workerId=2 304 - - 13.710 ms
+2026-05-16 00:08:48:848 info: ::1 - POST /api/service-requests 201 335 - 21.199 ms
+2026-05-16 00:08:50:850 info: ::1 - GET /api/services 304 - - 13.184 ms
+2026-05-16 00:08:51:851 info: ::1 - GET /api/bookings/client 304 - - 18.338 ms
+2026-05-16 00:08:51:851 info: ::1 - GET /api/services 304 - - 14.492 ms
+2026-05-16 00:08:51:851 info: ::1 - GET /api/bookings/client 304 - - 15.047 ms
+2026-05-16 00:08:51:851 info: User connected: 07u-BUJe2zkiTK2zAAAR (UserId: 1)
+2026-05-16 00:08:51:851 info: User 1 joined their notification room
+2026-05-16 00:08:51:851 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 0.425 ms
+2026-05-16 00:08:51:851 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 0.948 ms
+2026-05-16 00:08:51:851 info: User 1 joined their notification room
+2026-05-16 00:10:40:1040 info: ::1 - POST /api/auth/register 201 272 - 196.146 ms
+2026-05-16 00:10:40:1040 info: User 45 joined their notification room
+2026-05-16 00:10:40:1040 info: User 45 joined their notification room
+2026-05-16 00:10:40:1040 info: ::1 - GET /api/bookings/worker 200 2 - 17.294 ms
+2026-05-16 00:10:40:1040 info: ::1 - GET /api/service-requests 200 2 - 18.291 ms
+2026-05-16 00:10:40:1040 info: ::1 - GET /api/bookings/worker 304 - - 16.478 ms
+2026-05-16 00:10:40:1040 info: ::1 - GET /api/service-requests 304 - - 15.240 ms
+2026-05-16 00:10:54:1054 info: User disconnected: 07u-BUJe2zkiTK2zAAAR
+2026-05-16 00:10:55:1055 info: ::1 - GET /api/services?workerId=45 200 2 - 4.777 ms
+2026-05-16 00:12:07:127 info: User disconnected: BtJcQ2Tc0cPaldHjAAAN
+2026-05-16 00:12:36:1236 info: Database synced successfully
+2026-05-16 00:13:20:1320 info: ::1 - POST /api/auth/login 200 322 - 107.527 ms
+2026-05-16 00:13:20:1320 info: ::1 - GET /uploads/41-1777919568940.webp 200 72028 - 2.335 ms
+2026-05-16 00:13:20:1320 info: ::1 - GET /api/services 200 5904 - 10.474 ms
+2026-05-16 00:13:20:1320 info: User connected: RNemoar3dWkWkIolAAAT (UserId: 41)
+2026-05-16 00:13:20:1320 info: ::1 - GET /api/bookings/client 200 2 - 20.338 ms
+2026-05-16 00:13:20:1320 info: ::1 - GET /api/services 304 - - 10.972 ms
+2026-05-16 00:13:20:1320 info: User 41 joined their notification room
+2026-05-16 00:13:20:1320 info: ::1 - GET /uploads/24-1776438325659.webp 200 62177 - 4.179 ms
+2026-05-16 00:13:20:1320 info: ::1 - GET /api/bookings/client 304 - - 11.411 ms
+2026-05-16 00:13:20:1320 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 0.303 ms
+2026-05-16 00:13:21:1321 info: User 41 joined their notification room
+2026-05-16 00:13:30:1330 info: ::1 - GET /api/services 304 - - 8.614 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /api/services 304 - - 4.339 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.686 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/28-1776382397880.jpg 200 34075 - 6.612 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/24-1776351823526.jpeg 200 66038 - 6.413 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/29-1776433669052.jpg 200 136292 - 10.175 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/25-1776369294869.jpg 200 229978 - 6.492 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/24-1776438972919.jpg 200 189490 - 10.598 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/24-1776441463826.webp 200 98506 - 8.255 ms
+2026-05-16 00:13:30:1330 info: ::1 - GET /uploads/40-1777095200195.png 200 1640897 - 9.332 ms
+2026-05-16 00:13:33:1333 info: User 41 joined their notification room
+2026-05-16 00:13:33:1333 info: User 41 joined their notification room
+2026-05-16 00:13:33:1333 info: ::1 - GET /api/bookings/client 304 - - 18.641 ms
+2026-05-16 00:13:33:1333 info: ::1 - GET /api/services 304 - - 18.878 ms
+2026-05-16 00:13:33:1333 info: ::1 - GET /api/services 304 - - 17.708 ms
+2026-05-16 00:13:33:1333 info: ::1 - GET /api/bookings/client 304 - - 50.108 ms
+2026-05-16 00:13:45:1345 info: ::1 - GET /api/services 304 - - 14.865 ms
+2026-05-16 00:13:45:1345 info: ::1 - GET /api/services 304 - - 11.742 ms
+2026-05-16 00:13:57:1357 info: ::1 - GET /api/workers 200 3637 - 7.529 ms
+2026-05-16 00:13:57:1357 info: ::1 - GET /api/workers 304 - - 8.593 ms
+2026-05-16 00:13:57:1357 info: ::1 - GET /api/services?workerId=24 200 1521 - 14.035 ms
+2026-05-16 00:13:57:1357 info: ::1 - GET /api/services?workerId=24 304 - - 2.787 ms
+2026-05-16 00:14:02:142 info: ::1 - GET /api/workers 304 - - 6.854 ms
+2026-05-16 00:14:02:142 info: ::1 - GET /api/workers 304 - - 7.933 ms
+2026-05-16 00:14:02:142 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 0.553 ms
+2026-05-16 00:15:02:152 info: ::1 - POST /api/auth/register 201 262 - 121.862 ms
+2026-05-16 00:15:02:152 info: User 46 joined their notification room
+2026-05-16 00:15:02:152 info: User 46 joined their notification room
+2026-05-16 00:15:02:152 info: ::1 - GET /api/services 304 - - 8.069 ms
+2026-05-16 00:15:02:152 info: ::1 - GET /api/bookings/client 304 - - 11.751 ms
+2026-05-16 00:15:02:152 info: ::1 - GET /api/services 304 - - 12.650 ms
+2026-05-16 00:15:02:152 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 0.715 ms
+2026-05-16 00:15:02:152 info: ::1 - GET /api/bookings/client 304 - - 24.845 ms
+2026-05-16 00:15:32:1532 info: ::1 - POST /api/auth/register 201 256 - 130.826 ms
+2026-05-16 00:15:32:1532 info: User 47 joined their notification room
+2026-05-16 00:15:32:1532 info: User 47 joined their notification room
+2026-05-16 00:15:32:1532 info: ::1 - GET /api/bookings/worker 304 - - 23.927 ms
+2026-05-16 00:15:32:1532 info: ::1 - GET /api/service-requests 304 - - 19.928 ms
+2026-05-16 00:15:32:1532 info: ::1 - GET /api/bookings/worker 304 - - 14.861 ms
+2026-05-16 00:15:32:1532 info: ::1 - GET /api/service-requests 304 - - 20.985 ms
+2026-05-16 00:16:36:1636 info: ::1 - POST /api/auth/login 200 262 - 141.219 ms
+2026-05-16 00:16:36:1636 info: ::1 - GET /api/services 200 5904 - 12.680 ms
+2026-05-16 00:16:36:1636 info: User connected: BCo_46YJPMwKVuviAAAV (UserId: 46)
+2026-05-16 00:16:36:1636 info: ::1 - GET /api/bookings/client 200 2 - 30.274 ms
+2026-05-16 00:16:36:1636 info: ::1 - GET /api/services 304 - - 28.363 ms
+2026-05-16 00:16:36:1636 info: User 46 joined their notification room
+2026-05-16 00:16:36:1636 info: ::1 - GET /uploads/17-1776199669154.webp 200 115679 - 4.693 ms
+2026-05-16 00:16:36:1636 info: User 46 joined their notification room
+2026-05-16 00:16:36:1636 info: ::1 - GET /api/bookings/client 304 - - 26.867 ms
+2026-05-16 00:16:36:1636 info: ::1 - GET /uploads/24-1776441463826.webp 200 98506 - 2.764 ms
+2026-05-16 00:16:36:1636 info: ::1 - GET /uploads/42-1777919804036.png 200 206183 - 6.743 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /api/services 304 - - 6.485 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /api/services 304 - - 5.141 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 0.732 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/24-1776351823526.jpeg 200 66038 - 4.659 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/24-1776438325659.webp 200 62177 - 7.331 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/25-1776369294869.jpg 200 229978 - 5.487 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/28-1776382397880.jpg 200 34075 - 8.589 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/29-1776433669052.jpg 200 136292 - 5.340 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/24-1776438972919.jpg 200 189490 - 9.194 ms
+2026-05-16 00:16:45:1645 info: ::1 - GET /uploads/40-1777095200195.png 200 1640897 - 7.828 ms
+2026-05-16 00:17:01:171 info: ::1 - GET /api/services?workerId=47 200 2 - 3.494 ms
+2026-05-16 00:17:01:171 info: ::1 - GET /api/services?workerId=47 304 - - 5.088 ms
+2026-05-16 00:18:08:188 info: ::1 - POST /api/upload 201 40 - 111.869 ms
+2026-05-16 00:18:08:188 info: ::1 - GET /uploads/47-1778879888285.jpeg 200 66038 - 0.604 ms
+2026-05-16 00:19:13:1913 info: ::1 - POST /api/upload 500 1187 - 4.011 ms
+2026-05-16 00:19:19:1919 info: ::1 - POST /api/services 201 279 - 12.597 ms
+2026-05-16 00:19:19:1919 info: ::1 - GET /api/services?workerId=47 200 331 - 4.035 ms
+2026-05-16 00:19:19:1919 info: ::1 - GET /api/services?workerId=47 304 - - 5.617 ms
+2026-05-16 00:19:21:1921 info: ::1 - GET /api/services/22 200 279 - 4.141 ms
+2026-05-16 00:19:21:1921 info: ::1 - GET /api/services/22 304 - - 3.980 ms
+2026-05-16 00:19:27:1927 info: ::1 - POST /api/upload 500 1187 - 5.268 ms
+2026-05-16 00:19:30:1930 info: ::1 - PUT /api/services/22 200 279 - 2.751 ms
+2026-05-16 00:19:30:1930 info: ::1 - GET /api/services?workerId=47 304 - - 3.747 ms
+2026-05-16 00:19:30:1930 info: ::1 - GET /api/services?workerId=47 304 - - 2.958 ms
+2026-05-16 00:19:34:1934 info: ::1 - GET /api/services/22 200 279 - 1.688 ms
+2026-05-16 00:19:34:1934 info: ::1 - GET /api/services/22 304 - - 2.808 ms
+2026-05-16 00:19:47:1947 info: ::1 - GET /api/services?workerId=47 304 - - 3.013 ms
+2026-05-16 00:19:47:1947 info: ::1 - GET /api/services?workerId=47 304 - - 2.245 ms
+2026-05-16 00:19:50:1950 info: ::1 - DELETE /api/services/22 200 29 - 16.370 ms
+2026-05-16 00:20:29:2029 info: ::1 - POST /api/upload 500 1187 - 6.508 ms
+2026-05-16 00:21:04:214 info: Database synced successfully
+2026-05-16 00:21:06:216 info: User disconnected: RNemoar3dWkWkIolAAAT
+2026-05-16 00:21:08:218 info: User disconnected: BCo_46YJPMwKVuviAAAV
+2026-05-16 00:21:15:2115 info: Database synced successfully
+2026-05-16 00:21:55:2155 info: ::1 - POST /api/auth/login 200 262 - 85.556 ms
+2026-05-16 00:21:55:2155 info: ::1 - GET /api/services 200 5904 - 5.888 ms
+2026-05-16 00:21:55:2155 info: User connected: -oekaDXe-mlYRSK-AAAX (UserId: 46)
+2026-05-16 00:21:55:2155 info: ::1 - GET /api/bookings/client 304 - - 13.727 ms
+2026-05-16 00:21:55:2155 info: ::1 - GET /api/services 304 - - 7.170 ms
+2026-05-16 00:21:55:2155 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 0.757 ms
+2026-05-16 00:21:55:2155 info: User 46 joined their notification room
+2026-05-16 00:21:55:2155 info: ::1 - GET /api/bookings/client 304 - - 9.640 ms
+2026-05-16 00:21:55:2155 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 0.841 ms
+2026-05-16 00:21:55:2155 info: User 46 joined their notification room
+2026-05-16 00:22:02:222 info: ::1 - GET /api/services?workerId=47 200 2 - 4.503 ms
+2026-05-16 00:22:02:222 info: ::1 - GET /api/services?workerId=47 304 - - 5.451 ms
+2026-05-16 00:22:24:2224 info: ::1 - POST /api/upload 500 1187 - 6.656 ms
+2026-05-16 00:22:32:2232 info: ::1 - POST /api/upload 201 39 - 10.144 ms
+2026-05-16 00:22:32:2232 info: ::1 - GET /uploads/47-1778880152497.png 200 27781 - 2.660 ms
+2026-05-16 00:23:16:2316 info: ::1 - POST /api/upload 201 40 - 7.595 ms
+2026-05-16 00:23:16:2316 info: ::1 - GET /uploads/47-1778880196373.webp 200 49702 - 1.814 ms
+2026-05-16 00:23:20:2320 info: ::1 - POST /api/services 201 311 - 7.074 ms
+2026-05-16 00:23:20:2320 info: ::1 - GET /api/services?workerId=47 200 363 - 2.600 ms
+2026-05-16 00:23:20:2320 info: ::1 - GET /api/services?workerId=47 304 - - 3.321 ms
+2026-05-16 00:23:23:2323 info: ::1 - GET /api/services/22 200 311 - 2.287 ms
+2026-05-16 00:23:23:2323 info: ::1 - GET /api/services/22 304 - - 2.422 ms
+2026-05-16 00:23:33:2333 info: ::1 - POST /api/upload 201 40 - 21.279 ms
+2026-05-16 00:23:33:2333 info: ::1 - GET /uploads/47-1778880213463.webp 200 49702 - 0.920 ms
+2026-05-16 00:23:36:2336 info: ::1 - PUT /api/services/22 200 365 - 14.458 ms
+2026-05-16 00:23:36:2336 info: ::1 - GET /api/services?workerId=47 200 417 - 2.407 ms
+2026-05-16 00:23:36:2336 info: ::1 - GET /api/services?workerId=47 304 - - 4.585 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /api/services 200 6320 - 5.134 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /api/services 304 - - 4.009 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 0.790 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 0.836 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.711 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 1.536 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 2.250 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 1.526 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 1.685 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 1.980 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 2.545 ms
+2026-05-16 00:23:53:2353 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 0.514 ms
+2026-05-16 00:23:59:2359 info: ::1 - GET /api/services/22 200 365 - 1.972 ms
+2026-05-16 00:23:59:2359 info: ::1 - GET /api/services/22 304 - - 3.902 ms
+2026-05-16 00:24:17:2417 info: ::1 - POST /api/bookings 201 211 - 10.004 ms
+2026-05-16 00:24:19:2419 info: User 46 joined their notification room
+2026-05-16 00:24:19:2419 info: User 46 joined their notification room
+2026-05-16 00:24:19:2419 info: ::1 - GET /api/services 304 - - 7.281 ms
+2026-05-16 00:24:19:2419 info: ::1 - GET /api/bookings/client 200 647 - 11.100 ms
+2026-05-16 00:24:19:2419 info: ::1 - GET /api/services 304 - - 7.075 ms
+2026-05-16 00:24:19:2419 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 0.485 ms
+2026-05-16 00:24:19:2419 info: ::1 - GET /api/bookings/client 304 - - 6.358 ms
+2026-05-16 00:24:19:2419 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 0.950 ms
+2026-05-16 00:24:19:2419 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.000 ms
+2026-05-16 00:24:26:2426 info: ::1 - PUT /api/auth/profile 200 272 - 14.601 ms
+2026-05-16 00:24:29:2429 info: ::1 - GET /api/services 304 - - 8.174 ms
+2026-05-16 00:24:29:2429 info: ::1 - GET /api/services 304 - - 8.752 ms
+2026-05-16 00:24:34:2434 info: ::1 - GET /api/workers 200 3952 - 6.524 ms
+2026-05-16 00:24:34:2434 info: ::1 - GET /api/workers 304 - - 11.818 ms
+2026-05-16 00:24:34:2434 info: ::1 - GET /api/services?workerId=47 304 - - 12.341 ms
+2026-05-16 00:24:34:2434 info: ::1 - GET /api/services?workerId=47 304 - - 5.428 ms
+2026-05-16 00:24:38:2438 info: ::1 - GET /api/services 304 - - 3.774 ms
+2026-05-16 00:24:38:2438 info: ::1 - GET /api/services 304 - - 4.494 ms
+2026-05-16 00:24:43:2443 info: ::1 - GET /api/services 304 - - 6.293 ms
+2026-05-16 00:24:43:2443 info: ::1 - GET /api/services 304 - - 5.111 ms
+2026-05-16 00:24:43:2443 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.110 ms
+2026-05-16 00:24:43:2443 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 3.834 ms
+2026-05-16 00:24:43:2443 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 3.895 ms
+2026-05-16 00:24:43:2443 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:24:43:2443 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 5.756 ms
+2026-05-16 00:24:43:2443 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 1.880 ms
+2026-05-16 00:24:43:2443 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:24:43:2443 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:24:43:2443 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:24:47:2447 info: User 46 joined their notification room
+2026-05-16 00:24:47:2447 info: User 46 joined their notification room
+2026-05-16 00:24:47:2447 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:24:47:2447 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:24:56:2456 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:24:56:2456 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:02:252 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:02:252 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:03:253 info: User 46 joined their notification room
+2026-05-16 00:25:03:253 info: User 46 joined their notification room
+2026-05-16 00:25:03:253 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:03:253 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:04:254 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:04:254 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:07:257 info: User 46 joined their notification room
+2026-05-16 00:25:07:257 info: User 46 joined their notification room
+2026-05-16 00:25:07:257 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:07:257 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:07:257 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:07:257 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:08:258 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:08:258 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:09:259 info: User 46 joined their notification room
+2026-05-16 00:25:09:259 info: User 46 joined their notification room
+2026-05-16 00:25:09:259 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:09:259 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:10:2510 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:10:2510 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:10:2510 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:10:2510 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:11:2511 info: User 46 joined their notification room
+2026-05-16 00:25:11:2511 info: User 46 joined their notification room
+2026-05-16 00:25:11:2511 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:11:2511 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:11:2511 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:11:2511 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:22:2522 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:25:22:2522 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 00:28:46:2846 info: Database synced successfully
+2026-05-16 00:28:46:2846 info: Server running on port 5000
+2026-05-16 17:37:50:3750 info: Database synced successfully
+2026-05-16 17:37:50:3750 info: Server running on port 5000
+2026-05-16 17:38:44:3844 info: ::1 - POST /api/auth/login 200 256 - 368.984 ms
+2026-05-16 17:38:45:3845 info: User connected: 7hNdlPK-9-ydk2xRAAAB (UserId: 47)
+2026-05-16 17:38:45:3845 info: User 47 joined their notification room
+2026-05-16 17:38:45:3845 info: User 47 joined their notification room
+2026-05-16 17:38:45:3845 info: ::1 - GET /api/bookings/worker 200 663 - 62.858 ms
+2026-05-16 17:38:45:3845 info: ::1 - GET /api/service-requests 200 2 - 62.074 ms
+2026-05-16 17:38:45:3845 info: ::1 - GET /api/bookings/worker 304 - - 20.513 ms
+2026-05-16 17:38:45:3845 info: ::1 - GET /api/service-requests 304 - - 20.058 ms
+2026-05-16 17:38:49:3849 info: ::1 - PUT /api/bookings/16/status 200 210 - 37.249 ms
+2026-05-16 17:38:56:3856 info: User 47 joined their notification room
+2026-05-16 17:38:56:3856 info: User 47 joined their notification room
+2026-05-16 17:38:56:3856 info: ::1 - GET /api/messages/contacts 200 2 - 15.893 ms
+2026-05-16 17:38:56:3856 info: ::1 - GET /api/messages/contacts 304 - - 8.881 ms
+2026-05-16 17:39:03:393 info: ::1 - GET /api/services?workerId=47 304 - - 8.433 ms
+2026-05-16 17:39:03:393 info: ::1 - GET /api/services?workerId=47 304 - - 7.631 ms
+2026-05-16 17:39:03:393 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 6.495 ms
+2026-05-16 17:39:07:397 info: ::1 - GET /api/services/22 304 - - 3.589 ms
+2026-05-16 17:39:07:397 info: ::1 - GET /api/services/22 304 - - 4.180 ms
+2026-05-16 17:39:07:397 info: ::1 - GET /uploads/47-1778880196373.webp 304 - - 3.452 ms
+2026-05-16 17:39:07:397 info: ::1 - GET /uploads/47-1778880213463.webp 304 - - 3.515 ms
+2026-05-16 17:39:19:3919 info: ::1 - POST /api/upload 201 40 - 301.577 ms
+2026-05-16 17:39:19:3919 info: ::1 - GET /uploads/47-1778942358955.webp 200 49702 - 4.347 ms
+2026-05-16 17:39:20:3920 info: ::1 - PUT /api/services/22 200 419 - 25.302 ms
+2026-05-16 17:39:20:3920 info: ::1 - GET /api/services?workerId=47 200 471 - 4.527 ms
+2026-05-16 17:39:20:3920 info: ::1 - GET /api/services?workerId=47 304 - - 4.268 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /api/services 200 6374 - 25.279 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /api/services 304 - - 12.648 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 7.467 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 7.330 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 7.064 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 7.428 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 8.982 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 4.406 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 4.577 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/24-1776441463826.webp 200 98506 - 13.572 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/24-1776438972919.jpg 200 189490 - 9.676 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/42-1777919804036.png 200 206183 - 13.167 ms
+2026-05-16 17:39:32:3932 info: ::1 - GET /uploads/40-1777095200195.png 200 1640897 - 11.523 ms
+2026-05-16 17:39:36:3936 info: ::1 - GET /api/workers 200 3952 - 7.323 ms
+2026-05-16 17:39:36:3936 info: ::1 - GET /api/workers 304 - - 5.996 ms
+2026-05-16 17:39:36:3936 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 0.639 ms
+2026-05-16 17:39:39:3939 info: User connected: bmX0btffEd-Gf9MtAAAD (UserId: 46)
+2026-05-16 17:39:39:3939 info: ::1 - GET /api/messages/contacts 304 - - 17.218 ms
+2026-05-16 17:39:39:3939 info: User 46 joined their notification room
+2026-05-16 17:39:39:3939 info: ::1 - GET /api/messages/contacts 304 - - 14.351 ms
+2026-05-16 17:39:39:3939 info: User 46 joined their notification room
+2026-05-16 17:39:41:3941 info: ::1 - GET /api/services 304 - - 7.337 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /api/services 304 - - 6.599 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 2.035 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 2.428 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.684 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 3.658 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 3.567 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 3.474 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 4.415 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 4.447 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 4.533 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 6.752 ms
+2026-05-16 17:39:41:3941 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 2.925 ms
+2026-05-16 17:39:42:3942 info: ::1 - GET /api/workers 304 - - 21.835 ms
+2026-05-16 17:39:42:3942 info: ::1 - GET /api/workers 304 - - 7.954 ms
+2026-05-16 17:39:42:3942 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 0.664 ms
+2026-05-16 17:39:46:3946 info: ::1 - GET /api/services 304 - - 4.939 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /api/services 304 - - 8.734 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.196 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 3.232 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 2.320 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 6.107 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 5.166 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 6.716 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 3.349 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 1.864 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 0.742 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 0.526 ms
+2026-05-16 17:39:47:3947 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 4.106 ms
+2026-05-16 17:39:54:3954 info: ::1 - GET /api/services/22 200 419 - 3.700 ms
+2026-05-16 17:39:54:3954 info: ::1 - GET /api/services/22 304 - - 2.873 ms
+2026-05-16 17:49:07:497 info: Database synced successfully
+2026-05-16 17:49:07:497 info: Server running on port 5000
+2026-05-16 17:49:07:497 info: User connected: so8aJ-dDYzUQ1GtVAAAC (UserId: 47)
+2026-05-16 17:49:07:497 info: User connected: sNkSqsvtt8EQUcsXAAAD (UserId: 46)
+2026-05-16 17:51:53:5153 info: ::1 - GET /api/services 304 - - 46.825 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /api/services 304 - - 15.813 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 11.990 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 9.108 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 9.874 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 11.085 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 12.135 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 2.973 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 5.667 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 5.279 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 6.907 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 7.003 ms
+2026-05-16 17:51:53:5153 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 7.460 ms
+2026-05-16 17:52:06:526 info: ::1 - POST /api/auth/login 200 272 - 435.654 ms
+2026-05-16 17:52:06:526 info: User 46 joined their notification room
+2026-05-16 17:52:06:526 info: User 46 joined their notification room
+2026-05-16 17:52:06:526 info: ::1 - GET /api/services 304 - - 15.383 ms
+2026-05-16 17:52:06:526 info: ::1 - GET /api/bookings/client 200 702 - 25.054 ms
+2026-05-16 17:52:06:526 info: ::1 - GET /api/services 304 - - 13.379 ms
+2026-05-16 17:52:06:526 info: ::1 - GET /api/bookings/client 304 - - 8.369 ms
+2026-05-16 17:53:04:534 info: ::1 - POST /api/upload 201 40 - 199.866 ms
+2026-05-16 17:53:04:534 info: ::1 - PUT /api/auth/profile 200 336 - 28.612 ms
+2026-05-16 17:53:04:534 info: ::1 - GET /uploads/46-1778943184374.webp 200 49702 - 2.411 ms
+2026-05-16 17:53:21:5321 info: ::1 - POST /api/upload 201 40 - 16.042 ms
+2026-05-16 17:53:21:5321 info: ::1 - PUT /api/auth/profile 200 336 - 22.410 ms
+2026-05-16 17:53:21:5321 info: ::1 - GET /uploads/46-1778943201621.webp 200 92050 - 1.710 ms
+2026-05-16 17:53:23:5323 info: ::1 - POST /api/upload 201 40 - 16.464 ms
+2026-05-16 17:53:23:5323 info: ::1 - PUT /api/auth/profile 200 336 - 26.399 ms
+2026-05-16 17:53:23:5323 info: ::1 - GET /uploads/46-1778943203097.webp 200 92050 - 1.664 ms
+2026-05-16 17:53:25:5325 info: User 46 joined their notification room
+2026-05-16 17:53:25:5325 info: User 46 joined their notification room
+2026-05-16 17:53:25:5325 info: ::1 - GET /api/bookings/client 304 - - 23.153 ms
+2026-05-16 17:53:25:5325 info: ::1 - GET /api/services 304 - - 19.348 ms
+2026-05-16 17:53:25:5325 info: ::1 - GET /api/services 304 - - 17.977 ms
+2026-05-16 17:53:25:5325 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 1.727 ms
+2026-05-16 17:53:25:5325 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 1.473 ms
+2026-05-16 17:53:25:5325 info: ::1 - GET /api/bookings/client 304 - - 51.745 ms
+2026-05-16 17:53:57:5357 info: ::1 - GET /api/service-requests 304 - - 17.771 ms
+2026-05-16 17:53:57:5357 info: ::1 - GET /api/service-requests 304 - - 9.822 ms
+2026-05-16 17:53:59:5359 info: User 47 joined their notification room
+2026-05-16 17:53:59:5359 info: User 47 joined their notification room
+2026-05-16 17:53:59:5359 info: ::1 - GET /api/service-requests 304 - - 24.056 ms
+2026-05-16 17:53:59:5359 info: ::1 - GET /api/bookings/worker 200 718 - 27.665 ms
+2026-05-16 17:53:59:5359 info: ::1 - GET /api/service-requests 304 - - 22.102 ms
+2026-05-16 17:53:59:5359 info: ::1 - GET /api/bookings/worker 304 - - 20.755 ms
+2026-05-16 17:59:48:5948 info: User disconnected: so8aJ-dDYzUQ1GtVAAAC
+2026-05-16 17:59:48:5948 info: ::1 - GET /uploads/46-1778943203097.webp 304 - - 0.790 ms
+2026-05-16 17:59:49:5949 info: ::1 - GET /api/services 200 6374 - 15.752 ms
+2026-05-16 17:59:49:5949 info: ::1 - GET /api/services 200 6374 - 19.363 ms
+2026-05-16 17:59:49:5949 info: User connected: Xn3PpBF3POLGNkiEAAAF (UserId: 46)
+2026-05-16 17:59:49:5949 info: ::1 - GET /api/bookings/client 304 - - 35.515 ms
+2026-05-16 17:59:49:5949 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 4.188 ms
+2026-05-16 17:59:49:5949 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 4.014 ms
+2026-05-16 17:59:49:5949 info: User 46 joined their notification room
+2026-05-16 17:59:49:5949 info: ::1 - GET /api/bookings/client 304 - - 22.695 ms
+2026-05-16 17:59:49:5949 info: User 46 joined their notification room
+2026-05-16 18:06:12:612 info: Database synced successfully
+2026-05-16 18:06:12:612 info: Server running on port 5000
+2026-05-16 18:06:13:613 info: User connected: HyIxkbKAencMe0BxAAAC (UserId: 46)
+2026-05-16 18:06:13:613 info: User connected: rdV6FUr5cqUsCJbSAAAD (UserId: 46)
+2026-05-16 18:07:21:721 info: ::1 - GET /uploads/46-1778943203097.webp 304 - - 5.572 ms
+2026-05-16 18:07:34:734 info: ::1 - POST /api/auth/login 200 256 - 319.222 ms
+2026-05-16 18:07:35:735 info: User connected: vVCxqwXmSzoPMLZ-AAAF (UserId: 47)
+2026-05-16 18:07:35:735 info: User 47 joined their notification room
+2026-05-16 18:07:35:735 info: User 47 joined their notification room
+2026-05-16 18:07:35:735 info: ::1 - GET /api/bookings/worker 304 - - 77.396 ms
+2026-05-16 18:07:35:735 info: ::1 - GET /api/service-requests 304 - - 66.748 ms
+2026-05-16 18:07:35:735 info: ::1 - GET /api/bookings/worker 304 - - 24.439 ms
+2026-05-16 18:07:35:735 info: ::1 - GET /api/service-requests 304 - - 24.204 ms
+2026-05-16 18:07:59:759 info: ::1 - POST /api/upload 201 40 - 210.551 ms
+2026-05-16 18:07:59:759 info: ::1 - PUT /api/auth/profile 200 319 - 24.880 ms
+2026-05-16 18:07:59:759 info: ::1 - GET /uploads/47-1778944078853.webp 200 49702 - 3.350 ms
+2026-05-16 18:08:00:80 info: User 47 joined their notification room
+2026-05-16 18:08:00:80 info: User 47 joined their notification room
+2026-05-16 18:08:00:80 info: ::1 - GET /api/bookings/worker 304 - - 35.466 ms
+2026-05-16 18:08:00:80 info: ::1 - GET /api/service-requests 304 - - 39.209 ms
+2026-05-16 18:08:00:80 info: ::1 - GET /api/bookings/worker 304 - - 26.437 ms
+2026-05-16 18:08:00:80 info: ::1 - GET /api/service-requests 304 - - 16.324 ms
+2026-05-16 18:08:07:87 info: User 47 joined their notification room
+2026-05-16 18:08:07:87 info: User 47 joined their notification room
+2026-05-16 18:08:07:87 info: ::1 - GET /api/service-requests 304 - - 12.422 ms
+2026-05-16 18:08:07:87 info: ::1 - GET /api/service-requests 304 - - 12.285 ms
+2026-05-16 18:08:12:812 info: ::1 - GET /api/services?workerId=47 200 522 - 6.117 ms
+2026-05-16 18:08:12:812 info: ::1 - GET /api/services?workerId=47 304 - - 5.212 ms
+2026-05-16 18:08:12:812 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 1.419 ms
+2026-05-16 18:08:14:814 info: User 47 joined their notification room
+2026-05-16 18:08:14:814 info: User 47 joined their notification room
+2026-05-16 18:08:14:814 info: ::1 - GET /api/messages/contacts 304 - - 10.900 ms
+2026-05-16 18:08:14:814 info: ::1 - GET /api/messages/contacts 304 - - 7.407 ms
+2026-05-16 18:08:40:840 info: User 46 joined their notification room
+2026-05-16 18:08:40:840 info: User 46 joined their notification room
+2026-05-16 18:08:40:840 info: ::1 - GET /api/messages/contacts 304 - - 16.049 ms
+2026-05-16 18:08:40:840 info: ::1 - GET /api/messages/contacts 304 - - 21.684 ms
+2026-05-16 18:08:40:840 info: ::1 - GET /api/messages/user/47 200 109 - 15.543 ms
+2026-05-16 18:08:40:840 info: ::1 - GET /api/messages/user/47 304 - - 9.867 ms
+2026-05-16 18:08:40:840 info: ::1 - GET /uploads/47-1778944078853.webp 304 - - 2.359 ms
+2026-05-16 18:08:40:840 info: User 46 joined their notification room
+2026-05-16 18:08:40:840 info: ::1 - GET /api/messages/47 200 2 - 11.291 ms
+2026-05-16 18:08:46:846 info: ::1 - POST /api/messages 201 242 - 44.411 ms
+2026-05-16 18:08:46:846 info: ::1 - GET /api/messages/user/46 200 114 - 7.025 ms
+2026-05-16 18:08:46:846 info: ::1 - GET /api/messages/user/46 304 - - 8.882 ms
+2026-05-16 18:08:46:846 info: ::1 - GET /uploads/46-1778943203097.webp 304 - - 0.865 ms
+2026-05-16 18:08:52:852 info: User 47 joined their notification room
+2026-05-16 18:08:52:852 info: ::1 - GET /api/messages/46 200 244 - 5.614 ms
+2026-05-16 18:09:14:914 info: ::1 - POST /api/messages 201 235 - 37.674 ms
+2026-05-16 18:09:45:945 info: User 47 joined their notification room
+2026-05-16 18:09:45:945 info: User 47 joined their notification room
+2026-05-16 18:09:45:945 info: ::1 - GET /api/bookings/worker 304 - - 16.593 ms
+2026-05-16 18:09:45:945 info: ::1 - GET /api/service-requests 304 - - 17.890 ms
+2026-05-16 18:09:45:945 info: ::1 - GET /api/bookings/worker 304 - - 14.520 ms
+2026-05-16 18:09:45:945 info: ::1 - GET /api/service-requests 304 - - 14.895 ms
+2026-05-16 18:09:53:953 info: User 46 joined their notification room
+2026-05-16 18:09:53:953 info: User 46 joined their notification room
+2026-05-16 18:09:53:953 info: ::1 - GET /api/services 200 6425 - 34.866 ms
+2026-05-16 18:09:53:953 info: ::1 - GET /api/services 200 6425 - 47.748 ms
+2026-05-16 18:09:53:953 info: ::1 - GET /api/bookings/client 304 - - 56.634 ms
+2026-05-16 18:09:53:953 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 2.140 ms
+2026-05-16 18:09:53:953 info: ::1 - GET /api/bookings/client 304 - - 26.809 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /api/services 200 6425 - 12.917 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /api/services 200 6425 - 16.527 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 3.306 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 4.095 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 4.115 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 3.779 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 5.429 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 4.145 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 5.777 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 5.663 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 7.875 ms
+2026-05-16 18:10:03:103 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 10.109 ms
+2026-05-16 18:10:24:1024 info: ::1 - GET /api/services 200 6425 - 32.825 ms
+2026-05-16 18:10:24:1024 info: ::1 - GET /api/services 200 6425 - 39.359 ms
+2026-05-16 18:10:30:1030 info: User 46 joined their notification room
+2026-05-16 18:10:30:1030 info: User 46 joined their notification room
+2026-05-16 18:10:30:1030 info: ::1 - GET /api/messages/contacts 200 184 - 7.841 ms
+2026-05-16 18:10:30:1030 info: ::1 - GET /api/messages/contacts 304 - - 15.443 ms
+2026-05-16 18:10:30:1030 info: ::1 - GET /api/messages/user/25 200 64 - 12.679 ms
+2026-05-16 18:10:30:1030 info: ::1 - GET /api/messages/user/25 304 - - 6.436 ms
+2026-05-16 18:10:30:1030 info: User 46 joined their notification room
+2026-05-16 18:10:30:1030 info: ::1 - GET /api/messages/25 200 2 - 8.142 ms
+2026-05-16 18:10:49:1049 info: ::1 - POST /api/messages 201 260 - 35.942 ms
+2026-05-16 18:10:57:1057 info: ::1 - GET /uploads/47-1778944078853.webp 304 - - 0.739 ms
+2026-05-16 18:11:22:1122 info: ::1 - POST /api/auth/login 401 39 - 2.841 ms
+2026-05-16 18:11:26:1126 info: ::1 - POST /api/auth/login 401 39 - 2.963 ms
+2026-05-16 18:11:48:1148 info: User 46 joined their notification room
+2026-05-16 18:11:48:1148 info: User 46 joined their notification room
+2026-05-16 18:11:48:1148 info: ::1 - GET /api/messages/contacts 200 342 - 7.662 ms
+2026-05-16 18:11:48:1148 info: ::1 - GET /api/messages/contacts 304 - - 7.901 ms
+2026-05-16 18:11:48:1148 info: User 46 joined their notification room
+2026-05-16 18:11:48:1148 info: ::1 - GET /uploads/47-1778944078853.webp 304 - - 2.039 ms
+2026-05-16 18:11:48:1148 info: ::1 - GET /api/messages/25 200 262 - 15.323 ms
+2026-05-16 18:12:02:122 info: User 47 joined their notification room
+2026-05-16 18:12:02:122 info: User 47 joined their notification room
+2026-05-16 18:12:02:122 info: ::1 - GET /api/messages/contacts 200 189 - 10.281 ms
+2026-05-16 18:12:02:122 info: ::1 - GET /api/messages/contacts 304 - - 15.761 ms
+2026-05-16 18:12:02:122 info: User 47 joined their notification room
+2026-05-16 18:12:02:122 info: ::1 - GET /api/messages/46 200 480 - 18.126 ms
+2026-05-16 18:12:03:123 info: ::1 - GET /api/services?workerId=47 304 - - 4.410 ms
+2026-05-16 18:12:03:123 info: ::1 - GET /api/services?workerId=47 304 - - 5.647 ms
+2026-05-16 18:12:03:123 info: ::1 - GET /uploads/47-1778880152497.png 304 - - 0.683 ms
+2026-05-16 18:12:08:128 info: ::1 - GET /api/services/22 304 - - 5.465 ms
+2026-05-16 18:12:08:128 info: ::1 - GET /api/services/22 304 - - 3.054 ms
+2026-05-16 18:12:08:128 info: ::1 - GET /uploads/47-1778880196373.webp 304 - - 1.657 ms
+2026-05-16 18:12:08:128 info: ::1 - GET /uploads/47-1778880213463.webp 304 - - 4.109 ms
+2026-05-16 18:12:08:128 info: ::1 - GET /uploads/47-1778942358955.webp 304 - - 5.755 ms
+2026-05-16 18:12:18:1218 info: ::1 - POST /api/upload 201 40 - 14.261 ms
+2026-05-16 18:12:18:1218 info: ::1 - GET /uploads/47-1778944338115.webp 200 49702 - 3.914 ms
+2026-05-16 18:12:19:1219 info: ::1 - PUT /api/services/22 200 258 - 20.860 ms
+2026-05-16 18:12:19:1219 info: ::1 - GET /api/services?workerId=47 200 361 - 9.642 ms
+2026-05-16 18:12:19:1219 info: ::1 - GET /api/services?workerId=47 304 - - 7.486 ms
+2026-05-16 18:12:21:1221 info: ::1 - GET /api/services/22 200 258 - 3.190 ms
+2026-05-16 18:12:21:1221 info: ::1 - GET /api/services/22 304 - - 4.934 ms
+2026-05-16 18:12:26:1226 info: ::1 - POST /api/upload 201 39 - 33.077 ms
+2026-05-16 18:12:26:1226 info: ::1 - GET /uploads/47-1778944346631.png 200 27781 - 4.931 ms
+2026-05-16 18:12:27:1227 info: ::1 - PUT /api/services/22 200 311 - 140.547 ms
+2026-05-16 18:12:27:1227 info: ::1 - GET /api/services?workerId=47 200 414 - 11.318 ms
+2026-05-16 18:12:27:1227 info: ::1 - GET /api/services?workerId=47 304 - - 7.980 ms
+2026-05-16 18:12:29:1229 info: ::1 - GET /api/services/22 200 311 - 4.020 ms
+2026-05-16 18:12:29:1229 info: ::1 - GET /api/services/22 304 - - 4.308 ms
+2026-05-16 18:12:31:1231 info: ::1 - PUT /api/services/22 200 257 - 16.377 ms
+2026-05-16 18:12:31:1231 info: ::1 - GET /api/services?workerId=47 200 360 - 5.029 ms
+2026-05-16 18:12:31:1231 info: ::1 - GET /api/services?workerId=47 304 - - 6.579 ms
+2026-05-16 18:12:31:1231 info: ::1 - GET /uploads/47-1778944346631.png 304 - - 0.530 ms
+2026-05-16 18:12:33:1233 info: ::1 - GET /api/services/22 200 257 - 6.216 ms
+2026-05-16 18:12:33:1233 info: ::1 - GET /api/services/22 304 - - 2.946 ms
+2026-05-16 18:12:38:1238 info: ::1 - POST /api/upload 201 40 - 13.535 ms
+2026-05-16 18:12:38:1238 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 18:12:39:1239 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 18:12:40:1240 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 18:12:46:1246 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 18:13:08:138 info: User disconnected: vVCxqwXmSzoPMLZ-AAAF
+2026-05-16 18:13:09:139 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 18:13:40:1340 info: User disconnected: HyIxkbKAencMe0BxAAAC
+2026-05-16 18:13:43:1343 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 18:13:50:1350 info: User disconnected: rdV6FUr5cqUsCJbSAAAD
+2026-05-16 18:28:14:2814 info: Database synced successfully
+2026-05-16 18:28:14:2814 info: Server running on port 5000
+2026-05-16 18:28:38:2838 error: Failed to sync database: SQLITE_ERROR: table Users_backup has 10 columns but 11 values were supplied
+2026-05-16 18:28:41:2841 error: Failed to sync database: SQLITE_ERROR: table Users_backup has 10 columns but 11 values were supplied
+2026-05-16 18:29:06:296 error: Failed to sync database: SQLITE_ERROR: table Users_backup has 10 columns but 11 values were supplied
+2026-05-16 18:29:38:2938 error: Failed to sync database: SQLITE_ERROR: table Users_backup has 10 columns but 11 values were supplied
+2026-05-16 18:29:40:2940 error: Failed to sync database: SQLITE_ERROR: table Users_backup has 10 columns but 11 values were supplied
+2026-05-16 18:31:42:3142 info: Database synced successfully
+2026-05-16 18:31:42:3142 info: Server running on port 5000
+2026-05-16 18:32:17:3217 info: Database synced successfully
+2026-05-16 18:32:17:3217 info: Server running on port 5000
+2026-05-16 18:32:41:3241 info: Database synced successfully
+2026-05-16 18:32:41:3241 info: Server running on port 5000
+2026-05-16 18:33:06:336 info: Database synced successfully
+2026-05-16 18:33:06:336 info: Server running on port 5000
+2026-05-16 18:33:51:3351 info: Database synced successfully
+2026-05-16 18:33:51:3351 info: Server running on port 5000
+2026-05-16 18:34:13:3413 info: Database synced successfully
+2026-05-16 18:34:13:3413 info: Server running on port 5000
+2026-05-16 18:34:32:3432 info: Database synced successfully
+2026-05-16 18:34:32:3432 info: Server running on port 5000
+2026-05-16 18:35:45:3545 info: Database synced successfully
+2026-05-16 18:35:45:3545 info: Server running on port 5000
+2026-05-16 18:36:25:3625 info: Database synced successfully
+2026-05-16 18:36:25:3625 info: Server running on port 5000
+2026-05-16 18:36:51:3651 info: Database synced successfully
+2026-05-16 18:36:51:3651 info: Server running on port 5000
+2026-05-16 18:36:54:3654 info: Database synced successfully
+2026-05-16 18:36:54:3654 info: Server running on port 5000
+2026-05-16 18:37:35:3735 info: Database synced successfully
+2026-05-16 18:37:35:3735 info: Server running on port 5000
+2026-05-16 18:41:34:4134 info: Database synced successfully
+2026-05-16 18:41:34:4134 info: Server running on port 5000
+2026-05-16 18:45:32:4532 info: Database synced successfully
+2026-05-16 18:45:32:4532 info: Server running on port 5000
+2026-05-16 18:47:22:4722 info: Database synced successfully
+2026-05-16 18:47:22:4722 info: Server running on port 5000
+2026-05-16 18:47:46:4746 info: Database synced successfully
+2026-05-16 18:47:46:4746 info: Server running on port 5000
+2026-05-16 18:49:30:4930 info: Database synced successfully
+2026-05-16 18:49:30:4930 info: Server running on port 5000
+2026-05-16 18:50:09:509 info: Database synced successfully
+2026-05-16 18:50:09:509 info: Server running on port 5000
+2026-05-16 18:50:29:5029 info: Database synced successfully
+2026-05-16 18:50:30:5030 info: Server running on port 5000
+2026-05-16 18:50:45:5045 info: Database synced successfully
+2026-05-16 18:50:45:5045 info: Server running on port 5000
+2026-05-16 18:51:05:515 info: Database synced successfully
+2026-05-16 18:51:05:515 info: Server running on port 5000
+2026-05-16 18:51:23:5123 info: Database synced successfully
+2026-05-16 18:51:23:5123 info: Server running on port 5000
+2026-05-16 18:51:47:5147 info: Database synced successfully
+2026-05-16 18:51:47:5147 info: Server running on port 5000
+2026-05-16 18:52:13:5213 info: Database synced successfully
+2026-05-16 18:52:13:5213 info: Server running on port 5000
+2026-05-16 18:52:15:5215 info: Database synced successfully
+2026-05-16 18:52:15:5215 info: Server running on port 5000
+2026-05-16 18:53:58:5358 info: Database synced successfully
+2026-05-16 18:53:58:5358 info: Server running on port 5000
+2026-05-16 19:26:17:2617 info: Database synced successfully
+2026-05-16 19:26:17:2617 info: Server running on port 5000
+2026-05-16 19:28:03:283 info: Database synced successfully
+2026-05-16 19:28:03:283 info: Server running on port 5000
+2026-05-16 19:34:33:3433 info: Database synced successfully
+2026-05-16 19:34:33:3433 info: Server running on port 5000
+2026-05-16 19:41:05:415 info: User login successful: alhyagem20@gmail.com
+2026-05-16 19:41:05:415 info: ::1 - POST /api/auth/login 200 301 - 124.532 ms
+2026-05-16 19:41:05:415 info: User connected: VH8DY3C5F6-aV4O7AAAB (UserId: 48)
+2026-05-16 19:41:05:415 info: User 48 joined their notification room
+2026-05-16 19:41:05:415 info: ::1 - GET /api/services 200 6263 - 51.603 ms
+2026-05-16 19:41:05:415 info: ::1 - GET /api/services 200 6263 - 50.659 ms
+2026-05-16 19:41:05:415 info: ::1 - GET /api/bookings/client 500 57 - 60.523 ms
+2026-05-16 19:41:05:415 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 3.438 ms
+2026-05-16 19:41:05:415 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 2.153 ms
+2026-05-16 19:41:05:415 info: ::1 - GET /api/bookings/client 500 57 - 14.633 ms
+2026-05-16 19:41:05:415 info: User 48 joined their notification room
+2026-05-16 19:48:03:483 info: Database synced successfully
+2026-05-16 19:48:25:4825 info: Database synced successfully
+2026-05-16 19:48:25:4825 info: Server running on port 5000
+2026-05-16 19:48:25:4825 info: User connected: Nycwwi8yMFCG0ooKAAAB (UserId: 48)
+2026-05-16 19:48:26:4826 info: User disconnected: Nycwwi8yMFCG0ooKAAAB
+2026-05-16 19:54:35:5435 info: Database synced successfully
+2026-05-16 19:54:35:5435 info: Server running on port 5000
+2026-05-16 19:54:40:5440 info: User connected: iohWTODMlRpx01p-AAAB (UserId: 45)
+2026-05-16 19:54:40:5440 info: User 45 joined their notification room
+2026-05-16 19:54:40:5440 info: User 45 joined their notification room
+2026-05-16 19:54:40:5440 info: ::1 - GET /api/bookings/worker 500 57 - 100.988 ms
+2026-05-16 19:54:40:5440 info: ::1 - GET /api/service-requests 304 - - 115.150 ms
+2026-05-16 19:54:40:5440 info: ::1 - GET /api/bookings/worker 500 57 - 26.359 ms
+2026-05-16 19:54:40:5440 info: ::1 - GET /api/service-requests 304 - - 34.253 ms
+2026-05-16 19:55:32:5532 info: User disconnected: iohWTODMlRpx01p-AAAB
+2026-05-16 19:55:34:5534 info: ::1 - GET /api/workers 200 4015 - 6.222 ms
+2026-05-16 19:55:34:5534 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 3.678 ms
+2026-05-16 19:55:34:5534 info: ::1 - GET /uploads/47-1778944078853.webp 200 49702 - 7.335 ms
+2026-05-16 19:56:54:5654 info: Database synced successfully
+2026-05-16 19:56:54:5654 info: Server running on port 5000
+2026-05-16 19:56:54:5654 info: Database synced successfully
+2026-05-16 19:56:58:5658 info: Database synced successfully
+2026-05-16 19:56:58:5658 info: Server running on port 5000
+2026-05-16 19:56:58:5658 info: Database synced successfully
+2026-05-16 19:57:04:574 info: Database synced successfully
+2026-05-16 19:57:04:574 info: Server running on port 5000
+2026-05-16 19:57:04:574 info: Database synced successfully
+2026-05-16 19:57:28:5728 info: Database synced successfully
+2026-05-16 19:57:28:5728 info: Server running on port 5000
+2026-05-16 19:57:28:5728 info: Database synced successfully
+2026-05-16 19:57:36:5736 info: Database synced successfully
+2026-05-16 19:57:36:5736 info: Server running on port 5000
+2026-05-16 19:57:36:5736 info: Database synced successfully
+2026-05-16 19:57:37:5737 info: Database synced successfully
+2026-05-16 19:57:37:5737 info: Server running on port 5000
+2026-05-16 19:57:37:5737 info: Database synced successfully
+2026-05-16 19:57:42:5742 info: Database synced successfully
+2026-05-16 19:57:42:5742 info: Server running on port 5000
+2026-05-16 19:57:43:5743 info: Database synced successfully
+2026-05-16 19:57:52:5752 info: Database synced successfully
+2026-05-16 19:57:52:5752 info: Server running on port 5000
+2026-05-16 19:57:52:5752 info: Database synced successfully
+2026-05-16 19:58:34:5834 info: ::1 - GET /api/workers 304 - - 23.945 ms
+2026-05-16 19:58:34:5834 info: ::1 - GET /uploads/7-1775274002185.jpg 304 - - 2.554 ms
+2026-05-16 19:58:34:5834 info: ::1 - GET /uploads/47-1778944078853.webp 304 - - 2.813 ms
+2026-05-16 19:59:04:594 info: User connected: rabh2y0dn68iBMT1AAAB (UserId: 45)
+2026-05-16 19:59:04:594 info: ::1 - GET /api/bookings/worker 500 57 - 45.485 ms
+2026-05-16 19:59:04:594 info: User 45 joined their notification room
+2026-05-16 19:59:04:594 info: ::1 - GET /api/service-requests 304 - - 46.462 ms
+2026-05-16 19:59:04:594 info: ::1 - GET /api/bookings/worker 500 57 - 16.086 ms
+2026-05-16 19:59:04:594 info: ::1 - GET /api/service-requests 304 - - 13.610 ms
+2026-05-16 19:59:04:594 info: User 45 joined their notification room
+2026-05-16 20:00:29:029 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:00:29:029 info: ::1 - POST /api/auth/login 200 301 - 202.074 ms
+2026-05-16 20:00:30:030 info: User 45 joined their notification room
+2026-05-16 20:00:30:030 info: ::1 - GET /api/services 200 6263 - 25.667 ms
+2026-05-16 20:00:30:030 info: User 45 joined their notification room
+2026-05-16 20:00:30:030 info: ::1 - GET /api/bookings/client 500 57 - 51.931 ms
+2026-05-16 20:00:30:030 info: ::1 - GET /api/services 200 6263 - 31.465 ms
+2026-05-16 20:00:30:030 info: ::1 - GET /api/bookings/client 500 57 - 13.754 ms
+2026-05-16 20:00:30:030 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 1.436 ms
+2026-05-16 20:00:30:030 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 2.244 ms
+2026-05-16 20:00:30:030 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 0.686 ms
+2026-05-16 20:00:54:054 info: User disconnected: rabh2y0dn68iBMT1AAAB
+2026-05-16 20:01:23:123 info: ::1 - GET /api/admin/users 200 10663 - 31.886 ms
+2026-05-16 20:01:23:123 info: ::1 - GET /api/admin/users 304 - - 22.870 ms
+2026-05-16 20:02:12:212 info: ::1 - GET /api/admin/workers 500 170 - 19.179 ms
+2026-05-16 20:02:12:212 info: ::1 - GET /api/admin/workers 500 170 - 12.540 ms
+2026-05-16 20:02:37:237 info: ::1 - GET /api/admin/services 200 10571 - 28.865 ms
+2026-05-16 20:02:37:237 info: ::1 - GET /api/admin/services 304 - - 21.316 ms
+2026-05-16 20:02:59:259 info: ::1 - GET /api/admin/reports 200 2 - 8.904 ms
+2026-05-16 20:02:59:259 info: ::1 - GET /api/admin/reports 304 - - 10.567 ms
+2026-05-16 20:03:19:319 info: ::1 - GET /api/admin/security-logs 200 7355 - 7.439 ms
+2026-05-16 20:03:19:319 info: ::1 - GET /api/admin/security-logs 200 7382 - 5.550 ms
+2026-05-16 20:05:57:557 info: ::1 - GET /api/services 200 6263 - 7.810 ms
+2026-05-16 20:05:57:557 info: ::1 - GET /api/bookings/client 500 57 - 20.899 ms
+2026-05-16 20:05:57:557 info: ::1 - GET /api/services 200 6263 - 15.105 ms
+2026-05-16 20:05:57:557 info: User connected: JfkuZjWqCsIoRHkJAAAD (UserId: 48)
+2026-05-16 20:05:57:557 info: ::1 - GET /api/bookings/client 500 57 - 25.480 ms
+2026-05-16 20:05:57:557 info: User 48 joined their notification room
+2026-05-16 20:05:57:557 info: User 48 joined their notification room
+2026-05-16 20:05:57:557 info: ::1 - GET /uploads/40-1777095200195.png 304 - - 1.245 ms
+2026-05-16 20:05:57:557 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 1.721 ms
+2026-05-16 20:05:57:557 info: ::1 - GET /uploads/24-1776438972919.jpg 304 - - 0.441 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /api/services 200 6263 - 4.658 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /api/services 200 6263 - 6.629 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/17-1776199669154.webp 304 - - 1.363 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/24-1776351823526.jpeg 304 - - 1.117 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 6.380 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 4.988 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 5.978 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/24-1776438325659.webp 304 - - 3.133 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/24-1776441463826.webp 304 - - 3.057 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/42-1777919804036.png 304 - - 3.200 ms
+2026-05-16 20:06:07:67 info: ::1 - GET /uploads/47-1778944346631.png 200 27781 - 15.180 ms
+2026-05-16 20:06:12:612 info: User disconnected: JfkuZjWqCsIoRHkJAAAD
+2026-05-16 20:08:19:819 info: ::1 - GET /api/services 200 6263 - 5.577 ms
+2026-05-16 20:08:19:819 info: ::1 - GET /api/bookings/client 500 57 - 16.636 ms
+2026-05-16 20:08:19:819 info: ::1 - GET /api/services 200 6263 - 9.365 ms
+2026-05-16 20:08:19:819 info: User connected: 4TutERnWyhTjqiOkAAAF (UserId: 48)
+2026-05-16 20:08:19:819 info: ::1 - GET /api/bookings/client 500 57 - 17.449 ms
+2026-05-16 20:08:19:819 info: User 48 joined their notification room
+2026-05-16 20:08:19:819 info: User 48 joined their notification room
+2026-05-16 20:08:19:819 info: ::1 - GET /uploads/28-1776382397880.jpg 304 - - 0.794 ms
+2026-05-16 20:08:19:819 info: ::1 - GET /uploads/25-1776369294869.jpg 304 - - 1.015 ms
+2026-05-16 20:08:33:833 info: User disconnected: 4TutERnWyhTjqiOkAAAF
+2026-05-16 20:09:20:920 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:09:20:920 info: ::1 - POST /api/auth/login 200 301 - 206.562 ms
+2026-05-16 20:09:20:920 info: ::1 - GET /api/services 200 6263 - 20.938 ms
+2026-05-16 20:09:20:920 info: ::1 - GET /api/bookings/client 500 57 - 34.807 ms
+2026-05-16 20:09:20:920 info: ::1 - GET /api/services 200 6263 - 12.521 ms
+2026-05-16 20:09:20:920 info: User connected: EF9jovfhXb238K2zAAAH (UserId: 48)
+2026-05-16 20:09:20:920 info: ::1 - GET /api/bookings/client 500 57 - 23.378 ms
+2026-05-16 20:09:20:920 info: User 48 joined their notification room
+2026-05-16 20:09:20:920 info: User 48 joined their notification room
+2026-05-16 20:09:20:920 info: ::1 - GET /uploads/29-1776433669052.jpg 304 - - 1.039 ms
+2026-05-16 20:09:33:933 info: User disconnected: EF9jovfhXb238K2zAAAH
+2026-05-16 20:09:46:946 info: ::1 - GET /api/admin/users 304 - - 5.210 ms
+2026-05-16 20:09:46:946 info: ::1 - GET /api/admin/users 304 - - 9.991 ms
+2026-05-16 20:10:15:1015 info: ::1 - GET /api/admin/workers 500 170 - 3.559 ms
+2026-05-16 20:10:15:1015 info: ::1 - GET /api/admin/workers 500 170 - 4.482 ms
+2026-05-16 20:10:42:1042 info: ::1 - GET /api/admin/services 304 - - 14.015 ms
+2026-05-16 20:10:42:1042 info: ::1 - GET /api/admin/services 304 - - 12.882 ms
+2026-05-16 20:10:51:1051 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:10:51:1051 info: ::1 - POST /api/auth/login 200 301 - 199.299 ms
+2026-05-16 20:10:51:1051 info: User connected: x0b6fTWf040znPplAAAJ (UserId: 48)
+2026-05-16 20:10:51:1051 info: ::1 - GET /api/services 200 6263 - 52.913 ms
+2026-05-16 20:10:51:1051 info: User 48 joined their notification room
+2026-05-16 20:10:51:1051 info: User 48 joined their notification room
+2026-05-16 20:10:51:1051 info: ::1 - GET /api/services 200 6263 - 90.217 ms
+2026-05-16 20:10:51:1051 info: ::1 - GET /api/bookings/client 500 57 - 146.055 ms
+2026-05-16 20:10:51:1051 info: ::1 - GET /api/bookings/client 500 57 - 21.018 ms
+2026-05-16 20:10:55:1055 info: ::1 - GET /api/admin/reports 304 - - 6.506 ms
+2026-05-16 20:10:55:1055 info: ::1 - GET /api/admin/reports 304 - - 12.514 ms
+2026-05-16 20:11:22:1122 info: User disconnected: x0b6fTWf040znPplAAAJ
+2026-05-16 20:14:49:1449 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:14:49:1449 info: ::1 - POST /api/auth/login 200 301 - 88.690 ms
+2026-05-16 20:15:00:150 info: ::1 - GET /api/admin/users 200 10663 - 6.780 ms
+2026-05-16 20:15:00:150 info: ::1 - GET /api/admin/users 304 - - 7.112 ms
+2026-05-16 20:15:00:150 info: ::1 - GET /api/admin/workers 500 170 - 3.221 ms
+2026-05-16 20:15:00:150 info: ::1 - GET /api/admin/workers 500 170 - 2.486 ms
+2026-05-16 20:15:07:157 info: ::1 - GET /api/admin/services 200 10571 - 10.895 ms
+2026-05-16 20:15:07:157 info: ::1 - GET /api/admin/services 304 - - 4.980 ms
+2026-05-16 20:15:12:1512 info: ::1 - GET /api/admin/workers 500 170 - 3.899 ms
+2026-05-16 20:15:12:1512 info: ::1 - GET /api/admin/workers 500 170 - 3.286 ms
+2026-05-16 20:15:26:1526 info: ::1 - GET /api/admin/workers 500 170 - 2.516 ms
+2026-05-16 20:15:26:1526 info: ::1 - GET /api/admin/workers 500 170 - 1.940 ms
+2026-05-16 20:15:38:1538 info: ::1 - GET /api/admin/bookings 500 210 - 3.011 ms
+2026-05-16 20:15:38:1538 info: ::1 - GET /api/admin/bookings 500 210 - 4.122 ms
+2026-05-16 20:15:41:1541 info: ::1 - GET /api/admin/services 304 - - 5.732 ms
+2026-05-16 20:15:41:1541 info: ::1 - GET /api/admin/services 304 - - 7.479 ms
+2026-05-16 20:15:42:1542 info: ::1 - GET /api/admin/workers 500 170 - 2.190 ms
+2026-05-16 20:15:42:1542 info: ::1 - GET /api/admin/workers 500 170 - 2.397 ms
+2026-05-16 20:15:43:1543 info: ::1 - GET /api/admin/reports 200 2 - 5.809 ms
+2026-05-16 20:15:43:1543 info: ::1 - GET /api/admin/reports 304 - - 2.762 ms
+2026-05-16 20:15:45:1545 info: ::1 - GET /api/admin/bookings 500 210 - 1.741 ms
+2026-05-16 20:15:45:1545 info: ::1 - GET /api/admin/bookings 500 210 - 2.077 ms
+2026-05-16 20:15:46:1546 info: ::1 - GET /api/admin/services 304 - - 4.740 ms
+2026-05-16 20:15:46:1546 info: ::1 - GET /api/admin/services 304 - - 6.161 ms
+2026-05-16 20:15:47:1547 info: ::1 - GET /api/admin/workers 500 170 - 2.580 ms
+2026-05-16 20:15:47:1547 info: ::1 - GET /api/admin/workers 500 170 - 4.559 ms
+2026-05-16 20:15:48:1548 info: ::1 - GET /api/admin/users 304 - - 4.289 ms
+2026-05-16 20:15:48:1548 info: ::1 - GET /api/admin/users 304 - - 6.114 ms
+2026-05-16 20:16:31:1631 info: ::1 - POST /api/auth/register 201 278 - 119.350 ms
+2026-05-16 20:16:32:1632 info: User connected: IYD2Gb_Ru2vUW8VeAAAL (UserId: 49)
+2026-05-16 20:16:32:1632 info: ::1 - GET /api/bookings/worker 500 57 - 18.937 ms
+2026-05-16 20:16:32:1632 info: User 49 joined their notification room
+2026-05-16 20:16:32:1632 info: ::1 - GET /api/service-requests 304 - - 22.423 ms
+2026-05-16 20:16:32:1632 info: ::1 - GET /api/bookings/worker 500 57 - 7.731 ms
+2026-05-16 20:16:32:1632 info: ::1 - GET /api/service-requests 304 - - 7.949 ms
+2026-05-16 20:16:32:1632 info: User 49 joined their notification room
+2026-05-16 20:17:09:179 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:17:09:179 info: ::1 - POST /api/auth/login 200 301 - 84.860 ms
+2026-05-16 20:17:13:1713 info: ::1 - GET /api/admin/workers 500 170 - 2.835 ms
+2026-05-16 20:17:13:1713 info: ::1 - GET /api/admin/workers 500 170 - 4.546 ms
+2026-05-16 20:17:18:1718 info: ::1 - GET /api/admin/bookings 500 210 - 2.336 ms
+2026-05-16 20:17:18:1718 info: ::1 - GET /api/admin/bookings 500 210 - 1.582 ms
+2026-05-16 20:17:19:1719 info: ::1 - GET /api/admin/reports 304 - - 2.554 ms
+2026-05-16 20:17:19:1719 info: ::1 - GET /api/admin/reports 304 - - 4.602 ms
+2026-05-16 20:17:21:1721 info: ::1 - GET /api/admin/security-logs 200 8222 - 5.819 ms
+2026-05-16 20:17:21:1721 info: ::1 - GET /api/admin/security-logs 200 8239 - 3.639 ms
+2026-05-16 20:18:44:1844 info: Database synced successfully
+2026-05-16 20:18:44:1844 info: Database synced successfully
+2026-05-16 20:18:44:1844 info: Server running on port 5000
+2026-05-16 20:18:44:1844 info: User connected: vfiIhZ2SqV1r7SVbAAAB (UserId: 49)
+2026-05-16 20:19:21:1921 info: Database synced successfully
+2026-05-16 20:19:21:1921 info: Server running on port 5000
+2026-05-16 20:19:21:1921 info: Database synced successfully
+2026-05-16 20:19:22:1922 info: User connected: u5g-M7YRf-RTAs4yAAAB (UserId: 49)
+2026-05-16 20:24:33:2433 info: Database synced successfully
+2026-05-16 20:24:33:2433 info: Server running on port 5000
+2026-05-16 20:24:33:2433 info: User connected: ywcNl34dyo1p2DaOAAAB (UserId: 49)
+2026-05-16 20:24:53:2453 info: ::1 - GET /api/admin/workers 401 28 - 8.547 ms
+2026-05-16 20:24:53:2453 info: ::1 - GET /api/admin/workers 401 28 - 2.895 ms
+2026-05-16 20:24:54:2454 info: ::1 - GET /api/admin/workers 401 28 - 1.981 ms
+2026-05-16 20:24:54:2454 info: ::1 - GET /api/admin/workers 401 28 - 2.048 ms
+2026-05-16 20:24:56:2456 info: ::1 - GET /api/admin/workers 401 28 - 3.368 ms
+2026-05-16 20:24:56:2456 info: ::1 - GET /api/admin/workers 401 28 - 4.455 ms
+2026-05-16 20:25:02:252 info: ::1 - GET /api/admin/bookings 401 28 - 2.372 ms
+2026-05-16 20:25:02:252 info: ::1 - GET /api/admin/bookings 401 28 - 3.910 ms
+2026-05-16 20:25:03:253 info: ::1 - GET /api/admin/services 401 28 - 3.495 ms
+2026-05-16 20:25:03:253 info: ::1 - GET /api/admin/services 401 28 - 2.292 ms
+2026-05-16 20:25:07:257 info: ::1 - GET /api/admin/services 401 28 - 4.562 ms
+2026-05-16 20:25:07:257 info: ::1 - GET /api/admin/services 401 28 - 3.838 ms
+2026-05-16 20:25:34:2534 info: User disconnected: ywcNl34dyo1p2DaOAAAB
+2026-05-16 20:25:44:2544 info: ::1 - GET /api/admin/reports 401 28 - 3.111 ms
+2026-05-16 20:25:44:2544 info: ::1 - GET /api/admin/reports 401 28 - 2.559 ms
+2026-05-16 20:27:14:2714 info: ::1 - GET /api/admin/workers 401 28 - 3.120 ms
+2026-05-16 20:27:14:2714 info: ::1 - GET /api/admin/workers 401 28 - 10.649 ms
+2026-05-16 20:27:31:2731 info: ::1 - GET /api/admin/reports 401 28 - 2.531 ms
+2026-05-16 20:27:31:2731 info: ::1 - GET /api/admin/reports 401 28 - 4.822 ms
+2026-05-16 20:27:44:2744 info: ::1 - GET /api/admin/users 401 28 - 3.059 ms
+2026-05-16 20:27:44:2744 info: ::1 - GET /api/admin/users 401 28 - 4.343 ms
+2026-05-16 20:29:09:299 info: ::1 - GET /api/admin/workers 401 28 - 2.538 ms
+2026-05-16 20:29:09:299 info: ::1 - GET /api/admin/workers 401 28 - 2.932 ms
+2026-05-16 20:29:17:2917 info: ::1 - GET /api/admin/bookings 401 28 - 1.994 ms
+2026-05-16 20:29:17:2917 info: ::1 - GET /api/admin/bookings 401 28 - 3.395 ms
+2026-05-16 20:30:07:307 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:30:07:307 info: ::1 - POST /api/auth/login 200 298 - 260.116 ms
+2026-05-16 20:30:29:3029 info: ::1 - GET /api/admin/workers 500 170 - 5.982 ms
+2026-05-16 20:30:29:3029 info: ::1 - GET /api/admin/workers 500 170 - 6.511 ms
+2026-05-16 20:30:45:3045 info: ::1 - GET /api/admin/workers 401 38 - 0.424 ms
+2026-05-16 20:30:45:3045 info: ::1 - GET /favicon.ico 404 150 - 3.484 ms
+2026-05-16 20:30:54:3054 info: ::1 - GET /api/services 200 335 - 12.560 ms
+2026-05-16 20:31:18:3118 info: ::1 - GET / 200 17 - 0.557 ms
+2026-05-16 20:31:39:3139 info: ::1 - GET / 304 - - 0.624 ms
+2026-05-16 20:32:10:3210 info: ::1 - GET /api/admin/users 200 972 - 6.957 ms
+2026-05-16 20:32:10:3210 info: ::1 - GET /api/admin/users 304 - - 5.634 ms
+2026-05-16 20:32:18:3218 info: ::1 - GET /api/admin/workers 500 170 - 2.940 ms
+2026-05-16 20:32:18:3218 info: ::1 - GET /api/admin/workers 500 170 - 5.385 ms
+2026-05-16 20:32:33:3233 info: ::1 - GET /api/admin/users 304 - - 5.372 ms
+2026-05-16 20:32:33:3233 info: ::1 - GET /api/admin/users 304 - - 4.139 ms
+2026-05-16 20:32:49:3249 info: ::1 - GET /api/admin/services 200 607 - 6.279 ms
+2026-05-16 20:32:49:3249 info: ::1 - GET /api/admin/services 304 - - 7.419 ms
+2026-05-16 20:33:04:334 info: ::1 - GET /api/admin/bookings 500 210 - 4.915 ms
+2026-05-16 20:33:04:334 info: ::1 - GET /api/admin/bookings 500 210 - 3.874 ms
+2026-05-16 20:33:17:3317 info: ::1 - GET /api/admin/reports 200 207 - 7.634 ms
+2026-05-16 20:33:17:3317 info: ::1 - GET /api/admin/reports 304 - - 3.255 ms
+2026-05-16 20:33:34:3334 info: ::1 - GET /api/admin/bookings 500 210 - 2.219 ms
+2026-05-16 20:33:34:3334 info: ::1 - GET /api/admin/bookings 500 210 - 3.467 ms
+2026-05-16 20:34:01:341 info: ::1 - GET /api/admin/workers 500 170 - 4.031 ms
+2026-05-16 20:34:01:341 info: ::1 - GET /api/admin/workers 500 170 - 5.278 ms
+2026-05-16 20:35:34:3534 info: Database synced successfully
+2026-05-16 20:35:34:3534 info: Server running on port 5000
+2026-05-16 20:35:35:3535 info: Database synced successfully
+2026-05-16 20:35:35:3535 info: Database synced successfully
+2026-05-16 20:37:33:3733 info: ::1 - GET /api/admin/reports 304 - - 44.904 ms
+2026-05-16 20:37:33:3733 info: ::1 - GET /api/admin/reports 304 - - 7.430 ms
+2026-05-16 20:39:01:391 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:39:01:391 info: ::1 - POST /api/auth/login 200 298 - 416.538 ms
+2026-05-16 20:39:25:3925 info: ::1 - GET /api/admin/workers 200 979 - 118.658 ms
+2026-05-16 20:39:25:3925 info: ::1 - GET /api/admin/workers 304 - - 58.424 ms
+2026-05-16 20:39:33:3933 info: ::1 - GET /api/admin/workers 304 - - 23.188 ms
+2026-05-16 20:39:33:3933 info: ::1 - GET /api/admin/workers 304 - - 65.548 ms
+2026-05-16 20:39:46:3946 info: Admin User 1 updated User 3 status to approved
+2026-05-16 20:39:47:3947 info: ::1 - PUT /api/admin/users/3/status 200 320 - 104.149 ms
+2026-05-16 20:39:47:3947 info: ::1 - GET /api/admin/workers 200 980 - 46.192 ms
+2026-05-16 20:39:55:3955 info: ::1 - GET /api/admin/bookings 200 357 - 83.407 ms
+2026-05-16 20:39:55:3955 info: ::1 - GET /api/admin/bookings 304 - - 33.785 ms
+2026-05-16 20:40:01:401 info: ::1 - GET /api/admin/bookings 304 - - 48.430 ms
+2026-05-16 20:40:01:401 info: ::1 - GET /api/admin/bookings 304 - - 34.860 ms
+2026-05-16 20:40:09:409 info: ::1 - GET /api/admin/workers 304 - - 57.614 ms
+2026-05-16 20:40:09:409 info: ::1 - GET /api/admin/workers 304 - - 10.470 ms
+2026-05-16 20:40:36:4036 info: ::1 - GET /api/admin/users 200 973 - 4.810 ms
+2026-05-16 20:40:36:4036 info: ::1 - GET /api/admin/users 304 - - 12.874 ms
+2026-05-16 20:40:46:4046 info: ::1 - GET /api/admin/workers 304 - - 5.995 ms
+2026-05-16 20:40:46:4046 info: ::1 - GET /api/admin/workers 304 - - 9.374 ms
+2026-05-16 20:40:47:4047 info: ::1 - GET /api/admin/services 304 - - 7.239 ms
+2026-05-16 20:40:47:4047 info: ::1 - GET /api/admin/services 304 - - 12.576 ms
+2026-05-16 20:40:48:4048 info: ::1 - GET /api/admin/workers 304 - - 18.158 ms
+2026-05-16 20:40:48:4048 info: ::1 - GET /api/admin/workers 304 - - 7.147 ms
+2026-05-16 20:40:48:4048 info: ::1 - GET /api/admin/services 304 - - 5.981 ms
+2026-05-16 20:40:48:4048 info: ::1 - GET /api/admin/services 304 - - 9.044 ms
+2026-05-16 20:40:54:4054 info: ::1 - GET /api/admin/bookings 304 - - 5.615 ms
+2026-05-16 20:40:54:4054 info: ::1 - GET /api/admin/bookings 304 - - 11.335 ms
+2026-05-16 20:40:55:4055 info: ::1 - GET /api/admin/reports 304 - - 6.447 ms
+2026-05-16 20:40:55:4055 info: ::1 - GET /api/admin/reports 304 - - 8.083 ms
+2026-05-16 20:41:45:4145 info: ::1 - GET /api/admin/bookings 304 - - 13.367 ms
+2026-05-16 20:41:45:4145 info: ::1 - GET /api/admin/bookings 304 - - 10.410 ms
+2026-05-16 20:41:45:4145 info: ::1 - GET /api/admin/services 304 - - 14.184 ms
+2026-05-16 20:41:45:4145 info: ::1 - GET /api/admin/services 304 - - 6.604 ms
+2026-05-16 20:42:17:4217 info: ::1 - POST /api/auth/register 201 271 - 144.585 ms
+2026-05-16 20:42:17:4217 info: User connected: KeWX9JepXbyoTaTsAAAB (UserId: 5)
+2026-05-16 20:42:17:4217 info: User 5 joined their notification room
+2026-05-16 20:42:17:4217 info: ::1 - GET /api/bookings/worker 200 2 - 77.609 ms
+2026-05-16 20:42:17:4217 info: ::1 - GET /api/service-requests 304 - - 72.739 ms
+2026-05-16 20:42:17:4217 info: ::1 - GET /api/bookings/worker 304 - - 15.657 ms
+2026-05-16 20:42:17:4217 info: ::1 - GET /api/service-requests 304 - - 13.545 ms
+2026-05-16 20:42:17:4217 info: User 5 joined their notification room
+2026-05-16 20:42:26:4226 info: ::1 - GET /api/services?workerId=5 200 2 - 2.967 ms
+2026-05-16 20:42:26:4226 info: ::1 - GET /api/services?workerId=5 304 - - 3.244 ms
+2026-05-16 20:42:44:4244 info: ::1 - POST /api/upload 201 39 - 131.861 ms
+2026-05-16 20:42:44:4244 info: ::1 - GET /uploads/5-1778953364649.webp 200 49702 - 3.755 ms
+2026-05-16 20:42:46:4246 warn: Forbidden access attempt (unapproved worker): User ID 5 - Status: pending - IP: ::1
+2026-05-16 20:42:46:4246 info: ::1 - POST /api/services 403 55 - 5.598 ms
+2026-05-16 20:43:02:432 warn: Forbidden access attempt (unapproved worker): User ID 5 - Status: pending - IP: ::1
+2026-05-16 20:43:02:432 info: ::1 - POST /api/services 403 55 - 5.100 ms
+2026-05-16 20:43:02:432 warn: Forbidden access attempt (unapproved worker): User ID 5 - Status: pending - IP: ::1
+2026-05-16 20:43:02:432 info: ::1 - POST /api/services 403 55 - 2.073 ms
+2026-05-16 20:43:02:432 warn: Forbidden access attempt (unapproved worker): User ID 5 - Status: pending - IP: ::1
+2026-05-16 20:43:02:432 info: ::1 - POST /api/services 403 55 - 2.654 ms
+2026-05-16 20:43:29:4329 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:43:29:4329 info: ::1 - POST /api/auth/login 200 298 - 87.346 ms
+2026-05-16 20:43:31:4331 info: ::1 - GET /api/admin/workers 200 1432 - 8.629 ms
+2026-05-16 20:43:31:4331 info: ::1 - GET /api/admin/workers 304 - - 5.088 ms
+2026-05-16 20:43:34:4334 info: Admin User 1 updated User 5 status to approved
+2026-05-16 20:43:34:4334 info: ::1 - PUT /api/admin/users/5/status 200 276 - 14.514 ms
+2026-05-16 20:43:34:4334 info: ::1 - GET /api/admin/workers 200 1433 - 8.553 ms
+2026-05-16 20:43:39:4339 info: ::1 - POST /api/services 201 258 - 13.889 ms
+2026-05-16 20:43:39:4339 info: ::1 - GET /api/services?workerId=5 200 308 - 3.718 ms
+2026-05-16 20:43:39:4339 info: ::1 - GET /api/services?workerId=5 304 - - 3.382 ms
+2026-05-16 20:43:47:4347 info: User 5 joined their notification room
+2026-05-16 20:43:47:4347 info: User 5 joined their notification room
+2026-05-16 20:43:47:4347 info: ::1 - GET /api/bookings/worker 304 - - 13.030 ms
+2026-05-16 20:43:47:4347 info: ::1 - GET /api/service-requests 304 - - 11.791 ms
+2026-05-16 20:43:47:4347 info: ::1 - GET /api/bookings/worker 304 - - 11.117 ms
+2026-05-16 20:43:47:4347 info: ::1 - GET /api/service-requests 304 - - 10.171 ms
+2026-05-16 20:43:50:4350 info: ::1 - GET /api/services?workerId=5 304 - - 2.478 ms
+2026-05-16 20:43:50:4350 info: ::1 - GET /api/services?workerId=5 304 - - 7.580 ms
+2026-05-16 20:44:06:446 info: User 5 joined their notification room
+2026-05-16 20:44:06:446 info: User 5 joined their notification room
+2026-05-16 20:44:06:446 info: ::1 - GET /api/messages/contacts 200 2 - 7.663 ms
+2026-05-16 20:44:06:446 info: ::1 - GET /api/messages/contacts 304 - - 5.150 ms
+2026-05-16 20:44:08:448 info: User 5 joined their notification room
+2026-05-16 20:44:08:448 info: User 5 joined their notification room
+2026-05-16 20:44:08:448 info: ::1 - GET /api/service-requests 304 - - 4.302 ms
+2026-05-16 20:44:08:448 info: ::1 - GET /api/service-requests 304 - - 10.339 ms
+2026-05-16 20:44:09:449 info: User 5 joined their notification room
+2026-05-16 20:44:09:449 info: User 5 joined their notification room
+2026-05-16 20:44:09:449 info: ::1 - GET /api/bookings/worker 304 - - 11.578 ms
+2026-05-16 20:44:09:449 info: ::1 - GET /api/service-requests 304 - - 11.277 ms
+2026-05-16 20:44:09:449 info: ::1 - GET /api/bookings/worker 304 - - 12.551 ms
+2026-05-16 20:44:09:449 info: ::1 - GET /api/service-requests 304 - - 6.763 ms
+2026-05-16 20:44:09:449 info: ::1 - GET /api/services?workerId=5 304 - - 2.478 ms
+2026-05-16 20:44:09:449 info: ::1 - GET /api/services?workerId=5 304 - - 3.373 ms
+2026-05-16 20:45:56:4556 warn: Failed login attempt for email: customer@test.com from IP: ::1
+2026-05-16 20:45:56:4556 info: ::1 - POST /api/auth/login 401 39 - 2.676 ms
+2026-05-16 20:46:07:467 warn: Failed login attempt for email: cust2@test.com from IP: ::1
+2026-05-16 20:46:07:467 info: ::1 - POST /api/auth/login 401 39 - 1.851 ms
+2026-05-16 20:46:08:468 warn: Failed login attempt for email: cust2@test.com from IP: ::1
+2026-05-16 20:46:08:468 info: ::1 - POST /api/auth/login 401 39 - 1.529 ms
+2026-05-16 20:46:33:4633 info: ::1 - POST /api/auth/register 201 268 - 337.187 ms
+2026-05-16 20:46:33:4633 info: ::1 - GET /api/services 200 642 - 28.132 ms
+2026-05-16 20:46:33:4633 info: User connected: TIiseffWcKPf6Ru3AAAD (UserId: 6)
+2026-05-16 20:46:33:4633 info: ::1 - GET /uploads/5-1778953364649.webp 304 - - 2.896 ms
+2026-05-16 20:46:33:4633 info: ::1 - GET /api/services 200 642 - 85.530 ms
+2026-05-16 20:46:33:4633 info: ::1 - GET /api/bookings/client 200 2 - 106.646 ms
+2026-05-16 20:46:33:4633 info: User 6 joined their notification room
+2026-05-16 20:46:33:4633 info: User 6 joined their notification room
+2026-05-16 20:46:33:4633 info: ::1 - GET /api/bookings/client 304 - - 52.770 ms
+2026-05-16 20:46:50:4650 info: ::1 - GET /api/services 200 642 - 4.141 ms
+2026-05-16 20:46:50:4650 info: ::1 - GET /api/services 200 642 - 2.142 ms
+2026-05-16 20:47:00:470 info: ::1 - GET /api/services 200 642 - 2.241 ms
+2026-05-16 20:47:00:470 info: ::1 - GET /api/services 200 642 - 4.929 ms
+2026-05-16 20:48:13:4813 info: User 5 joined their notification room
+2026-05-16 20:48:13:4813 info: User 5 joined their notification room
+2026-05-16 20:48:13:4813 info: ::1 - GET /api/service-requests 304 - - 4.757 ms
+2026-05-16 20:48:13:4813 info: ::1 - GET /api/service-requests 304 - - 3.511 ms
+2026-05-16 20:48:22:4822 info: ::1 - GET /api/services 200 642 - 11.854 ms
+2026-05-16 20:48:22:4822 info: ::1 - GET /api/services 200 642 - 6.434 ms
+2026-05-16 20:48:22:4822 info: ::1 - GET /uploads/5-1778953364649.webp 304 - - 1.081 ms
+2026-05-16 20:48:23:4823 info: ::1 - GET /api/services 200 642 - 8.689 ms
+2026-05-16 20:48:23:4823 info: ::1 - GET /api/services 200 642 - 9.838 ms
+2026-05-16 20:48:32:4832 info: ::1 - POST /api/bookings 201 215 - 14.028 ms
+2026-05-16 20:48:32:4832 info: User 6 joined their notification room
+2026-05-16 20:48:32:4832 info: User 6 joined their notification room
+2026-05-16 20:48:32:4832 info: ::1 - GET /api/services 200 642 - 23.167 ms
+2026-05-16 20:48:32:4832 info: ::1 - GET /api/services 200 642 - 21.911 ms
+2026-05-16 20:48:32:4832 info: ::1 - GET /api/bookings/client 200 545 - 31.099 ms
+2026-05-16 20:48:32:4832 info: ::1 - GET /api/bookings/client 304 - - 7.563 ms
+2026-05-16 20:48:32:4832 info: ::1 - GET /uploads/5-1778953364649.webp 304 - - 0.665 ms
+2026-05-16 20:48:39:4839 info: User 5 joined their notification room
+2026-05-16 20:48:39:4839 info: User 5 joined their notification room
+2026-05-16 20:48:39:4839 info: ::1 - GET /api/bookings/worker 200 543 - 15.502 ms
+2026-05-16 20:48:39:4839 info: ::1 - GET /api/service-requests 304 - - 14.804 ms
+2026-05-16 20:48:39:4839 info: ::1 - GET /api/bookings/worker 304 - - 12.704 ms
+2026-05-16 20:48:39:4839 info: ::1 - GET /api/service-requests 304 - - 13.857 ms
+2026-05-16 20:48:41:4841 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:48:45:4845 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:48:48:4848 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:48:48:4848 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:48:52:4852 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:49:49:4949 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:49:49:4949 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:49:49:4949 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:49:56:4956 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:49:56:4956 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:01:501 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:01:501 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:02:502 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:02:502 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:03:503 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:03:503 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:03:503 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:03:503 warn: Rate Limit Exceeded: IP ::1
+2026-05-16 20:50:04:504 info: User disconnected: TIiseffWcKPf6Ru3AAAD
+2026-05-16 20:50:05:505 info: User disconnected: KeWX9JepXbyoTaTsAAAB
+2026-05-16 20:53:55:5355 info: Database synced successfully
+2026-05-16 20:53:55:5355 info: Server running on port 5000
+2026-05-16 20:54:07:547 info: Database synced successfully
+2026-05-16 20:54:07:547 info: Server running on port 5000
+2026-05-16 20:54:27:5427 warn: Failed login attempt for email: sh@gmail.com from IP: ::1
+2026-05-16 20:54:27:5427 info: ::1 - POST /api/auth/login 401 39 - 20.439 ms
+2026-05-16 20:54:43:5443 info: User login successful: alhyagem20@gmail.com
+2026-05-16 20:54:43:5443 info: ::1 - POST /api/auth/login 200 298 - 108.188 ms
+2026-05-16 20:54:45:5445 info: ::1 - GET /api/admin/workers 200 1433 - 21.550 ms
+2026-05-16 20:54:45:5445 info: ::1 - GET /api/admin/workers 304 - - 6.250 ms
+2026-05-16 20:54:47:5447 info: ::1 - GET /api/admin/services 200 1150 - 9.922 ms
+2026-05-16 20:54:47:5447 info: ::1 - GET /api/admin/services 304 - - 6.011 ms
+2026-05-16 20:54:52:5452 info: ::1 - GET /api/admin/bookings 200 669 - 12.198 ms
+2026-05-16 20:54:52:5452 info: ::1 - GET /api/admin/bookings 304 - - 5.784 ms
+2026-05-16 20:55:04:554 info: ::1 - GET /api/admin/reports 200 207 - 6.116 ms
+2026-05-16 20:55:04:554 info: ::1 - GET /api/admin/reports 304 - - 3.366 ms
+2026-05-16 20:55:10:5510 info: Database synced successfully
+2026-05-16 20:55:27:5527 info: ::1 - GET /api/admin/workers 304 - - 9.071 ms
+2026-05-16 20:55:27:5527 info: ::1 - GET /api/admin/workers 304 - - 8.068 ms
+2026-05-16 20:55:33:5533 info: ::1 - GET /api/admin/users 200 1375 - 8.474 ms
+2026-05-16 20:55:33:5533 info: ::1 - GET /api/admin/users 304 - - 5.473 ms
+2026-05-16 20:55:42:5542 info: ::1 - GET /api/admin/workers 304 - - 5.740 ms
+2026-05-16 20:55:42:5542 info: ::1 - GET /api/admin/workers 304 - - 6.249 ms
+2026-05-16 20:55:44:5544 info: ::1 - GET /api/admin/users 304 - - 3.418 ms
+2026-05-16 20:55:44:5544 info: ::1 - GET /api/admin/users 304 - - 5.666 ms
+2026-05-16 20:56:13:5613 info: ::1 - GET /api/admin/workers 304 - - 5.058 ms
+2026-05-16 20:56:13:5613 info: ::1 - GET /api/admin/workers 304 - - 4.801 ms
+2026-05-16 20:56:14:5614 info: ::1 - GET /api/admin/services 304 - - 3.660 ms
+2026-05-16 20:56:14:5614 info: ::1 - GET /api/admin/services 304 - - 5.034 ms
+2026-05-16 20:56:15:5615 info: ::1 - GET /api/admin/bookings 304 - - 4.131 ms
+2026-05-16 20:56:15:5615 info: ::1 - GET /api/admin/bookings 304 - - 8.125 ms
+2026-05-16 20:56:18:5618 info: ::1 - GET /api/admin/workers 304 - - 13.754 ms
+2026-05-16 20:56:18:5618 info: ::1 - GET /api/admin/workers 304 - - 5.690 ms
+2026-05-16 20:56:19:5619 info: ::1 - GET /api/admin/services 304 - - 4.069 ms
+2026-05-16 20:56:19:5619 info: ::1 - GET /api/admin/services 304 - - 7.688 ms
+2026-05-16 20:56:49:5649 info: ::1 - POST /api/auth/register 201 270 - 105.052 ms
+2026-05-16 20:56:50:5650 info: User connected: bGiw9sL67uSCjwyRAAAB (UserId: 7)
+2026-05-16 20:56:50:5650 info: User 7 joined their notification room
+2026-05-16 20:56:50:5650 info: User 7 joined their notification room
+2026-05-16 20:56:50:5650 info: ::1 - GET /api/services 200 642 - 35.932 ms
+2026-05-16 20:56:50:5650 info: ::1 - GET /api/services 200 642 - 34.557 ms
+2026-05-16 20:56:50:5650 info: ::1 - GET /api/bookings/client 200 2 - 38.049 ms
+2026-05-16 20:56:50:5650 info: ::1 - GET /uploads/5-1778953364649.webp 200 49702 - 3.762 ms
+2026-05-16 20:56:50:5650 info: ::1 - GET /api/bookings/client 304 - - 16.829 ms
+2026-05-16 20:56:58:5658 info: ::1 - GET /api/services 200 642 - 7.123 ms
+2026-05-16 20:56:58:5658 info: ::1 - GET /api/services 200 642 - 11.412 ms
+2026-05-16 20:57:08:578 info: ::1 - POST /api/bookings 201 215 - 12.840 ms
+2026-05-16 20:57:08:578 info: User 7 joined their notification room
+2026-05-16 20:57:08:578 info: User 7 joined their notification room
+2026-05-16 20:57:08:578 info: ::1 - GET /api/services 200 642 - 12.889 ms
+2026-05-16 20:57:08:578 info: ::1 - GET /api/services 200 642 - 10.777 ms
+2026-05-16 20:57:08:578 info: ::1 - GET /api/bookings/client 200 545 - 12.917 ms
+2026-05-16 20:57:08:578 info: ::1 - GET /uploads/5-1778953364649.webp 304 - - 1.530 ms
+2026-05-16 20:57:08:578 info: ::1 - GET /api/bookings/client 304 - - 12.638 ms
+2026-05-16 20:57:15:5715 info: ::1 - GET /api/admin/workers 304 - - 5.847 ms
+2026-05-16 20:57:15:5715 info: ::1 - GET /api/admin/workers 304 - - 6.090 ms
+2026-05-16 20:57:37:5737 warn: Failed login attempt for email: nn@gmail.com from IP: ::1
+2026-05-16 20:57:37:5737 info: ::1 - POST /api/auth/login 401 39 - 87.671 ms
+2026-05-16 20:58:03:583 warn: Failed login attempt for email: ne@gmail.com from IP: ::1
+2026-05-16 20:58:03:583 info: ::1 - POST /api/auth/login 401 39 - 2.241 ms
+2026-05-16 20:58:04:584 warn: Failed login attempt for email: ne@gmail.com from IP: ::1
+2026-05-16 20:58:04:584 info: ::1 - POST /api/auth/login 401 39 - 2.159 ms
+2026-05-16 20:58:27:5827 info: ::1 - GET /api/services 200 642 - 6.321 ms
+2026-05-16 20:58:27:5827 info: ::1 - GET /api/services 200 642 - 6.179 ms
+2026-05-16 21:06:04:64 info: ::1 - GET /api/admin/users 200 1576 - 5.840 ms
+2026-05-16 21:06:04:64 info: ::1 - GET /api/admin/users 304 - - 5.938 ms

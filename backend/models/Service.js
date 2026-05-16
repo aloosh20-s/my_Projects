@@ -13,19 +13,32 @@ const Service = sequelize.define('Service', {
   },
   title: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      notEmpty: { msg: 'Title cannot be empty' },
+      len: [3, 100]
+    }
   },
   category: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      notEmpty: { msg: 'Category is required' }
+    }
   },
   description: {
     type: DataTypes.TEXT,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      notEmpty: { msg: 'Description is required' }
+    }
   },
   price: {
     type: DataTypes.FLOAT,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      min: 0
+    }
   },
   estimatedTime: {
     type: DataTypes.STRING,

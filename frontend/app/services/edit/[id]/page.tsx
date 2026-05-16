@@ -133,12 +133,20 @@ export default function EditServicePage({ params }: { params: Promise<{ id: stri
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-1">Title</label>
-            <input type="text" required value={title} onChange={e => setTitle(e.target.value)} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700" placeholder="e.g. Professional Plumbing Repair" />
+            <label className="block text-sm font-medium mb-1">Service Title</label>
+            <input type="text" required value={title} onChange={e => setTitle(e.target.value)} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700" placeholder="e.g. Fix Leaky Faucets" />
           </div>
           <div>
             <label className="block text-sm font-medium mb-1">Category</label>
-            <input type="text" required value={category} onChange={e => setCategory(e.target.value)} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700" placeholder="e.g. Plumbing" />
+            <select required value={category} onChange={e => setCategory(e.target.value)} className="w-full px-4 py-2 border rounded-lg dark:bg-slate-800 dark:border-slate-700">
+              <option value="" disabled>Select a category</option>
+              <option value="Plumbing">Plumbing</option>
+              <option value="Electrical">Electrical</option>
+              <option value="Cleaning">Cleaning</option>
+              <option value="Handyman">Handyman</option>
+              <option value="Technology">Technology</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
           <div>
             <label className="block text-sm font-medium mb-1">Description</label>
@@ -159,7 +167,10 @@ export default function EditServicePage({ params }: { params: Promise<{ id: stri
             <label className="block text-sm font-medium mb-1">Service Images</label>
             <div className="flex gap-4 mb-2 overflow-x-auto py-2">
               {images.map((img, i) => (
-                <img key={i} src={img} alt={`Uploaded ${i}`} className="h-24 w-24 object-cover rounded-lg border border-slate-200 dark:border-slate-700" />
+                <div key={i} className="relative inline-block">
+                  <img src={img} alt={`Uploaded ${i}`} className="h-24 w-24 object-cover rounded-lg border border-slate-200 dark:border-slate-700" />
+                  <button type="button" onClick={() => setImages(images.filter((_, index) => index !== i))} className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs shadow-md">X</button>
+                </div>
               ))}
             </div>
             <div className="relative inline-block w-full">

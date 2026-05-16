@@ -97,14 +97,22 @@ const sendMessage = async (req, res) => {
     const { receiverId, message } = req.body;
     const senderId = req.user.id;
 
-    if (!receiverId || !message) {
+    let sanitizedMessage = message.trim();
+    if (!receiverId || !sanitizedMessage) {
       return res.status(400).json({ message: 'Receiver and message text are required' });
     }
+
+    if (sanitizedMessage.length > 1000) {
+      return res.status(400).json({ message: 'Message is too long (max 1000 characters)' });
+    }
+
+    // Basic XSS protection
+    sanitizedMessage = sanitizedMessage.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
     const newMessage = await Message.create({
       senderId,
       receiverId,
-      message
+      message: sanitizedMessage
     });
 
     // We can populate the sender details for immediate return

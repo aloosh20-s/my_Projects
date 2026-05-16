@@ -15,7 +15,9 @@ export default function Login() {
 
   useEffect(() => {
     if (user) {
-      router.push(user.role === 'worker' ? '/worker/bookings' : '/customer');
+      if (user.role === 'admin') router.push('/admin');
+      else if (user.role === 'worker') router.push('/worker/bookings');
+      else router.push('/customer');
     }
   }, [user, router]);
 
@@ -35,7 +37,9 @@ export default function Login() {
       // Use AuthContext login so Navbar re-renders reactively
       login(data);
 
-      if (data.role === 'worker') {
+      if (data.role === 'admin') {
+        router.push('/admin');
+      } else if (data.role === 'worker') {
         router.push('/worker/bookings');
       } else {
         router.push('/customer');

@@ -22,19 +22,25 @@ const app = express();
 const server = http.createServer(app);
 
 // Initialize Socket.io
+const allowedOrigins = [
+  'http://localhost:3000',
+  process.env.FRONTEND_URL
+].filter(Boolean);
+
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000', // Restricted to frontend URL
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     methods: ['GET', 'POST']
   }
 });
 
 app.set('io', io);
-
-// Middlewares
-const allowedOrigins = [
-  'http://localhost:3000'
-];
 
 app.use(cors({
   origin: function (origin, callback) {
@@ -43,7 +49,8 @@ app.use(cors({
     } else {
       callback(new Error('Not allowed by CORS'));
     }
-  }
+  },
+  credentials: false // "Do not allow credentials with wildcard origin" -> better to just use credentials false or restrict to exact origin.
 }));
 app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" },
@@ -90,6 +97,24 @@ app.use('/socket.io', (req, res, next) => {
 
 app.use(express.json());
 
+// Global XSS Sanitization Middleware for body
+app.use((req, res, next) => {
+  const sanitize = (obj) => {
+    for (const key in obj) {
+      if (typeof obj[key] === 'string') {
+        obj[key] = obj[key].replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      } else if (typeof obj[key] === 'object' && obj[key] !== null) {
+        sanitize(obj[key]);
+      }
+    }
+  };
+  
+  if (req.body) {
+    sanitize(req.body);
+  }
+  next();
+});
+
 // Serve uploads folder statically for local development
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
@@ -116,9 +141,11 @@ io.use((socket, next) => {
 io.on('connection', (socket) => {
   logger.info(`User connected: ${socket.id} (UserId: ${socket.user?.id || 'Unknown'})`);
 
-  socket.on('join', (userId) => {
-    socket.join(`user_${userId}`);
-    logger.info(`User ${userId} joined their notification room`);
+  socket.on('join', () => {
+    if (socket.user && socket.user.id) {
+      socket.join(`user_${socket.user.id}`);
+      logger.info(`User ${socket.user.id} joined their notification room`);
+    }
   });
 
   socket.on('disconnect', () => {
@@ -139,6 +166,8 @@ app.use('/api/workers', require('./routes/workerRoutes'));
 app.use('/api/upload', require('./routes/uploadRoutes'));
 app.use('/api/service-requests', require('./routes/serviceRequestRoutes'));
 app.use('/api/messages', require('./routes/messageRoutes'));
+app.use('/api/admin', require('./routes/adminRoutes'));
+app.use('/api/reports', require('./routes/reportRoutes'));
 // app.use('/api/reviews', require('./routes/reviewRoutes'));
 
 const PORT = process.env.PORT || 5000;

@@ -5,6 +5,7 @@ const Booking = require('./Booking');
 const Review = require('./Review');
 const Message = require('./Message');
 const ServiceRequest = require('./ServiceRequest');
+const Report = require('./Report');
 
 // User and WorkerProfile
 User.hasOne(WorkerProfile, { foreignKey: 'userId', as: 'workerProfile' });
@@ -47,5 +48,6 @@ module.exports = {
   Booking,
   Review,
   Message,
-  ServiceRequest
+  ServiceRequest,
+  Report
 };

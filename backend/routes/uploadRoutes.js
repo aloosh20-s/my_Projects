@@ -5,6 +5,13 @@ const fs = require('fs');
 const path = require('path');
 const router = express.Router();
 const { protect } = require('../middlewares/authMiddleware');
+const rateLimit = require('express-rate-limit');
+
+const uploadLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 20,
+  message: { message: 'Too many uploads from this IP, please try again later.' }
+});
 
 // Configure Cloudinary if env variables are available
 const useCloudinary = !!(process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && process.env.CLOUDINARY_API_SECRET);
@@ -52,7 +59,7 @@ const upload = multer({
 // @desc    Upload an image
 // @route   POST /api/upload
 // @access  Private
-router.post('/', protect, upload.single('image'), async (req, res) => {
+router.post('/', protect, uploadLimiter, upload.single('image'), async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ message: 'No image uploaded' });

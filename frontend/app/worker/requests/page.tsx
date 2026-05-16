@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import { API_BASE_URL } from '@/utils/api';
+import { socket } from '@/utils/socket';
 import { MapPin, DollarSign, Calendar, CheckCircle } from 'lucide-react';
 
 export default function WorkerRequestsPage() {
@@ -32,7 +33,25 @@ export default function WorkerRequestsPage() {
   };
 
   useEffect(() => {
-    if (user?.role === 'worker') fetchRequests();
+    if (user?.role === 'worker') {
+      fetchRequests();
+
+      if (!socket.connected) {
+        socket.auth = { token: user.token };
+        socket.connect();
+      }
+      socket.emit('join', user.id);
+
+      const handleNewRequest = () => {
+        fetchRequests();
+      };
+
+      socket.on('new_request', handleNewRequest);
+
+      return () => {
+        socket.off('new_request', handleNewRequest);
+      };
+    }
   }, [user]);
 
   // Protection

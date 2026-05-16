@@ -23,6 +23,21 @@ exports.createRequest = async (req, res) => {
       workerId: workerId || null
     });
 
+    const io = req.app.get('io');
+    if (workerId) {
+      io.to(`user_${workerId}`).emit('new_request', {
+        id: serviceRequest.id,
+        title: serviceRequest.title,
+        customerName: req.user.name
+      });
+    } else {
+      io.emit('new_request', {
+        id: serviceRequest.id,
+        title: serviceRequest.title,
+        customerName: req.user.name
+      });
+    }
+
     res.status(201).json(serviceRequest);
   } catch (error) {
     console.error('Error in createRequest:', error);
@@ -93,6 +108,13 @@ exports.respondToRequest = async (req, res) => {
     serviceRequest.workerId = req.user.id;
     serviceRequest.status = 'assigned';
     await serviceRequest.save();
+
+    const io = req.app.get('io');
+    io.to(`user_${serviceRequest.customerId}`).emit('request_accepted', {
+      id: serviceRequest.id,
+      title: serviceRequest.title,
+      workerName: req.user.name
+    });
 
     res.json(serviceRequest);
   } catch (error) {

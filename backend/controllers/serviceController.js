@@ -55,6 +55,9 @@ const createService = async (req, res) => {
 
     res.status(201).json(service);
   } catch (error) {
+    if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+      return res.status(400).json({ message: error.errors.map(e => e.message).join(', ') });
+    }
     res.status(500).json({ message: error.message });
   }
 };
@@ -85,6 +88,9 @@ const updateService = async (req, res) => {
     res.json(updatedService);
   } catch (error) {
     console.error('[serviceController.updateService Error]:', error);
+    if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+      return res.status(400).json({ message: error.errors.map(e => e.message).join(', ') });
+    }
     const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
     res.status(500).json({ message });
   }

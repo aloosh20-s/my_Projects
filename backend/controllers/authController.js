@@ -1,6 +1,7 @@
 const { User, WorkerProfile } = require('../models');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const logger = require('../config/logger');
 
 // Generate JWT
 const generateToken = (id) => {
@@ -26,12 +27,14 @@ const registerUser = async (req, res) => {
     // Create user
     const allowedRoles = ['client', 'worker'];
     const assignedRole = allowedRoles.includes(role) ? role : 'client';
+    const status = assignedRole === 'worker' ? 'pending' : 'active';
 
     const user = await User.create({
       name,
       email,
       password,
       role: assignedRole,
+      status,
       phone,
       location
     });
@@ -54,6 +57,7 @@ const registerUser = async (req, res) => {
         phone: user.phone,
         location: user.location,
         profileImage: user.profileImage,
+        status: user.status,
         token: generateToken(user.id)
       });
     } else {
@@ -61,6 +65,9 @@ const registerUser = async (req, res) => {
     }
   } catch (error) {
     console.error('[authController.registerUser Error]:', error);
+    if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+      return res.status(400).json({ message: error.errors.map(e => e.message).join(', ') });
+    }
     const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
     res.status(500).json({ message });
   }
@@ -78,6 +85,7 @@ const loginUser = async (req, res) => {
     const user = await User.findOne({ where: { email } });
 
     if (user && (await user.matchPassword(password))) {
+      logger.info(`User login successful: ${email}`);
       res.json({
         id: user.id,
         name: user.name,
@@ -86,9 +94,11 @@ const loginUser = async (req, res) => {
         phone: user.phone,
         location: user.location,
         profileImage: user.profileImage,
+        status: user.status,
         token: generateToken(user.id)
       });
     } else {
+      logger.warn(`Failed login attempt for email: ${email} from IP: ${req.ip}`);
       res.status(401).json({ message: 'Invalid email or password' });
     }
   } catch (error) {
@@ -138,6 +148,10 @@ const updateUserProfile = async (req, res) => {
       user.phone = req.body.phone || user.phone;
       user.location = req.body.location || user.location;
       user.profileImage = req.body.profileImage || user.profileImage;
+      
+      // Explicitly preventing role and status modification
+      // user.role = req.body.role || user.role;
+      // user.status = req.body.status || user.status;
 
       if (req.body.password) {
         if (!req.body.oldPassword) {
@@ -162,6 +176,7 @@ const updateUserProfile = async (req, res) => {
         phone: updatedUser.phone,
         location: updatedUser.location,
         profileImage: updatedUser.profileImage,
+        status: updatedUser.status,
         token: generateToken(updatedUser.id),
       });
     } else {
@@ -169,6 +184,9 @@ const updateUserProfile = async (req, res) => {
     }
   } catch (error) {
     console.error('[authController.updateUserProfile Error]:', error);
+    if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+      return res.status(400).json({ message: error.errors.map(e => e.message).join(', ') });
+    }
     const message = process.env.NODE_ENV === 'production' ? 'An unexpected server error occurred.' : error.message;
     res.status(500).json({ message });
   }

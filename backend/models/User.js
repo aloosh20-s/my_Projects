@@ -37,6 +37,13 @@ const User = sequelize.define('User', {
       isIn: [['client', 'worker', 'admin']]
     }
   },
+  status: {
+    type: DataTypes.STRING,
+    defaultValue: 'active',
+    validate: {
+      isIn: [['pending', 'approved', 'rejected', 'suspended', 'active']]
+    }
+  },
   phone: {
     type: DataTypes.STRING,
     defaultValue: ''

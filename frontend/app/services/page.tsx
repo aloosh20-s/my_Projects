@@ -18,7 +18,7 @@ function ServicesContent() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const res = await fetch(`${API_BASE_URL}/services`);
+        const res = await fetch(`${API_BASE_URL}/services`, { cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
           setServices(data);
